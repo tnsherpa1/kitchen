@@ -5,7 +5,7 @@ const Contact = (props) => (
         <div className="inner">  
             <section>
                 <h2>Contact</h2>
-                <form name="contact" className="box" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
                     <input type="hidden" name="bot-field" />
                     <div className="field half first">
                         <label htmlFor="name">Name</label>
@@ -20,7 +20,7 @@ const Contact = (props) => (
                         <textarea name="message" id="message" rows="6"></textarea>
                     </div>
                     <ul className="actions">
-                        <li><input type="submit" value="Send Message" className="special" /></li>
+                        <li><button type="submit" className="special" >Send Message</button></li>
                         <li><input type="reset" value="Clear" /></li>
                     </ul>
                 </form>
