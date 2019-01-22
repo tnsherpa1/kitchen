@@ -12,7 +12,7 @@ const Menu = (props) => (
                 <li><Link onClick={props.onToggleMenu} to="/gallery">Gallery</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/experience">What we offer</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/everest">Everest Trek</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/about#contact">Contact</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/contact">Contact</Link></li>
             </ul>
             <ul className="actions vertical">
                 <li><a href="https://www.opentable.com/r/himalayan-sherpa-kitchen-st-helena" className="button special fit" target="_blank" rel="noopener noreferrer">Reservation</a></li>
