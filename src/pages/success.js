@@ -5,7 +5,7 @@ const Success = () => (
   <Layout>
     <div id="main" className="alt">
         <section id="one">
-            <div className="inner">
+            <div className="inner box">
                 <h1>Thank You!</h1>
                 <p>Your message has been sent. We will be in touch soon.</p>
             </div>
