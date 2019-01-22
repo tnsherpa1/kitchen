@@ -113,6 +113,9 @@ class Photo extends React.Component {
 
         <div id="main" className="alt">
           <section id="one">
+          <header>
+            <h1 className="major">Gallery</h1>
+          </header>
             <div className="inner">
                 <Gallery photos={photos} onClick={this.openLightbox} />
                 <Lightbox images={photos}
