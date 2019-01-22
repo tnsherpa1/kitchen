@@ -8,6 +8,10 @@
 
 	form {
 		margin: 0 0 _size(element-margin) 0;
+		
+		.hidden {
+			display: none;
+		}
 
 		.field {
 			margin: 0 0 (_size(element-margin) * 1) 0;

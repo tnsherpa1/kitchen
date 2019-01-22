@@ -7,7 +7,7 @@ const Contact = (props) => (
                 <h2>Contact</h2>
                 <form className="box" method="post" netlify-honeypot="bot-field" data-netlify="true">
                     <div class="hidden">
-                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                        <input name="bot-field" />
                     </div>
                     <div className="field half first">
                         <label htmlFor="name">Name</label>
