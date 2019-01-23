@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
+import Footer from './Footer'
 
 const Menu = (props) => (
     <nav id="menu">
@@ -10,13 +11,14 @@ const Menu = (props) => (
                 <li><Link onClick={props.onToggleMenu} to="/about">Our Story</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/menu">Menu</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/gallery">Gallery</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/experience">What we offer</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/everest">Everest Trek</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/contact">Contact</Link></li>
             </ul>
             <ul className="actions vertical">
                 <li><a href="https://www.opentable.com/r/himalayan-sherpa-kitchen-st-helena" className="button special fit" target="_blank" rel="noopener noreferrer">Reservation</a></li>
                 <li><a href="tel:+7079634439" className="button fit">Phone: (707) 963-4439</a></li>
             </ul>
+            <Footer />
         </div>
         <button className="close" onClick={props.onToggleMenu}>Close</button>
     </nav>

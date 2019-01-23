@@ -1,6 +1,7 @@
 import React from 'react'
 import namaste from '../assets/images/namaste.svg'
 import { Link } from 'gatsby'
+import Footer from './Footer'
 
 const Banner = props => (
   <section id="banner" className="major">
@@ -32,6 +33,7 @@ const Banner = props => (
           <li>Dinner: 5:00pm to 9:00pm (Daily except Tuesdays)</li>
           <li>Closed on Tuesdays</li>
         </ul>
+        <Footer />
       </div>
     </div>
   </section>
