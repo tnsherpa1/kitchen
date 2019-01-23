@@ -18,7 +18,7 @@ const items = [
 
 
 const Momo = props => (
-  <Collapsible trigger="MoMo - Steamed Dumplings">
+  <Collapsible tabIndex={0} trigger="MoMo - Steamed Dumplings">
     <div className="table-wrapper">
       <table>
         <thead>

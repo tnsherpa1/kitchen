@@ -23,7 +23,7 @@ const items = [
 ]
 
 const Bubbles = props => (
-  <Collapsible trigger="Sparkling Wines">
+  <Collapsible tabIndex={0} trigger="Sparkling Wines">
     <div className="table-wrapper">
       <table>
         <thead>

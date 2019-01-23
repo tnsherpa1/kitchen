@@ -43,7 +43,7 @@ const items = [
 
 
 const Sides = props => (
-  <Collapsible trigger="Sides">
+  <Collapsible tabIndex={0} trigger="Sides">
     <div className="table-wrapper">
       <table>
         <thead>

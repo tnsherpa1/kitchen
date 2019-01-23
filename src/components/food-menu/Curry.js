@@ -67,7 +67,7 @@ const items = [
 ]
 
 const Curry = props => (
-  <Collapsible trigger="Curry Dishes">
+  <Collapsible tabIndex={0} trigger="Curry Dishes">
     <div className="table-wrapper">
     <p>(Served with a choice of steamed Basmati or Brown Rice or Buttered Naan Bread)</p>
       <table>

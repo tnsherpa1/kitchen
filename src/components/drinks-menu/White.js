@@ -63,7 +63,7 @@ const items = [
 ]
 
 const White = props => (
-  <Collapsible trigger="White Wines">
+  <Collapsible tabIndex={0} trigger="White Wines">
     <div className="table-wrapper">
       <table>
         <thead>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Collapsible from '../Collapsible'
 
 const TikaMasala = props => (
-  <Collapsible trigger="Tika Masala">
+  <Collapsible tabIndex={0} trigger="Tika Masala">
     <div className="table-wrapper">
     <div className="box">
         <ul className="alt">

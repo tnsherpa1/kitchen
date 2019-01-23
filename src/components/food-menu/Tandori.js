@@ -37,7 +37,7 @@ const items = [
 ]
 
 const Tandori = props => (
-  <Collapsible trigger="Tandoori">
+  <Collapsible tabIndex={0} trigger="Tandoori">
     <div className="table-wrapper">
     <ul className="alt">
         <li>(Sizzling Platters)<br/>

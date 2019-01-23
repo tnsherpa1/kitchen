@@ -22,7 +22,7 @@ const Everest = (props) => (
                         <img id="everestInfo" src={everestInfo} alt="Everest Base Camp Trek Information" />
                     </div>
                     <div className="col-4">
-                        <p>Mt. Everest Base Camp trek organized by the owner every season, Chiring Sherpa. Chiring leads a trip to Nepal every year. Tourists enjoy and fully immerse in the local culture and natural beauty along the route.</p>
+                        <blockquote>Chiring leads a trip to Nepal every year. Tourists enjoy and fully immerse in the local culture and natural beauty along the route. <br /> For more details, pricing and complete itinerary please call or use the contact form below.</blockquote>
                     </div>
                     </div>
                 </div>
