@@ -184,7 +184,6 @@
 				}
 
 				nav {
-					padding-right: 10px;
 					button {
 						padding: 0 0.5em;
 						font-size: 0.5em;
@@ -214,12 +213,16 @@
 
 			@include breakpoint(xsmall) {
 				.logo {
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
 					span {
 						display: none;
 					}
 				}
 
 				nav {
+					padding-right: 20px;
 					button {
 						&.menu-link {
 							overflow: hidden;
