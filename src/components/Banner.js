@@ -1,7 +1,7 @@
 import React from 'react'
 import namaste from '../assets/images/namaste.svg'
 import { Link } from 'gatsby'
-import Footer from './Footer'
+import yelp from '../assets/images/small_4_half.png'
 
 const Banner = props => (
   <section id="banner" className="major">
@@ -33,7 +33,10 @@ const Banner = props => (
           <li>Dinner: 5:00pm to 9:00pm (Daily except Tuesdays)</li>
           <li>Closed on Tuesdays</li>
         </ul>
-        <Footer />
+        <ul className="icons">
+            <li><a href="https://www.yelp.com/biz/st-helena-sherpa-kitchen-st-helena" target="_blank" rel="noopener noreferrer" className="icon alt fa-yelp"><span className="label">Yelp</span></a></li>
+            <li><a href="https://www.yelp.com/biz/st-helena-sherpa-kitchen-st-helena" target="_blank" rel="noopener noreferrer"><img src={yelp} alt="yelp" /></a></li>
+          </ul>
       </div>
     </div>
   </section>

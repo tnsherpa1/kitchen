@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import Footer from './Footer'
+import yelp from '../assets/images/small_4_half.png'
 
 const Menu = (props) => (
     <nav id="menu">
@@ -18,7 +18,10 @@ const Menu = (props) => (
                 <li><a href="https://www.opentable.com/r/himalayan-sherpa-kitchen-st-helena" className="button special fit" target="_blank" rel="noopener noreferrer">Reservation</a></li>
                 <li><a href="tel:+7079634439" className="button fit">Phone: (707) 963-4439</a></li>
             </ul>
-            <Footer />
+            <ul className="icons">
+                <li><a href="https://www.yelp.com/biz/st-helena-sherpa-kitchen-st-helena" target="_blank" rel="noopener noreferrer" className="icon alt fa-yelp"><span className="label">Yelp</span></a></li>
+                <li><a href="https://www.yelp.com/biz/st-helena-sherpa-kitchen-st-helena" target="_blank" rel="noopener noreferrer"><img src={yelp} alt="yelp" /></a></li>
+            </ul>
         </div>
         <button className="close" onClick={props.onToggleMenu}>Close</button>
     </nav>
