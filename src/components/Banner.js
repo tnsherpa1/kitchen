@@ -17,15 +17,6 @@ const Banner = props => (
           cuisine! Your taste is our specialty and your pleasure our courtesy.
         </p>
       </div>
-      <div>
-      <ul className="actions">
-        <li>
-          <Link to ="/menu" className="button scrolly">
-            View the Menu
-          </Link>
-        </li>
-      </ul>
-      </div>
       <div id="footer">
         <ul className="alt">
           <li>Hours:</li>
@@ -33,10 +24,18 @@ const Banner = props => (
           <li>Dinner: 5:00pm to 9:00pm (Daily except Tuesdays)</li>
           <li>Closed on Tuesdays</li>
         </ul>
+        <ul className="actions vertical">
+          <li><a href="tel:1-707-963-4439" className="button scrolly special">(707) 963-4439</a></li>
+          <li>
+            <Link to ="/menu" className="button scrolly">
+              View the Menu
+            </Link>
+          </li>
+        </ul>
         <ul className="icons">
-            <li><a href="https://www.yelp.com/biz/st-helena-sherpa-kitchen-st-helena" target="_blank" rel="noopener noreferrer" className="icon alt fa-yelp"><span className="label">Yelp</span></a></li>
-            <li><a href="https://www.yelp.com/biz/st-helena-sherpa-kitchen-st-helena" target="_blank" rel="noopener noreferrer"><img src={yelp} alt="yelp" /></a></li>
-          </ul>
+          <li><a href="https://www.yelp.com/biz/st-helena-sherpa-kitchen-st-helena" target="_blank" rel="noopener noreferrer" className="icon alt fa-yelp"><span className="label">Yelp</span></a></li>
+          <li><a href="https://www.yelp.com/biz/st-helena-sherpa-kitchen-st-helena" target="_blank" rel="noopener noreferrer"><img src={yelp} alt="yelp" /></a></li>
+        </ul>
       </div>
     </div>
   </section>
