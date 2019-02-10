@@ -7,15 +7,15 @@ const Banner = props => (
   <section id="banner" className="major">
     <div className="inner align-center">
       <header className="major">
-        <h1>From the himalayas to the heart of wine country</h1>
+        <h1>Himalayan Sherpa Kitchen, St. Helena, California</h1>
       </header>
 
       <div className="content">
+        <img className="namaste" src={namaste} alt="Namaste from himalayan sherpa kitchen" />
         <p>
           We offer you a hearty welcome to the exotic flavors of the Himalayan
           cuisine! Your taste is our specialty and your pleasure our courtesy.
         </p>
-        <img className="namaste" src={namaste} alt="Namaste from himalayan sherpa kitchen" />
       </div>
       <div>
       <ul className="actions">
