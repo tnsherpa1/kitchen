@@ -26,6 +26,17 @@ class HomeIndex extends React.Component {
                 <Banner />
 
                 <div id="main">
+                    <section id="two">
+                        <div className="inner">
+                            <header className="major">
+                                <h2>The Story</h2>
+                            </header>
+                            <p>Himalayan Sherpa Kitchen is owned by the joint partnership of Chhiring and Nima Sherpa who met in their early twenties and quickly became friends. Nima manages at the popular local restaurant of Sonoma, Meritage Martini Oyster Bar. Both began as trekking guides in Nepal and upon arriving in beautiful wine country became quickly emerged in the restaurant business. Their experience in restaurant managing along with their friendly easy going personalities makes for great service. They truly believe the customer is always right.</p>
+                            <ul className="actions">
+                                <li><Link to="/about" className="button next">Learn more</Link></li>
+                            </ul>
+                        </div>
+                    </section>
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${pic01})`}}>
                             <header className="major">
@@ -51,17 +62,6 @@ class HomeIndex extends React.Component {
                             </header>
                             <Link to="/experience" className="link primary"></Link>
                         </article>
-                    </section>
-                    <section id="two">
-                        <div className="inner">
-                            <header className="major">
-                                <h2>The Story</h2>
-                            </header>
-                            <p>Himalayan Sherpa Kitchen is owned by the joint partnership of Chhiring and Nima Sherpa who met in their early twenties and quickly became friends.Chhiring is also partnered with other friends who together own Taste of the Himalayas in Sonoma. Nima manages at the popular local restaurant of Sonoma, Meritage Martini Oyster Bar. Both began as trekking guides in Nepal and upon arriving in beautiful wine country became quickly emerged in the restaurant business. Their experience in restaurant managing along with their friendly easy going personalities makes for great service. They truly believe the customer is always right.</p>
-                            <ul className="actions">
-                                <li><Link to="/landing" className="button next">Get Directions</Link></li>
-                            </ul>
-                        </div>
                     </section>
                 </div>
 

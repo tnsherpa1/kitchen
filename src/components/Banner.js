@@ -6,7 +6,7 @@ import yelp from '../assets/images/small_4_half.png'
 const Banner = props => (
   <section id="banner" className="major">
     <div className="inner align-center">
-      <header className="major">
+      <header className="major-hidden">
         <h1>Himalayan Sherpa Kitchen, St. Helena, California</h1>
       </header>
 

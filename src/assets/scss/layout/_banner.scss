@@ -42,13 +42,19 @@
 
 		h1 {
 			font-size: 2.55em;
-			clip-path: inset(100%);
-			clip: rect(1px 1px 1px 1px); /* IE 6/7 */
-			clip: rect(1px, 1px, 1px, 1px);
-			height: 1px;
-			overflow: hidden;
-			white-space: nowrap; /* added line */
-			width: 1px;
+		}
+
+		.major-hidden {
+			h1 {		
+				margin: 0;
+				clip-path: inset(100%);
+				clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+				clip: rect(1px, 1px, 1px, 1px);
+				height: 1px;
+				overflow: hidden;
+				white-space: nowrap; /* added line */
+				width: 1px;
+			}
 		}
 
 		> .inner {
