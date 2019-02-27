@@ -23,7 +23,7 @@ const items = [
     price: '$9.95',
   },
   {
-    name: 'Beet Salad ',
+    name: 'Spinach and Beet Salad ',
     desc:
       'Roasted beet, baby spinach, carrot, cherry tomatoes with cambozola cheese',
     price: '$10.50',

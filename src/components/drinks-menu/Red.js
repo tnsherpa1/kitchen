@@ -13,7 +13,7 @@ const items = [
     price: "$28.00 1/2 Btl"
   },
   {
-    name: "2016 Napa Cellard, Pinot Noir, Napa Valley",
+    name: "2016 Napa Cellars, Pinot Noir, Napa Valley",
     price: "$9 ($36.00 Btl)"
   },
   {

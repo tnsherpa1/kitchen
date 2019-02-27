@@ -7,47 +7,47 @@ const items = [
   {
     name: 'Mismas Tarkari',
     desc: 'Seasonal mixed vegetables in a light curry sauce (v)',
-    price: '$13.95',
+    price: '$14.95',
   },
   {
     name: 'Chana Masala ',
     desc: 'Organic Garbanzo beans with herbs in an onion gravy (v)',
-    price: '$13.50',
+    price: '$14.50',
   },
   {
     name: 'Alu Cauli Kerau',
     desc: 'Potatoes, cauliflowers and green peas in curry sauce (v)',
-    price: '$13.95',
+    price: '$14.95',
   },
   {
     name: 'Alu Bhanta',
     desc: 'Himalayan style cubes of eggplant and potatoes in curry sauce (v)',
-    price: '$13.95',
+    price: '$14.95',
   },
   {
     name: 'Saag Paneer',
     desc: 'Minced spinach with fried cheese cubes in a light creamy sauce',
-    price: '$14.95',
+    price: '$15.95',
   },
   {
     name: 'Matar Paneer',
     desc: 'Green peas and fried cheese cubes in a curry sauce',
-    price: '$14.50',
+    price: '$15.50',
   },
   {
     name: 'Kukhura Dahi',
     desc: ' Free range chicken cooked in yogurt and spiced curry sauce',
-    price: '$15.50',
+    price: '$16.50',
   },
   {
     name: 'Kukhura Ra Bhanta',
     desc: 'Free range chicken curry with cubes of Japanese eggplant',
-    price: '$15.95',
+    price: '$16.95',
   },
   {
     name: 'Lukshya Ra Phing',
     desc: 'Tender cubes of lamb curry with Phing (glass noodles)',
-    price: '$16.50',
+    price: '$17.50',
   },
   {
     name: 'Lukshya Saag',
@@ -57,12 +57,12 @@ const items = [
   {
     name: 'Machha Ra Bhanta',
     desc: 'Salmon and eggplant cooked in garlic, ginger and curry sauce',
-    price: '$16.95',
+    price: '$17.95',
   },
   {
     name: 'Prawns Vindaloo',
     desc: 'Prawns and potatoes in a Vindaloo curry sauce',
-    price: '$16.95',
+    price: '$17.95',
   },
 ]
 
