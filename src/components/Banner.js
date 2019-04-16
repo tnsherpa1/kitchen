@@ -19,10 +19,9 @@ const Banner = props => (
       </div>
       <div id="footer">
         <ul className="alt">
-          <li>Hours:</li>
-          <li>Lunch: 11:30am to 3:00pm (Daily except Tuesdays)</li>
-          <li>Dinner: 5:00pm to 9:00pm (Daily except Tuesdays)</li>
-          <li>Closed on Tuesdays</li>
+          <li><strong>Hours:</strong></li>
+          <li><strong>Lunch: 11:30am to 3:00pm</strong><p>Last tables seated at 2:45pm</p><p>Daily except Tuesdays</p></li>
+          <li><strong>Dinner: 5:00pm to 9:00pm</strong><p>Opens at 4:30pm on weekends</p><p>Last tables seated at 8:45pm</p><p>Daily except Tuesdays</p></li>
         </ul>
         <ul className="actions vertical">
           <li><a href="tel:1-707-963-4439" className="button scrolly special">(707) 963-4439</a></li>
