@@ -7,17 +7,22 @@ const items = [
     {
         name: "Rice",
         desc: "Your choice of Brown Rice or Steamed Basmati Rice",
-        price: "$3.50"
+        price: "$4.00"
     },
     {
         name: "Buttered Naan",
         desc: "Traditionally baked Bread in tandoor Oven",
-        price: "$3.50"
+        price: "$4.00"
     },
     {
         name: "Garlic Naan",
         desc: "Garlic Basil Naan Garlic and Basil spiced Naan",
-        price: "$3.95"
+        price: "$4.50"
+    },
+    {
+      name: "Garlic Cilantro Naan",
+      desc: "Garlic and Cilantro spiced Naan",
+      price: "$4.50"
     },
     {
         name: "Raita",

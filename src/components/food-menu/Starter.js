@@ -20,19 +20,19 @@ const items = [
     name: 'Himalayan Salad ',
     desc:
       'Organic field greens, strawberries, almonds and cucumber with our homemade dressing',
-    price: '$9.95',
+    price: '$10.00',
   },
   {
     name: 'Spinach and Beet Salad ',
     desc:
       'Roasted beet, baby spinach, carrot, cherry tomatoes with cambozola cheese',
-    price: '$10.50',
+    price: '$11.50',
   },
   {
     name: 'Garlic Prawn Salad ',
     desc:
       'Sauteed garlic prawns, organic field greens, cucumbers, tomatoes and goat cheese',
-    price: '$13.95',
+    price: '$14.95',
   },
 ]
 
