@@ -5,40 +5,28 @@ import DisplayMenu from '../DisplayMenu';
 
 const items = [
   {
-    name: "2016 Hahn GSM, Central Coast (House Red)",
-    price: "$8"
+    name: "2018 Hahn GSM, Central Coast (House Red)",
+    price: "$9"
   },
   {
-    name: "2015 Frank Family Vineyards, Pinot Noir",
-    price: "$28.00 1/2 Btl"
+    name: "2018 Frank Family Vineyards, Pinot Noir",
+    price: "$29.00 1/2 Btl"
   },
   {
-    name: "2016 Napa Cellars, Pinot Noir, Napa Valley",
-    price: "$9 ($36.00 Btl)"
+    name: "2017 Napa Cellars, Pinot Noir, Napa Valley",
+    price: "$10.50 ($39.00 Btl)"
   },
   {
-    name: "2017 Decoy Pinot Noir, Sonoma County",
-    price: "$40.00 Btl"
+    name: "2018 Decoy Pinot Noir, Sonoma County",
+    price: "$41.00 Btl"
   },
   {
-    name: "2014 Robledo Tempranillo, Napa Valley",
-    price: "$40.00 Btl"
-  },
-  {
-    name: "2016 Boucher Wines, Lipstick on a Pig, Red Wine Blend, Mendocino",
-    price: "$10 ($38.00 Btl)"
-  },
-  {
-    name: "2010 Kieu Hoang, Blend (75% Sangiovese & 25% Merlot), Napa Valley",
-    price: "$40.00 Btl"
-  },
-  {
-    name: "2017 Monticello Vineyards Estate Grown Merlot, Napa Valley",
-    price: "$10 ($40.00 Btl)"
+    name: "2017 Bell Syrah, Yountville, Napa Valley",
+    price: "$10.50 ($39.00 Btl)"
   },
   {
     name: "2014 Whitehall Lane, Merlot, Napa Valley",
-    price: "$40.00 Btl"
+    price: "$41.00 Btl"
   },
   {
     name: "2011 Jericho Canyon Merlot, Napa Valley",
@@ -50,7 +38,7 @@ const items = [
   },
   {
     name: "2016 Bello Vineyards Cabernet Sauvignon, California",
-    price: "$10.00 ($38.00 Btl)"
+    price: "$10.50 ($39.00 Btl)"
   },
   {
     name: "2015 Charles Krug Cabernet Sauvignon, Napa Valley",

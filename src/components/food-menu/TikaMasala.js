@@ -9,11 +9,11 @@ const TikaMasala = props => (
         <ul className="alt">
             <li>(Served with a choice of steamed Basmati or Brown Rice or Buttered Naan Bread)</li>
             <li>Served in a smooth creamy sauce with your choice of</li>
-            <li>Veggie $16.95</li>
-            <li>Organic Tofu $15.95)</li>
-            <li>Free Range Chicken $17.95</li>
-            <li>Lamb $18.50</li>
-            <li>Salmon $18.95</li>
+            <li>Veggie $17.50</li>
+            <li>Organic Tofu $16.50)</li>
+            <li>Free Range Chicken $18.50</li>
+            <li>Lamb $19.50</li>
+            <li>Salmon $19.50</li>
         </ul>
     </div>
     </div>

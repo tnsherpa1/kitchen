@@ -10,7 +10,7 @@ const items = [
   },
   {
     name: "Taj Mahal - Imported from India (Bottled)",
-    price: "$8.00"
+    price: "$9.00"
   },
   {
     name: "Mustang - Nepalese Lager (Bottled)",

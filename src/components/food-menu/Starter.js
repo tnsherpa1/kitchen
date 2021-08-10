@@ -8,31 +8,31 @@ const items = [
     name: 'Vegetables Pakoras ',
     desc:
       'Golden fried mixed vegetables fritters served with our homemade mint sauce (v)',
-    price: '$7.50',
+    price: '$8.50',
   },
   {
     name: 'Vegetable Samosas ',
     desc:
       'Crisp savory pastries stuffed with potatoes, green peas & spices served with mint sauce (v)',
-    price: '$8.00',
+    price: '$8.50',
   },
   {
     name: 'Himalayan Salad ',
     desc:
       'Organic field greens, strawberries, almonds and cucumber with our homemade dressing',
-    price: '$10.00',
+    price: '$10.50',
   },
   {
     name: 'Spinach and Beet Salad ',
     desc:
       'Roasted beet, baby spinach, carrot, cherry tomatoes with cambozola cheese',
-    price: '$11.50',
+    price: '$12.00',
   },
   {
     name: 'Garlic Prawn Salad ',
     desc:
       'Sauteed garlic prawns, organic field greens, cucumbers, tomatoes and goat cheese',
-    price: '$14.95',
+    price: '$15.50',
   },
 ]
 

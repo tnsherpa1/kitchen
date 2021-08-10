@@ -6,15 +6,15 @@ import DisplayMenu from '../DisplayMenu'
 const items = [
   {
     name: "Gloria Ferrer, Blanc de Noir (375,l)",
-    price: "$18.00 (Btl)"
+    price: "$19.00 (Btl)"
   },
   {
     name: "NV Mumm Brut, Napa Valley",
-    price: "$9.00"
+    price: "$10.50"
   },
   {
     name: "Zardetto Prosecco Brut, Italy",
-    price: "$34.00 (Btl)"
+    price: "$35.00 (Btl)"
   },
   {
     name: "Alexandrie North Coast Brut",
