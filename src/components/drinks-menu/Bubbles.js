@@ -10,11 +10,11 @@ const items = [
   },
   {
     name: "NV Mumm Brut, Napa Valley",
-    price: "$10.50"
+    price: "$11.00"
   },
   {
     name: "Zardetto Prosecco Brut, Italy",
-    price: "$35.00 (Btl)"
+    price: "$36.00 (Btl)"
   },
   {
     name: "Alexandrie North Coast Brut",

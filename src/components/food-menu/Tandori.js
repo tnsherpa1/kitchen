@@ -7,32 +7,32 @@ const items = [
     {
         name: "Rack of Lamb",
         desc: "Rack of Lamb marinated in perfect spices and broiled in tandoor oven (best way to eat Lamb)",
-        price: "$28.95"
+        price: "$32.95"
     },
     {
         name: "Mixed Grill Tandoori",
         desc: "Sizzling platters with a mix of Prawn, Leg of Lamb and Salmon Tandoori",
-        price: "$27.95"
+        price: "$29.95"
     },
     {
         name: "Salmon Tandoori",
         desc: "Salmon marinated and broiled in tandoor oven",
-        price: "$23.95"
+        price: "$25.95"
     },   
     {
         name: "Tandoori Tikka",
         desc: " Free range Chicken breast marinated and broiled in tandoor oven",
-        price: "$21.95"
+        price: "$22.95"
     },
     {
         name: "Chicken Tandoori",
         desc: "Free range Chicken with bones marinated and broiled in tandoor oven",
-        price: "$20.95"
+        price: "$22.95"
     },   
     {
         name: "Vegetable Tandoori",
         desc: "Different kinds of seasonal vegetables lightly spiced and served sizzling hot",
-        price: "$19.95"
+        price: "$21.95"
     }
 ]
 

@@ -7,32 +7,32 @@ const items = [
     {
         name: "Rice",
         desc: "Your choice of Brown Rice or Steamed Basmati Rice",
-        price: "$4.00"
+        price: "$4.50"
     },
     {
         name: "Buttered Naan",
         desc: "Traditionally baked Bread in tandoor Oven",
-        price: "$4.00"
+        price: "$4.50"
     },
     {
         name: "Garlic Naan",
         desc: "Garlic Basil Naan Garlic and Basil spiced Naan",
-        price: "$4.50"
+        price: "$4.95"
     },
     {
       name: "Garlic Cilantro Naan",
       desc: "Garlic and Cilantro spiced Naan",
-      price: "$4.50"
+      price: "$4.95"
     },
     {
         name: "Raita",
         desc: "Homemade yogurt with shredded cucumbers, toasted cumin, mint and spices",
-        price: "$4.00"
+        price: "$4.50"
     },
     {
         name: "Papadum",
         desc: "Papad Deep fried or Baked flat lentil wafers (Papadum)",
-        price: "$4.00"
+        price: "$4.50"
     },
     {
         name: "Mango Chutney",

@@ -6,7 +6,7 @@ import DisplayMenu from '../DisplayMenu'
 const items = [
   {
     name: "Napa Smith Organics IPA (Draft)",
-    price: "$6.00"
+    price: "$6.50"
   },
   {
     name: "Taj Mahal - Imported from India (Bottled)",
@@ -18,23 +18,23 @@ const items = [
   },
   {
     name: "Lagunitas Hop Stoopid Ale (Bottled)",
-    price: "$5.50"
+    price: "$6.50"
   },
   {
     name: "Stella Artois (Bottled)",
-    price: "$5.00"
+    price: "$5.50"
   },
   {
     name: "Anchor Steam Original (Bottled)",
-    price: "$5.00"
+    price: "$5.50"
   },
   {
     name: "Napa Smith Pilsner (Bottled)",
-    price: "$5.00"
+    price: "$5.50"
   },
   {
     name: "Non Alcoholic Beer (Bottled)",
-    price: "$5.00"
+    price: "$5.50"
   }
 ]
 

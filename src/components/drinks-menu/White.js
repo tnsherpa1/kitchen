@@ -5,7 +5,7 @@ import DisplayMenu from '../DisplayMenu';
 
 const items = [
   {
-    name: "2019 Dancing Crow Vineyards Rose, Lake County (House White)",
+    name: "2020 Dancing Crow Vineyards Rose, Lake County (House White)",
     price: "$9"
   },
   {
@@ -13,15 +13,15 @@ const items = [
     price: "$9.50 ($36.00 Btl)"
   },
   {
-    name: "2019 Trefethen Dry Riesling, Napa Valley",
-    price: "$10.50 ($37.00 Btl)"
+    name: "2020 Trefethen Dry Riesling, Napa Valley",
+    price: "$10.50 ($39.00 Btl)"
   },
   {
     name: "2019 Chateau Montelena Riesling, Potter Valley",
-    price: "$41.00 Btl"
+    price: "$45.00 Btl"
   },
   {
-    name: "2018 Abiouness, Amrita, White Wine, Napa Valley",
+    name: "2019 Abiouness, Amrita, White Wine, Napa Valley",
     price: "$9.50 ($36.00 Btl)"
   },
   {
@@ -41,8 +41,8 @@ const items = [
     price: "$9.50 ($37.00 Btl)"
   },
   {
-    name: "2020 Twomey Estate Sauvignon Blanc, Napa Valley",
-    price: "$41.00 Btl"
+    name: "2021 Twomey Estate Sauvignon Blanc, Napa Valley",
+    price: "$42.00 Btl"
   },
   {
     name: "2018 Starmont Chardonney, Carneros",
