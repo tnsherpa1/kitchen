@@ -19,7 +19,7 @@ const Banner = props => (
       </div>
       <div id="footer">
         <ul className="alt">
-          <li><strong>Hours:</strong><p>Open daily except Tuesdays</p></li>
+          <li><strong>Hours:</strong><p>Open daily</p></li>
           <li><strong>Lunch: 11:30am to 3:00pm</strong><p>Last tables seated at 2:45pm</p></li>
           <li><strong>Dinner: 5:00pm to 9:00pm</strong><p>Last tables seated at 8:30pm</p></li>
         </ul>

@@ -5,6 +5,12 @@ import DisplayMenu from '../DisplayMenu'
 
 const items = [
   {
+    name: 'Nepalese Daal Soup',
+    desc:
+      'Lentil soup tempered with sauteed garlic and fresh spinach (v)',
+    price: '$8.00',
+  },
+  {
     name: 'Vegetables Pakoras ',
     desc:
       'Golden fried mixed vegetables fritters served with our homemade mint sauce (v)',

@@ -36,7 +36,7 @@ const items = [
   },
   {
     name: 'Kukhura Dahi',
-    desc: ' Free range chicken cooked in yogurt and spiced curry sauce',
+    desc: 'Free range chicken cooked in yogurt and spiced curry sauce',
     price: '$17.95',
   },
   {
