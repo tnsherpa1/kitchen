@@ -7,12 +7,12 @@ const items = [
     {
         name: "Veggie Momo",
         desc: "Steamed dumplings filled w/spinach, onion, cabbage & spices served with tomato sauce (v)",
-        price: "$13.00"
+        price: "$14.00"
     },
     { 
         name: "Lamb or Chicken Momo ",
         desc: "Choice of lamb or Chicken steamed dumplings served with tomato sauce",
-        price: "$14.50"
+        price: "$15.50"
     }
 ]
 

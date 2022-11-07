@@ -26,11 +26,11 @@ const items = [
   },
   {
     name: "2018 Stag's Leap Merlot, Napa Valley",
-    price: "$55.00 Btl"
+    price: "$10.00 ($43.00 Btl)"
   },
   {
     name: "2017 Whitehall Lane, Merlot, Napa Valley",
-    price: "$41.00 Btl"
+    price: "$55.00 Btl"
   },
   {
     name: "2018 Pozzan Bacban Zinfandel, Napa Valley",
@@ -42,7 +42,7 @@ const items = [
   },
   {
     name: "2019 Textbook Cabernet, Napa Valley",
-    price: "$10.50 ($40.00 Btl)"
+    price: "$10.50 ($50.00 Btl)"
   }
 ]
 

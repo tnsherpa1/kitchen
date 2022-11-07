@@ -8,7 +8,7 @@ const items = [
     name: 'Nepalese Daal Soup',
     desc:
       'Lentil soup tempered with sauteed garlic and fresh spinach (v)',
-    price: '$8.00',
+    price: '$9.00',
   },
   {
     name: 'Vegetables Pakoras ',
@@ -26,19 +26,19 @@ const items = [
     name: 'Himalayan Salad ',
     desc:
       'Organic field greens, strawberries, almonds and cucumber with our homemade dressing',
-    price: '$10.50',
+    price: '$12.00',
   },
   {
     name: 'Spinach and Beet Salad ',
     desc:
       'Roasted beet, baby spinach, carrot, cherry tomatoes with cambozola cheese',
-    price: '$12.00',
+    price: '$14.00',
   },
   {
     name: 'Garlic Prawn Salad ',
     desc:
       'Sauteed garlic prawns, organic field greens, cucumbers, tomatoes and goat cheese',
-    price: '$15.50',
+    price: '$17.00',
   },
 ]
 

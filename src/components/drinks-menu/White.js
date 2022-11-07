@@ -5,7 +5,7 @@ import DisplayMenu from '../DisplayMenu';
 
 const items = [
   {
-    name: "2020 Dancing Crow Vineyards Rose, Lake County (House White)",
+    name: "2021 Dancing Crow Vineyards Rose, Lake County (House White)",
     price: "$9"
   },
   {
