@@ -17,10 +17,13 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.1.4",
+    "clsx": "^2.1.1",
     "gatsby": "^5.13.5",
+    "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-styled-components": "^6.13.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {
@@ -36,6 +39,7 @@
     "eslint-plugin-react": "^7.34.2",
     "eslint-webpack-plugin": "^4.2.0",
     "gatsby-plugin-eslint": "^4.0.4",
+    "gatsby-plugin-root-import": "^2.0.9",
     "prettier": "^3.3.1",
     "typescript": "^5.3.3"
   }

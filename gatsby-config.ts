@@ -1,4 +1,5 @@
 import type { GatsbyConfig } from "gatsby";
+const path = require("path");
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -21,6 +22,13 @@ const config: GatsbyConfig = {
           emitWarning: true,
           failOnError: false,
         },
+      },
+    },
+    //Setting up absoulte path
+    {
+      resolve: "gatsby-plugin-root-import",
+      options: {
+        "@": path.join(__dirname, "src"),
       },
     },
   ],
