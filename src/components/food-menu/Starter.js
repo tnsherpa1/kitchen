@@ -7,19 +7,19 @@ const items = [
   {
     name: 'Nepalese Daal Soup',
     desc:
-      'Lentil soup tempered with sauteed garlic and fresh spinach (v)',
+      'Lentil soup tempered with sauteed garlic & fresh spinach.',
     price: '$9.00',
   },
   {
-    name: 'Vegetables Pakoras ',
+    name: 'Vegetables Pakoras (4PCs)',
     desc:
-      'Golden fried mixed vegetables fritters served with our homemade mint sauce (v)',
+      'Golden fried mixed vegetables fritters served with our homemade mint sauce',
     price: '$8.50',
   },
   {
-    name: 'Vegetable Samosas ',
+    name: 'Vegetable Samosas (2PCs)',
     desc:
-      'Crisp savory pastries stuffed with potatoes, green peas & spices served with mint sauce (v)',
+      'Crisp savory pastries stuffed with potatoes, peas & spices served with mint sauce',
     price: '$8.50',
   },
   {
@@ -31,7 +31,7 @@ const items = [
   {
     name: 'Spinach and Beet Salad ',
     desc:
-      'Roasted beet, baby spinach, carrot, cherry tomatoes with cambozola cheese',
+      'Organic baby spinach, roasted beet, carrot, cherry tomatoes with cambozola cheese',
     price: '$14.00',
   },
   {

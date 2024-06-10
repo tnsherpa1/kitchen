@@ -6,7 +6,7 @@ import DisplayMenu from '../DisplayMenu';
 const items = [
     {
         name: "Veggie Momo",
-        desc: "Steamed dumplings filled w/spinach, onion, cabbage & spices served with tomato sauce (v)",
+        desc: "Steamed dumplings filled w/spinach, onion, cabbage & spices served with tomato sauce.",
         price: "$14.00"
     },
     { 

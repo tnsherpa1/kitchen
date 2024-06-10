@@ -15,14 +15,14 @@ const items = [
         price: "$4.50"
     },
     {
-        name: "Garlic Naan",
-        desc: "Garlic Basil Naan Garlic and Basil spiced Naan",
-        price: "$4.95"
+        name: "Garlic Basil Naan",
+        desc: "Garlic and Basil spiced Naan",
+        price: "$5.00"
     },
     {
       name: "Garlic Cilantro Naan",
       desc: "Garlic and Cilantro spiced Naan",
-      price: "$4.95"
+      price: "$5.00"
     },
     {
         name: "Raita",
@@ -30,8 +30,8 @@ const items = [
         price: "$4.50"
     },
     {
-        name: "Papadum",
-        desc: "Papad Deep fried or Baked flat lentil wafers (Papadum)",
+        name: "Papadum (3PCs)",
+        desc: "Deep fried or Baked flat lentil wafers (Papadum)",
         price: "$4.50"
     },
     {

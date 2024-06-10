@@ -56,9 +56,9 @@ const Menu = props => (
                 (707) 963-4439
               </li>
               <li>
-                18% Service Charge may be added to parties of 6 or more. We do To
-                Go and Catering for your private events. Thank you for dining
-                with us. See you soon.
+                18% Service Charge may be added to parties of 6 or more Take out
+                orders and catering available for private events Thank you for
+                dining with us. See you soon!
               </li>
             </ul>
             <img
