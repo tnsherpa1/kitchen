@@ -1,25 +1,68 @@
 import React from "react";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 
 import { StyledDiv } from "./style";
+import ImageWithFallBack from "../ImageWithFallBack";
+import { Container } from "../Container";
+import { Row } from "../Row";
+import { Col } from "../Col";
+import HamburgerMenuIcon from "../HamburgerIcon";
+import Drawer from "../Drawer";
+import MenuDrawer from "@/modules/MenuDrawer";
 
 type Props = {
   onToggleMenu: () => void;
 };
 
-const Header = ({ onToggleMenu }: Props) => (
-  <StyledDiv id="header" className="alt">
-    <Link to="/" className="logo">
-      <StaticImage src="/images/logo.svg" alt="sherpa kitchen logo" />
-      <strong>Himalayan Sherpa Kitchen</strong>
-    </Link>
-    <nav>
-      <button className="menu-link" onClick={onToggleMenu}>
-        Menu
-      </button>
-    </nav>
-  </StyledDiv>
-);
+const Header = ({ onToggleMenu }: Props) => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  return (
+    <>
+      <StyledDiv id="header" className="alt">
+        <Container fluid>
+          <Row>
+            <Col>
+              <div className="header-wrapper">
+                <Link to="/" className="logo-wrapper">
+                  <ImageWithFallBack
+                    src="/images/logo.svg"
+                    alt="sherpa kitchen logo"
+                  />
+                  <strong className="logo-title">
+                    Himalayan Sherpa Kitchen
+                  </strong>
+                </Link>
+                <nav
+                  className="menu-wrapper"
+                  onClick={() => setIsMenuOpen((prev) => !prev)}
+                >
+                  <div className="menu-link" onClick={onToggleMenu}>
+                    Menu
+                  </div>
+                  <HamburgerMenuIcon isMenuOpen={isMenuOpen} />
+                </nav>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </StyledDiv>
+      <Drawer
+        className="search-drawer"
+        title=""
+        open={isMenuOpen}
+        onClose={() => setIsMenuOpen(false)}
+        width="100%"
+        size="fullscreen"
+        position="top"
+        drawerZindex={9}
+        overlayZindex={5}
+        drawerType="custom"
+      >
+        <MenuDrawer />
+      </Drawer>
+    </>
+  );
+};
 
 export default Header;

@@ -2,10 +2,11 @@ import React from "react";
 
 import Header from "@/components/Header";
 import Menu from "@/components/Menu";
-import Contact from "@/components/Contact";
+import Contact from "@/modules/Contact";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "@/styles/GlobalStyles";
+import { GlobalStyles } from "@/theme/GlobalStyles";
+import { getTheme } from "@/theme/theme";
 
 type Props = {
   children: React.ReactNode;
@@ -16,18 +17,20 @@ const BaseLayout = ({ children }: Props) => {
   const handleToggleMenu = () => {};
 
   return (
-    <ThemeProvider theme={{}}>
-      <GlobalStyles />
-      <div className="body">
-        <div id="layout-wrapper">
-          <Header onToggleMenu={handleToggleMenu} />
-          {children}
-          <Contact />
-          <Footer />
+    <>
+      <ThemeProvider theme={getTheme}>
+        <GlobalStyles />
+        <div className="body">
+          <div id="layout-wrapper">
+            <Header onToggleMenu={handleToggleMenu} />
+            {children}
+            <Contact />
+            <Footer />
+          </div>
+          {/* <Menu /> */}
         </div>
-        <Menu />
-      </div>
-    </ThemeProvider>
+      </ThemeProvider>
+    </>
   );
 };
 

@@ -5,10 +5,11 @@ import Curry from "./components/Curry";
 import Tandori from "./components/Tandori";
 import TikaMasala from "./components/TikaMasala";
 import Sides from "./components/Sides";
+import { StyledDiv } from "./style";
 
-const Menu = () => {
+const MenuDrawer = () => {
   return (
-    <div id="menu">
+    <StyledDiv id="menu">
       <header className="major">
         <h1>Menu</h1>
       </header>
@@ -20,8 +21,8 @@ const Menu = () => {
       <TikaMasala />
       <Sides />
       <hr />
-    </div>
+    </StyledDiv>
   );
 };
 
-export default Menu;
+export default MenuDrawer;

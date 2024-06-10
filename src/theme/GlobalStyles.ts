@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+// import "./font-awesome.min.css";
 
 export const GlobalStyles = createGlobalStyle`
  * {
@@ -15,30 +16,31 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
 
-  /* .layout-wrapper{
-		padding-top: 3.25em;
+  @font-face {
+  font-family: 'SourceSans';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic") format("woff2");
+}
 
-		&.is-transitioning {
-			opacity: 0;
-		}
+body{
+  background-color: #5E4933;
+  &.menu-open{
+    height: 100vh;
+    overflow: hidden;
+  }
 
-		> * {
-			margin: 0 auto;
-			max-width: _size(inner);
-			width: calc(100% - 6em);
 
-			@include breakpoint(small) {
-				@include padding(3em, 0);
-				width: calc(100% - 2em);
-			}
-		}
+  .feature-image-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
-		> * > * {
-			@include inner;
-		}
 
-		@include breakpoint(small) {
-			padding-top: 2.75em;
-		}
-  } */
+
+
+ 
 `;

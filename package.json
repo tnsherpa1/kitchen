@@ -18,18 +18,26 @@
   "dependencies": {
     "babel-plugin-styled-components": "^2.1.4",
     "clsx": "^2.1.1",
+    "formik": "^2.4.6",
+    "framer-motion": "4.1.17",
     "gatsby": "^5.13.5",
     "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-plugin-styled-components": "^6.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "polished": "^4.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "styled-components": "^6.1.11"
+    "react-portal": "^4.2.2",
+    "styled-components": "^6.1.11",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.19",
-    "@types/react": "^18.2.55",
+    "@types/react": "^18.3.3",
     "@types/react-dom": "^18.2.19",
+    "@types/react-portal": "^4.0.7",
     "@typescript-eslint/eslint-plugin": "^7.12.0",
     "@typescript-eslint/parser": "^7.12.0",
     "eslint": "^9.4.0",
