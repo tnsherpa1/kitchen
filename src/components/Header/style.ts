@@ -6,6 +6,23 @@ export const StyledDiv = styled.div`
     position: relative;
     z-index: 10;
     background-color: ${theme.coreColor.bg};
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    &.sticky {
+      position: fixed;
+      width: 100%;
+      backdrop-filter: blur(10px);
+      animation: slideDown 0.35s ease-out;
+      box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    }
     .header-wrapper {
       display: flex;
       justify-content: space-between;

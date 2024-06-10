@@ -9,6 +9,7 @@ import { Col } from "../Col";
 import HamburgerMenuIcon from "../HamburgerIcon";
 import Drawer from "../Drawer";
 import MenuDrawer from "@/modules/MenuDrawer";
+import clsx from "clsx";
 
 type Props = {
   onToggleMenu: () => void;
@@ -16,10 +17,22 @@ type Props = {
 
 const Header = ({ onToggleMenu }: Props) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isHeaderSticky, setIsHeaderSticky] = React.useState(false);
+
+  React.useEffect(() => {
+    const detectScroll = () => {
+      setIsHeaderSticky(window.scrollY >= 73);
+    };
+
+    window.addEventListener("scroll", detectScroll);
+    return () => {
+      window.removeEventListener("scroll", detectScroll);
+    };
+  }, []);
 
   return (
     <>
-      <StyledDiv id="header" className="alt">
+      <StyledDiv id="header" className={clsx({ sticky: isHeaderSticky })}>
         <Container fluid>
           <Row>
             <Col>
