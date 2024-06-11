@@ -31,7 +31,7 @@ const items = [
     },   
     {
         name: "Vegetable Tandoori",
-        desc: "Different kinds of seasonal vegetables lightly spiced and served sizzling hot",
+        desc: "Seasonal vegetables lightly spiced and served sizzling hot",
         price: "$23.95"
     }
 ]

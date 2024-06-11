@@ -6,38 +6,38 @@ import DisplayMenu from '../DisplayMenu';
 const items = [
   {
     name: 'Mismas Tarkari',
-    desc: 'Seasonal mixed vegetables in a light curry sauce (v)',
+    desc: 'Seasonal mixed vegetables in a light curry sauce.',
     price: '$17.95',
   },
   {
     name: 'Chana Masala ',
-    desc: 'Organic Garbanzo beans with herbs in an onion gravy (v)',
+    desc: 'Organic Garbanzo beans with herbs in an onion gravy.',
     price: '$17.95',
   },
   {
     name: 'Alu Cauli Kerau',
-    desc: 'Potatoes, cauliflowers and green peas in curry sauce (v)',
+    desc: 'Potatoes, cauliflowers and green peas in curry sauce.',
     price: '$17.95',
   },
   {
     name: 'Alu Bhanta',
-    desc: 'Himalayan style cubes of eggplant and potatoes in curry sauce (v)',
+    desc: 'Himalayan style cubes of eggplant and potatoes in curry sauce.',
     price: '$17.95',
   },
   {
     name: 'Saag Paneer',
-    desc: 'Minced spinach with fried cheese cubes in a light creamy sauce',
+    desc: 'Minced spinach with cheese cubes in a light creamy sauce',
     price: '$18.95',
   },
   {
     name: 'Matar Paneer',
-    desc: 'Green peas and fried cheese cubes in a curry sauce',
+    desc: 'Green peas and cheese cubes in a curry sauce',
     price: '$18.95',
   },
   {
     name: 'Kukhura Dahi',
     desc: 'Free range chicken cooked in yogurt and spiced curry sauce',
-    price: '$18.95',
+    price: '$19.95',
   },
   {
     name: 'Kukhura Ra Bhanta',
@@ -69,7 +69,8 @@ const items = [
 const Curry = props => (
   <Collapsible tabIndex={0} trigger="Curry Dishes">
     <div className="table-wrapper">
-    <p>(Served with a choice of steamed Basmati or Brown Rice</p>
+    <p>(All the curry dishes served with a choice of steamed Basmati or Brown Rice)
+    Please let us know if you like your curries mild, medium or spicy</p>
       <table>
         <thead>
           <tr>
