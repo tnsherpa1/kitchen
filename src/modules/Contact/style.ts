@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const StyledSection = styled.section`
   ${({ theme }) => css`
     background-color: ${theme.coreColor.bg};
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
     border-bottom: 1px solid rgba(212, 212, 255, 0.1);
 
     .contact-wrapper {
@@ -17,8 +17,8 @@ export const StyledSection = styled.section`
         flex-grow: 1;
 
         .contact-title {
-          font-size: 27px;
-          font-family: "Courier New", Courier, monospace;
+          font-size: 35px;
+          letter-spacing: 2px;
           color: ${theme.coreColor.textColor};
           margin-bottom: 2em;
         }

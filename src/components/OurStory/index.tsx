@@ -31,7 +31,7 @@ const OurStory = () => {
                 ever since.
               </p>
               <div className="link-wrapper">
-                <Button href="/about" skin="outline">
+                <Button href="/about" skin="outline" size="md">
                   Learn more
                 </Button>
               </div>

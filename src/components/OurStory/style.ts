@@ -3,14 +3,14 @@ import styled, { css } from "styled-components";
 export const StyledSection = styled.section`
   ${({ theme }) => css`
     background-color: ${theme.coreColor.bgAlt};
+    padding: 6em;
 
     .our-story-wrapper {
-      padding: 4em 2em;
       font-family: "Courier New", Courier, monospace;
       color: ${theme.coreColor.textColor};
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      gap: 60px;
 
       .our-story-title {
         font-size: 28px;
@@ -20,7 +20,7 @@ export const StyledSection = styled.section`
           display: inline;
           &::after {
             left: 0;
-            bottom: -8px;
+            bottom: -15px;
             position: absolute;
             content: "";
             width: 100%;

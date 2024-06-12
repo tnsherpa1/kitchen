@@ -11,6 +11,9 @@ const defaultStyle = (theme: DefaultTheme) => css`
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
   transition: all 0.2s ease-in-out;
+  text-align: center;
+  letter-spacing: 2px;
+
   &.contained {
     background-color: #fff;
     box-shadow: none;
@@ -43,6 +46,7 @@ const defaultStyle = (theme: DefaultTheme) => css`
 
   &.md {
     width: 300px;
+    font-size: 20px;
   }
 
   &.disabled,

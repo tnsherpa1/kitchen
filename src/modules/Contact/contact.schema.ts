@@ -5,5 +5,5 @@ export const contactSchema = Yup.object().shape({
   email: Yup.string()
     .email("Invalid email address")
     .required("Email is required"),
-  message: Yup.string().required("Address is required"),
+  message: Yup.string().required("message is required"),
 });

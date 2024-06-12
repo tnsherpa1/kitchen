@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-// import "./font-awesome.min.css";
 
 export const GlobalStyles = createGlobalStyle`
  * {
@@ -24,6 +23,16 @@ export const GlobalStyles = createGlobalStyle`
   font-named-instance: 'Regular';
   src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic") format("woff2");
 }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+}
+
 
 body{
   background-color: #5E4933;

@@ -92,8 +92,8 @@ const Contact = () => {
                       cols={2}
                       onBlur={formik.handleBlur}
                       touched={formik.touched.message}
-                      error={!!formik.errors.email}
-                      errorMsg={formik.errors.email}
+                      error={!!formik.errors.message}
+                      errorMsg={formik.errors.message}
                       onChange={formik.handleChange}
                       value={formik.values.message}
                     />

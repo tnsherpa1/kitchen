@@ -1,4 +1,3 @@
-import { rem } from "polished";
 import styled, { css } from "styled-components";
 
 export const StyledDiv = styled.div`
@@ -32,7 +31,7 @@ export const StyledDiv = styled.div`
         justify-content: center;
         position: relative;
         text-decoration: none;
-        font-family: "Courier New", Courier, monospace;
+        font-family: "Source Sans Pro", Helvetica, sans-serif;
 
         .img {
           width: 50px;
@@ -45,13 +44,13 @@ export const StyledDiv = styled.div`
           color: ${theme.color.white["100"]};
           text-transform: uppercase;
           letter-spacing: 0.25em;
-          font-size: 27.2px;
+          font-size: 22px;
           line-height: 27.2px;
           position: relative;
           &::before {
             position: absolute;
             content: "";
-            bottom: -2px;
+            bottom: -8px;
             height: 2px;
             width: 100%;
             visibility: hidden;
@@ -87,6 +86,10 @@ export const StyledDiv = styled.div`
           text-transform: uppercase;
           position: relative;
           cursor: pointer;
+          transition: all 0.4 ease-in-out;
+          &:hover {
+            opacity: 0.8;
+          }
         }
       }
     }

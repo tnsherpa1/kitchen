@@ -6,6 +6,7 @@ import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
 import Button from "@/components/Button";
 import namaste from "@/assets/images/namaste.svg";
+import star from "@/assets/images/4star.png";
 
 const Banner = () => (
   <StyledDiv>
@@ -40,7 +41,7 @@ const Banner = () => (
                   <p>Last tables seated at 8:30pm</p>
                 </li>
               </ul>
-              <ul className="actions vertical">
+              <ul className="button-group">
                 <li>
                   <Button href="tel:1-707-963-4439" skin="contained" size="md">
                     (707) 963-4439
@@ -74,7 +75,7 @@ const Banner = () => (
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <ImageWithFallBack src="/images/4star.png" alt="yelp" />
+                    <ImageWithFallBack src={star} alt="yelp" />
                   </a>
                 </li>
               </ul>

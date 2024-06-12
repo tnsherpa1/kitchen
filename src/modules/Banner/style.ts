@@ -4,7 +4,7 @@ import heroBanner from "@/assets/images/hero-banner-image.jpeg";
 export const StyledDiv = styled.div`
   ${({ theme }) => css`
     background-color: ${theme.coreColor.bg};
-    background-image: url(heroBanner);
+    background-image: url(${heroBanner});
     height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -40,15 +40,20 @@ export const StyledDiv = styled.div`
         flex-direction: column;
         img {
           width: 140px;
+          margin-bottom: 20px;
         }
+        margin-bottom: 40px;
 
         .hero-banner-content-text {
+          font-family: "Source Sans Pro", Helvetica, sans-serif;
           font-size: 18px;
-          font-weight: 600;
+          font-weight: 500;
           letter-spacing: 1px;
           color: ${theme.coreColor.textColor};
-          font-family: "Courier New", Courier, monospace;
+          /* font-family: "Courier New", Courier, monospace; */
           text-align: center;
+          letter-spacing: 4px;
+          line-height: 26px;
         }
       }
 
@@ -69,9 +74,7 @@ export const StyledDiv = styled.div`
           width: 100%;
 
           li {
-            gap: 10px;
-            display: -webkit-inline-box;
-            margin: 0 auto;
+            gap: 5px;
 
             &.show-border {
               border-top: 1px solid rgba(212, 212, 255, 0.1);
@@ -80,6 +83,10 @@ export const StyledDiv = styled.div`
               flex-direction: column;
             }
           }
+        }
+
+        .button-group {
+          margin-top: 40px;
         }
       }
     }
