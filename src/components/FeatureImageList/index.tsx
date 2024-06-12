@@ -22,7 +22,7 @@ const FeatureImageList = ({
     <StyledArticle
       style={{ backgroundImage: `url(${imageURL})` }}
       className={className}
-      bgColor={bgColor}
+      $bgcolor={bgColor}
     >
       <Link to={href} className="link primary">
         <header className="feature-title">

@@ -3,46 +3,52 @@ import { InputStyle, StyledDiv } from "./style";
 import clsx from "clsx";
 
 type Props = {
-  id: string;
   name: string;
   placeholder: string;
+  value: string;
   label?: string;
   className?: string;
   error?: boolean;
   touched?: boolean;
   disabled?: boolean;
-};
+  errorMsg?: string;
+} & React.InputHTMLAttributes<HTMLInputElement>;
 const InputField = ({
   label,
-  id,
   className,
   error,
+  value,
   touched,
   disabled,
   placeholder,
   name,
+  errorMsg,
+  ...props
 }: Props) => {
   const isError = error && touched;
 
   return (
-    <StyledDiv>
+    <StyledDiv className={clsx({ error: isError })}>
       {label && (
-        <label htmlFor={id} className="label-wrapper">
+        <label htmlFor={label} className="label-wrapper">
           {label}
         </label>
       )}
 
       <div className="input-wrap">
         <InputStyle
-          id={id}
           className={clsx(className, {
             error: !!isError,
             disabled: disabled,
           })}
+          value={value}
           placeholder={placeholder}
           name={name}
           type="text"
+          {...props}
         />
+
+        {errorMsg && isError && <p className="error-msg">{errorMsg}</p>}
       </div>
     </StyledDiv>
   );

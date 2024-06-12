@@ -40,6 +40,16 @@ const defaultStyle = (theme: DefaultTheme) => css`
   &.letter-spacing {
     letter-spacing: 2px;
   }
+
+  &.md {
+    width: 300px;
+  }
+
+  &.disabled,
+  &.isLoading {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
 `;
 
 export const StyledLink = styled.div`
@@ -50,8 +60,9 @@ export const StyledLink = styled.div`
   `}
 `;
 
-export const StyledDiv = styled.div`
+export const StyledDiv = styled.button`
   ${({ theme }) => css`
+    background-color: transparent;
     ${defaultStyle(theme)}
   `}
 `;

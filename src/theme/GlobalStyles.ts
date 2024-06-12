@@ -27,6 +27,7 @@ export const GlobalStyles = createGlobalStyle`
 
 body{
   background-color: #5E4933;
+  overflow-x: hidden;
   &.menu-open{
     height: 100vh;
     overflow: hidden;

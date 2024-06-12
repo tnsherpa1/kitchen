@@ -7,13 +7,15 @@ type Props = {
   name: string;
   rows: number;
   cols: number;
+  value: string;
   placeholder: string;
   label?: string;
   className?: string;
   error?: boolean;
   touched?: boolean;
   disabled?: boolean;
-};
+  errorMsg?: string;
+} & React.InputHTMLAttributes<HTMLTextAreaElement>;
 const InputTextArea = ({
   label,
   id,
@@ -22,14 +24,17 @@ const InputTextArea = ({
   touched,
   disabled,
   placeholder,
+  value,
   name,
   rows,
   cols,
+  errorMsg,
+  ...props
 }: Props) => {
   const isError = error && touched;
 
   return (
-    <StyledDiv>
+    <StyledDiv className={clsx({ error: isError })}>
       {label && (
         <label htmlFor={id} className="label-wrapper">
           {label}
@@ -39,6 +44,7 @@ const InputTextArea = ({
       <div className="input-wrap">
         <InputTextAreaStyle
           id={id}
+          value={value}
           className={clsx(className, {
             error: !!isError,
             disabled: disabled,
@@ -47,8 +53,10 @@ const InputTextArea = ({
           name={name}
           rows={rows}
           cols={cols}
+          {...props}
         />
       </div>
+      {errorMsg && isError && <p className="error-msg">{errorMsg}</p>}
     </StyledDiv>
   );
 };

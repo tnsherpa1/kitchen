@@ -10,8 +10,11 @@ type Props = {
   children: React.ReactNode;
   href?: string;
   alt?: string;
-  ariaLabel?: string;
   className?: string;
+  size?: "md" | "sm";
+  disabled?: boolean;
+  loader?: boolean;
+  onClick?: () => void;
 };
 
 const Button = ({
@@ -19,16 +22,23 @@ const Button = ({
   skin,
   href,
   alt,
-  ariaLabel,
   className,
   children,
+  size,
+  disabled,
+  loader,
+  onClick,
 }: Props) => {
   const MotionStyledButton = motion(StyledDiv);
 
   if (href) {
     return (
       <StyledLink>
-        <Link to={href} className={clsx(className, skin)}>
+        <Link
+          to={href}
+          className={clsx(className, skin, size)}
+          aria-label={label || "link-button"}
+        >
           {children}
         </Link>
       </StyledLink>
@@ -36,8 +46,12 @@ const Button = ({
   }
 
   return (
-    <MotionStyledButton className={clsx(className, skin)}>
-      {children}
+    <MotionStyledButton
+      className={clsx(className, skin, size, { disabled, isLoading: loader })}
+      aria-label={label || "button"}
+      onClick={() => (!disabled || !loader) && onClick?.()}
+    >
+      {loader ? "Loading..." : children}
     </MotionStyledButton>
   );
 };

@@ -2,6 +2,13 @@ import styled, { css } from "styled-components";
 
 export const StyledDiv = styled.div`
   font-family: "Courier New", Courier, monospace;
+
+  &.error {
+    .label-wrapper {
+      color: red;
+    }
+  }
+
   .label-wrapper {
     color: #fff;
     display: block;
@@ -10,19 +17,38 @@ export const StyledDiv = styled.div`
     margin: 0 0 1em;
     text-transform: uppercase;
   }
+
+  .error-msg {
+    color: red;
+    margin-top: 10px;
+  }
 `;
 
 export const InputTextAreaStyle = styled.textarea`
   ${({ theme }) => css`
-    height: 60px;
+    height: 250px;
     width: 100%;
     background: rgba(212, 212, 255, 0.035);
     border: none;
     outline: 0;
-    padding: 0 1em;
+    padding: 0.75em 1em;
+    font-family:
+      Source Sans Pro,
+      Helvetica,
+      sans-serif;
+    font-size: 17pt;
+    color: ${theme.coreColor.textColor};
+    letter-spacing: 1px;
+
+    &::placeholder {
+      font-size: 18px;
+    }
 
     &:focus {
       border: 1px solid ${theme.coreColor.highlight};
+    }
+    &.error {
+      border: 1px solid red;
     }
   `}
 `;

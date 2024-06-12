@@ -2,9 +2,9 @@ import { defaultPalette } from "@/theme/color";
 import styled, { css } from "styled-components";
 
 export const StyledArticle = styled.article<{
-  bgColor: keyof typeof defaultPalette;
+  $bgcolor: keyof typeof defaultPalette;
 }>`
-  ${({ theme, bgColor }) => css`
+  ${({ theme, $bgcolor }) => css`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@ export const StyledArticle = styled.article<{
       content: "";
       width: 100%;
       height: 100%;
-      background-color: ${theme.coreColor[bgColor]};
+      background-color: ${theme.coreColor[$bgcolor]};
       opacity: 0.7;
       top: 0;
       transition: all 0.2s ease-in;

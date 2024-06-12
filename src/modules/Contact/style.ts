@@ -7,14 +7,15 @@ export const StyledSection = styled.section`
     border-bottom: 1px solid rgba(212, 212, 255, 0.1);
 
     .contact-wrapper {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
 
       .form-wrapper {
         border-right: 1px solid rgba(212, 212, 255, 0.1);
         padding: 4em;
         padding-left: 0;
-        height: 50vh;
         flex-grow: 1;
+
         .contact-title {
           font-size: 27px;
           font-family: "Courier New", Courier, monospace;
@@ -25,11 +26,11 @@ export const StyledSection = styled.section`
         .form-inner-wrapper {
           display: flex;
           flex-wrap: wrap;
-          gap: 10px;
+          gap: 28px;
           row-gap: 40px;
 
           .col-6 {
-            width: 49%;
+            width: 48%;
           }
 
           .col-12 {
@@ -48,9 +49,23 @@ export const StyledSection = styled.section`
           display: flex;
           gap: 20px;
           padding: 60px 40px;
+          position: relative;
 
-          &.show-border {
+          &::before {
+            position: absolute;
+            content: "";
             border-bottom: 1px solid rgba(212, 212, 255, 0.1);
+            width: calc(100vw + 3em);
+            margin-left: -40px;
+            bottom: 0;
+          }
+
+          &:last-child {
+            &::before {
+              content: "";
+              position: absolute;
+              border-bottom: none;
+            }
           }
 
           .content-info {

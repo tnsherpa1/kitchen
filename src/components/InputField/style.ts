@@ -1,15 +1,33 @@
 import styled, { css } from "styled-components";
 
 export const StyledDiv = styled.div`
-  font-family: "Courier New", Courier, monospace;
-  .label-wrapper {
-    color: #fff;
-    display: block;
-    font-size: 18px;
-    letter-spacing: 0.25em;
-    margin: 0 0 1em;
-    text-transform: uppercase;
-  }
+  ${({ theme }) => css`
+    font-family: "Courier New", Courier, monospace;
+
+    &.error {
+      .label-wrapper {
+        color: red;
+      }
+    }
+
+    .label-wrapper {
+      color: ${theme.coreColor.textColor};
+      display: block;
+      font-size: 18px;
+      letter-spacing: 0.25em;
+      margin: 0 0 1em;
+      text-transform: uppercase;
+    }
+
+    .input-wrap {
+      min-height: 91px;
+
+      .error-msg {
+        color: red;
+        margin-top: 10px;
+      }
+    }
+  `}
 `;
 
 export const InputStyle = styled.input`
@@ -20,9 +38,24 @@ export const InputStyle = styled.input`
     border: none;
     outline: 0;
     padding: 0 1em;
+    font-family:
+      Source Sans Pro,
+      Helvetica,
+      sans-serif;
+    font-size: 17pt;
+    color: ${theme.coreColor.textColor};
+    letter-spacing: 1px;
+
+    &::placeholder {
+      font-size: 18px;
+    }
 
     &:focus {
       border: 1px solid ${theme.coreColor.highlight};
+    }
+
+    &.error {
+      border: 1px solid red;
     }
   `}
 `;

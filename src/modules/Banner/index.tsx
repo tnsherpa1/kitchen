@@ -43,7 +43,7 @@ const Banner = () => (
               </ul>
               <ul className="actions vertical">
                 <li>
-                  <Button href="tel:1-707-963-4439" skin="contained">
+                  <Button href="tel:1-707-963-4439" skin="contained" size="md">
                     (707) 963-4439
                   </Button>
                 </li>
@@ -52,6 +52,7 @@ const Banner = () => (
                     href="/menu"
                     skin="outline"
                     className="letter-spacing"
+                    size="md"
                   >
                     VIEW THE MENU
                   </Button>
