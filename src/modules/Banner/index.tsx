@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 import { StyledDiv } from "./style";
 import ImageWithFallBack from "@/components/ImageWithFallBack";
 import { Container } from "@/components/Container";
 import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
 import Button from "@/components/Button";
+import namaste from "@/assets/images/namaste.svg";
 
 const Banner = () => (
   <StyledDiv>
@@ -17,7 +16,7 @@ const Banner = () => (
             <div className="hero-banner-content">
               <ImageWithFallBack
                 className="namaste"
-                src="/images/namaste.svg"
+                src={namaste}
                 alt="Namaste from himalayan sherpa kitchen"
               />
               <p className="hero-banner-content-text">

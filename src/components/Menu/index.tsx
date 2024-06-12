@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import star from "@/assets/images/4star.png";
 
 const Menu = () => (
   <nav id="menu">
@@ -58,7 +59,7 @@ const Menu = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/images/4star.png" alt="yelp" />
+            <img src={star} alt="yelp" />
           </a>
         </li>
       </ul>

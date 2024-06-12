@@ -10,6 +10,9 @@ import Button from "@/components/Button";
 import { useFormik } from "formik";
 import { ContactFormTypes } from "./contact-form.types";
 import { contactSchema } from "./contact.schema";
+import emailIcon from "@/assets/images/icons/email.png";
+import phoneIcon from "@/assets/images/icons/phone-call.png";
+import homeIcon from "@/assets/images/icons/home.png";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = React.useState(false);
@@ -109,7 +112,7 @@ const Contact = () => {
 
               <div className="contact-info-warpper">
                 <div className="contact-method">
-                  <Icons icon="/images/icons/email.png" />
+                  <Icons icon={emailIcon} />
                   <div className="content-info">
                     <h3>Email</h3>
                     <a href="mail:sherpadaiinsonoma@yahoo.com">
@@ -118,14 +121,14 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="contact-method">
-                  <Icons icon="/images/icons/phone-call.png" />
+                  <Icons icon={phoneIcon} />
                   <div className="content-info">
                     <h3>Phone</h3>
                     <a href="tel:1-707-963-4439">(707) 963-4439</a>
                   </div>
                 </div>
                 <div className="contact-method">
-                  <Icons icon="/images/icons/home.png" />
+                  <Icons icon={homeIcon} />
                   <div className="content-info">
                     <h3>Location</h3>
                     <span>

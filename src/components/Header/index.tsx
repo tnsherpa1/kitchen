@@ -10,6 +10,7 @@ import HamburgerMenuIcon from "../HamburgerIcon";
 import Drawer from "../Drawer";
 import MenuDrawer from "@/modules/MenuDrawer";
 import clsx from "clsx";
+import logo from "@/assets/images/logo.svg";
 
 type Props = {
   onToggleMenu: () => void;
@@ -38,10 +39,7 @@ const Header = ({ onToggleMenu }: Props) => {
             <Col>
               <div className="header-wrapper">
                 <Link to="/" className="logo-wrapper">
-                  <ImageWithFallBack
-                    src="/images/logo.svg"
-                    alt="sherpa kitchen logo"
-                  />
+                  <ImageWithFallBack src={logo} alt="sherpa kitchen logo" />
                   <strong className="logo-title">
                     Himalayan Sherpa Kitchen
                   </strong>

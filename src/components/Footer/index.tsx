@@ -1,6 +1,8 @@
 import React from "react";
 import { StyledFooter } from "./style";
 import Icons from "../Icons";
+import facebookIcon from "@/assets/images/icons/facebook.png";
+import instagramIcon from "@/assets/images/icons/instagram.png";
 
 const Footer = () => (
   <StyledFooter id="footer">
@@ -12,7 +14,7 @@ const Footer = () => (
           rel="noopener noreferrer"
           className="icon alt fa-facebook"
         >
-          <Icons icon="/images/icons/facebook.png" />
+          <Icons icon={facebookIcon} />
         </a>
       </li>
       <li>
@@ -22,7 +24,7 @@ const Footer = () => (
           rel="noopener noreferrer"
           className="icon alt fa-instagram"
         >
-          <Icons icon="/images/icons/instagram.png" />
+          <Icons icon={instagramIcon} />
         </a>
       </li>
       <li>
@@ -32,7 +34,7 @@ const Footer = () => (
           rel="noopener noreferrer"
           className="icon alt fa-yelp"
         >
-          <Icons icon="/images/icons/facebook.png" />
+          <Icons icon={facebookIcon} />
         </a>
       </li>
     </ul>

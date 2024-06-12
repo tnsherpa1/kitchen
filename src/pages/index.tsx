@@ -6,29 +6,33 @@ import { Link } from "gatsby";
 import FeatureImageList from "@/components/FeatureImageList";
 import OurStory from "@/components/OurStory";
 import { defaultPalette } from "@/theme/color";
+import featureImage from "@/assets/images/feature-image-1.jpg";
+import featureImage2 from "@/assets/images/feature-image-2.jpg";
+import featureImage3 from "@/assets/images/feature-image-3.jpg";
+import featureImage4 from "@/assets/images/feature-image-4.jpg";
 
 const feaatureImageListData = [
   {
     title: "Himalayan Experience",
     href: "/experience",
-    imageUrl: "/images/feature-image-1.jpg",
+    imageUrl: featureImage,
   },
   {
     title: "Great Hospitality",
     href: "/experience",
-    imageUrl: "/images/feature-image-2.jpg",
+    imageUrl: featureImage2,
     className: "large",
   },
   {
     title: "Parties and Events",
     href: "/experience",
-    imageUrl: "/images/feature-image-3.jpg",
+    imageUrl: featureImage3,
     className: "large",
   },
   {
     title: "Highest Quality Ingredients",
     href: "/experience",
-    imageUrl: "/images/feature-image-4.jpg",
+    imageUrl: featureImage4,
   },
 ];
 

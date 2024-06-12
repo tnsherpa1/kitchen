@@ -15,13 +15,6 @@ const config: GatsbyConfig = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.join(__dirname, `public`, `images`),
-      },
-    },
-    {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
