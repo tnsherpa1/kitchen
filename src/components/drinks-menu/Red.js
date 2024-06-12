@@ -31,7 +31,7 @@ const items = [
   {
     name: "2017 Whitehall Lane, Merlot, Napa Valley",
     price: "$55.00 Btl"
-  },///
+  },
   {
     name: "2018 Pozzan Bacban Zinfandel, Napa Valley",
     price: "$12.00 ($42.00 Btl)"
