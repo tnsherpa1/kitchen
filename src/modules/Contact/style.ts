@@ -5,6 +5,7 @@ export const StyledSection = styled.section`
     background-color: ${theme.coreColor.bg};
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     border-bottom: 1px solid rgba(212, 212, 255, 0.1);
+    border-top: 1px solid rgba(212, 212, 255, 0.1);
 
     .contact-wrapper {
       display: grid;

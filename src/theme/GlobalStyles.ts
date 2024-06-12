@@ -80,7 +80,6 @@ ${({ theme }) => css`
       margin: 30px 0;
       color: #fff;
     }
-    border-bottom: 1px solid rgba(212, 212, 255, 0.1);
     border-top: 1px solid rgba(212, 212, 255, 0.1);
   }
 

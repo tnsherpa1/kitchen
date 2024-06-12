@@ -39,7 +39,7 @@ const Contact = () => {
 
   return (
     <StyledSection>
-      <Container fluid>
+      <Container>
         <Row>
           <Col>
             <div className="contact-wrapper">
