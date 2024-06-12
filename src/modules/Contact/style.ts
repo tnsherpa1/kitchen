@@ -86,6 +86,10 @@ export const StyledSection = styled.section`
                 text-decoration: underline;
               }
             }
+
+            span {
+              line-height: 28px;
+            }
           }
         }
       }

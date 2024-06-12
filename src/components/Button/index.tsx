@@ -7,11 +7,12 @@ import { motion } from "framer-motion";
 type Props = {
   label?: string;
   skin: "contained" | "outline";
+  rel?: string;
   children: React.ReactNode;
   href?: string;
   alt?: string;
   className?: string;
-  size?: "md" | "sm";
+  size?: "md" | "sm" | "lg";
   disabled?: boolean;
   loader?: boolean;
   onClick?: () => void;
@@ -21,8 +22,8 @@ const Button = ({
   label,
   skin,
   href,
-  alt,
   className,
+  rel,
   children,
   size,
   disabled,
@@ -38,6 +39,7 @@ const Button = ({
           to={href}
           className={clsx(className, skin, size)}
           aria-label={label || "link-button"}
+          rel={rel}
         >
           {children}
         </Link>

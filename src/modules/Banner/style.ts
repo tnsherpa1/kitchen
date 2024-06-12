@@ -5,7 +5,7 @@ export const StyledDiv = styled.div`
   ${({ theme }) => css`
     background-color: ${theme.coreColor.bg};
     background-image: url(${heroBanner});
-    height: 100vh;
+    /* height: 100vh; */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,6 +23,7 @@ export const StyledDiv = styled.div`
       height: 100%;
       display: flex;
       justify-content: center;
+      padding: 120px 0;
     }
     .hero-banner-wrapper {
       display: flex;

@@ -20,8 +20,12 @@ export const StyledDiv = styled.div`
       width: 100%;
       backdrop-filter: blur(10px);
       animation: slideDown 0.35s ease-out;
-      box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+
+      &.showBoxShadow {
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+      }
     }
+
     .header-wrapper {
       display: flex;
       justify-content: space-between;

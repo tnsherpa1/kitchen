@@ -13,6 +13,7 @@ const defaultStyle = (theme: DefaultTheme) => css`
   transition: all 0.2s ease-in-out;
   text-align: center;
   letter-spacing: 2px;
+  cursor: pointer;
 
   &.contained {
     background-color: #fff;
@@ -47,6 +48,11 @@ const defaultStyle = (theme: DefaultTheme) => css`
   &.md {
     width: 300px;
     font-size: 20px;
+  }
+
+  &.lg {
+    width: 450px;
+    font-size: 21px;
   }
 
   &.disabled,

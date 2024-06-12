@@ -1,7 +1,6 @@
 import React from "react";
 
 import Header from "@/components/Header";
-import Menu from "@/components/Menu";
 import Contact from "@/modules/Contact";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "styled-components";
@@ -27,7 +26,6 @@ const BaseLayout = ({ children }: Props) => {
             <Contact />
             <Footer />
           </div>
-          {/* <Menu /> */}
         </div>
       </ThemeProvider>
     </>

@@ -11,6 +11,7 @@ import Drawer from "../Drawer";
 import MenuDrawer from "@/modules/MenuDrawer";
 import clsx from "clsx";
 import logo from "@/assets/images/logo.svg";
+import Menu from "../MenuList";
 
 type Props = {
   onToggleMenu: () => void;
@@ -33,7 +34,10 @@ const Header = ({ onToggleMenu }: Props) => {
 
   return (
     <>
-      <StyledDiv id="header" className={clsx({ sticky: isHeaderSticky })}>
+      <StyledDiv
+        id="header"
+        className={clsx({ sticky: isHeaderSticky, showBoxShadow: !isMenuOpen })}
+      >
         <Container fluid>
           <Row>
             <Col>
@@ -70,7 +74,8 @@ const Header = ({ onToggleMenu }: Props) => {
         overlayZindex={5}
         drawerType="custom"
       >
-        <MenuDrawer />
+        {/* <MenuDrawer /> */}
+        <Menu />
       </Drawer>
     </>
   );
