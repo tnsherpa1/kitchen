@@ -6,31 +6,31 @@ import DisplayMenu from '../DisplayMenu';
 const items = [
   {
     name: "Navarro Vineyards Pinot Noir Grape Juice",
-    price: "$5.00"
+    price: "$6.00  ($20 Btl)"
   },
   {
     name: "Mango Lassi",
-    price: "$4.00"
+    price: "$5.50"
   },
   {
     name: "Chai Tea",
-    price: "$3.00"
+    price: "$4.00"
   },
   {
     name: "Arnold Palmer",
-    price: "$3.00"
+    price: "$4.50"
   },
   {
-    name: "Ice Tea/Soda/Lemonate",
-    price: "$3.00"
+    name: "Ice Tea/Soda/Lemonade/Sprite/Diet Coke",
+    price: "$4.00"
   },
   {
     name: "San Pellegrino Sparkling (750ml)",
-    price: "$5.00"
+    price: "$6.00"
   },
   {
     name: "Acqua Panna Still Water(750ml)",
-    price: "$5.00"
+    price: "$6.00"
   }
 ]
 

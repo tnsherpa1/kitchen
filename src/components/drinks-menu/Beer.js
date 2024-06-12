@@ -5,37 +5,57 @@ import DisplayMenu from '../DisplayMenu'
 
 const items = [
   {
-    name: "Napa Smith Organics IPA (Draft)",
-    price: "$6.50"
+    name: 'Napa Smith Organics IPA (Draft)',
+    price: '$6.50',
   },
   {
-    name: "Taj Mahal - Imported from India (Bottled)",
-    price: "$9.00"
+    name: 'Trumer Pilsner (Draft)',
+    price: '$7.00',
   },
   {
-    name: "Mustang - Nepalese Lager (Bottled)",
-    price: "$5.50"
+    name: 'Lagunitas IPA (Draft)',
+    price: '$7.00',
   },
   {
-    name: "Lagunitas Hop Stoopid Ale (Bottled)",
-    price: "$6.50"
+    price: 'Nepal Ice Nepalese Lager (Bottled)',
+    price: '$10.00',
   },
   {
-    name: "Stella Artois (Bottled)",
-    price: "$5.50"
+    name: '805 Blonde Ale (Bottled)',
+    price: '$6.00',
   },
   {
-    name: "Anchor Steam Original (Bottled)",
-    price: "$5.50"
+    name: 'Fat Tire Amber Ale (Bottled)',
+    price: ' $6.00',
   },
   {
-    name: "Napa Smith Pilsner (Bottled)",
-    price: "$5.50"
+    name: 'Taj Mahal - Imported from India (Bottled)',
+    price: '$10.00',
   },
   {
-    name: "Non Alcoholic Beer (Bottled)",
-    price: "$5.50"
-  }
+    name: 'Mustang - Nepalese Lager (Bottled)',
+    price: '$5.50',
+  },
+  {
+    name: 'Lagunitas Hop Stoopid Ale (Bottled)',
+    price: '$6.50',
+  },
+  {
+    name: 'Stella Artois (Bottled)',
+    price: '$6.00',
+  },
+  {
+    name: 'Anchor Steam Original (Bottled)',
+    price: '$5.50',
+  },
+  {
+    name: 'Napa Smith Pilsner (Bottled)',
+    price: '$5.50',
+  },
+  {
+    name: 'Non Alcoholic Beer (Bottled)',
+    price: '$6.00',
+  },
 ]
 
 const Beer = props => (
