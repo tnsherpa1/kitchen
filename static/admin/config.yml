@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: rodinshrestha/kitchen-v2
+  branch: main
+
+publish_mode: editorial_workflow
+media_folder: "public/assets/img"
+public_folder: "img"
+
+collections:
+  - name: "starter_salad"
+    label: "Starter and Salad"
+    folder: "/content/kitchen_menu"
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }

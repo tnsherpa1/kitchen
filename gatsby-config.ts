@@ -15,6 +15,7 @@ const config: GatsbyConfig = {
     "gatsby-plugin-styled-components",
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
+    "gatsby-plugin-netlify-cms",
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -50,6 +51,17 @@ const config: GatsbyConfig = {
       options: {
         "@": path.join(__dirname, "src"),
       },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "kitchen menu",
+        path: `${__dirname}/content`,
+      },
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {},
     },
   ],
 };
