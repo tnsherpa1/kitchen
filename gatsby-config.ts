@@ -60,6 +60,13 @@ const config: GatsbyConfig = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "kitchen menu",
+        path: `${__dirname}/content/kitchen_menu`,
+      },
+    },
+    {
       resolve: "gatsby-transformer-remark",
       options: {},
     },
