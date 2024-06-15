@@ -12,7 +12,7 @@ const FromTheKitchen = () => {
 
   return (
     <StyledDiv>
-      <h3 className="align-center">From the kitchen:</h3>
+      <h3 className="kitchen-menu-title">From the kitchen:</h3>
       <Starter
         accordionState={accordionState}
         setAccordionState={setAccordionState}
@@ -33,7 +33,10 @@ const FromTheKitchen = () => {
         accordionState={accordionState}
         setAccordionState={setAccordionState}
       />
-      <Sides />
+      <Sides
+        accordionState={accordionState}
+        setAccordionState={setAccordionState}
+      />
     </StyledDiv>
   );
 };

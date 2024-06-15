@@ -53,7 +53,6 @@ const photos = [
 
 const Gallery = () => {
   const [index, setIndex] = React.useState<number | null>(null);
-  console.log(getLightBoxImage(photos), "@@@");
 
   return (
     <StyledSection>
@@ -62,7 +61,7 @@ const Gallery = () => {
           <Col>
             <div className="gallery-wrapper">
               <div className="gallery-wrapper">
-                <h1 className="section-title">Gallery</h1>
+                <h1 className="section-title gallery-title">Gallery</h1>
               </div>
 
               <div className="gallery-image-wrapper">

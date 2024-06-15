@@ -10,9 +10,9 @@ const DisplayMenu = ({ name, desc, price }: Props) => {
   return (
     <tbody>
       <tr>
-        {name && <td>{name}</td>}
-        {desc && <td>{desc}</td>}
-        {price && <td>{price}</td>}
+        {name && <td className="name">{name}</td>}
+        {desc && <td className="desc">{desc}</td>}
+        {price && <td className="price">{price}</td>}
       </tr>
     </tbody>
   );

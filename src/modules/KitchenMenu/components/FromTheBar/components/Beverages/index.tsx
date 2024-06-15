@@ -52,7 +52,6 @@ const Beverages = ({ accordionState, setAccordionState }: Props) => (
         <thead>
           <tr>
             <th>Name</th>
-            <th>Description</th>
             <th>Price</th>
           </tr>
         </thead>

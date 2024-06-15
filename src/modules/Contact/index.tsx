@@ -29,8 +29,6 @@ const Contact = () => {
     onSubmit: () => {
       setIsLoading(true);
 
-      console.log("fired");
-
       setTimeout(() => {
         setIsLoading(false);
       }, 1e3);

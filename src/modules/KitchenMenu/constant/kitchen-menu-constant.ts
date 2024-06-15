@@ -3,6 +3,7 @@ export const MOMO_STEAMED = "MoMo - Steamed Dumplings";
 export const CURRY_DISHES = "Curry Dishes";
 export const TANDOORI = "Tandoori";
 export const TIKA_MASALA = "Tika Masala";
+export const SIDES = "Sides";
 
 //Drinks
 export const BEER = "Beer";

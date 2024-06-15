@@ -11,7 +11,7 @@ const FromTheBar = () => {
 
   return (
     <StyledDiv>
-      <h3> From the Bar:</h3>
+      <h3 className="kitchen-menu-title"> From the Bar:</h3>
       <Beer
         accordionState={accordionState}
         setAccordionState={setAccordionState}

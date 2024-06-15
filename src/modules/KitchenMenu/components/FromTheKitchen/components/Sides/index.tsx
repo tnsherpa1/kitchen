@@ -1,6 +1,7 @@
 import React from "react";
 import DisplayMenu from "../../../DisplayMenu";
 import Accordion from "@/components/Accordion";
+import { SIDES } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 
 const items = [
   {
@@ -45,8 +46,17 @@ const items = [
   },
 ];
 
-const Sides = () => (
-  <Accordion title="Sides">
+type Props = {
+  accordionState: string;
+  setAccordionState: React.Dispatch<React.SetStateAction<string>>;
+};
+
+const Sides = ({ accordionState, setAccordionState }: Props) => (
+  <Accordion
+    title={SIDES}
+    expanded={accordionState === SIDES}
+    onChange={() => setAccordionState((prev) => (prev === SIDES ? "" : SIDES))}
+  >
     <div className="table-wrapper">
       <table>
         <thead>

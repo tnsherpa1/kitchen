@@ -85,7 +85,7 @@ ${({ theme }) => css`
 
   .section-title {
     color: ${theme.coreColor.textColor};
-    font-size: 67px;
+    font-size: 28px;
     font-family: inherit;
     position: relative;
     display: inline-block;

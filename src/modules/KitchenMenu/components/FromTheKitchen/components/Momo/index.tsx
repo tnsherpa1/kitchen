@@ -22,9 +22,6 @@ type Props = {
 };
 
 const Momo = ({ accordionState, setAccordionState }: Props) => {
-  const toggle = () => {
-    setAccordionState((prev) => (prev === MOMO_STEAMED ? "" : MOMO_STEAMED));
-  };
   return (
     <Accordion
       title={MOMO_STEAMED}

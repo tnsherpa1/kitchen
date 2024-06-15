@@ -22,7 +22,7 @@ export const StyledSection = styled.section`
 
       .about-us-title {
         color: ${theme.coreColor.textColor};
-        font-size: 67px;
+        font-size: 47px;
         font-family: inherit;
         position: relative;
         display: inline-block;

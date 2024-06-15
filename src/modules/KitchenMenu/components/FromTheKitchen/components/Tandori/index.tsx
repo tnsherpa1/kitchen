@@ -50,18 +50,16 @@ const Tandori = ({ accordionState, setAccordionState }: Props) => (
     }
   >
     <div className="table-wrapper">
-      <ul className="alt">
-        <li>
-          (Sizzling Platters)
-          <br />
-          Marinated in yogurt and Himalayan spices and broiled in the tandoor
-          oven, served sizzling on a bed of onions and bell peppers with fresh
-          spinach topping.
-          <br />
-          All Tandoori items served with a choice of Steamed Basmati or Brown
-          rice.
-        </li>
-      </ul>
+      <p className="dish-note-content">
+        (Sizzling Platters)
+        <br />
+        Marinated in yogurt and Himalayan spices and broiled in the tandoor
+        oven, served sizzling on a bed of onions and bell peppers with fresh
+        spinach topping.
+        <br />
+        All Tandoori items served with a choice of Steamed Basmati or Brown
+        rice.
+      </p>
 
       <table>
         <thead>

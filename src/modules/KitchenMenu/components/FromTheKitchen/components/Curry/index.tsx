@@ -80,7 +80,9 @@ const Curry = ({ accordionState, setAccordionState }: Props) => (
     }
   >
     <div className="table-wrapper">
-      <p>Served with a choice of steamed Basmati or Brown Rice</p>
+      <p className="dish-note-content">
+        Served with a choice of steamed Basmati or Brown Rice
+      </p>
 
       <table>
         <thead>

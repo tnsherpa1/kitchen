@@ -2,13 +2,19 @@ import { rem } from "polished";
 import styled, { css } from "styled-components";
 
 export const StyledDiv = styled.div<{ $iconAlignLeft: boolean }>`
-  ${({ $iconAlignLeft }) => css`
+  ${({ $iconAlignLeft, theme }) => css`
     width: 100%;
     transition: 0.3s ease all;
 
     &.disable {
       opacity: 0.3;
       pointer-events: none;
+    }
+
+    &.active {
+      .accordion-header {
+        border-bottom: 1px solid ${theme.coreColor.textColor};
+      }
     }
 
     .accordion-header {
@@ -18,20 +24,15 @@ export const StyledDiv = styled.div<{ $iconAlignLeft: boolean }>`
       transition: 0.3s ease all;
       position: relative;
       cursor: pointer;
+      border: 1px solid ${theme.coreColor.textColor};
+      border-bottom: none;
+      padding: 20px 10px;
+      font-size: 18px;
+      color: ${theme.coreColor.highlight};
+      letter-spacing: 2px;
 
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin-bottom: 0;
-        ${$iconAlignLeft
-          ? css`
-              padding-left: ${rem(30)};
-            `
-          : css`
-              padding-right: ${rem(30)};
-            `}
+      h3 {
+        font-weight: 400;
       }
 
       i {
@@ -50,39 +51,32 @@ export const StyledDiv = styled.div<{ $iconAlignLeft: boolean }>`
       }
     }
 
-    &.active {
-      .accordion-header {
-        margin-bottom: ${rem(10)};
-      }
-    }
-
-    &.active &.gutter {
-      margin: ${rem(20)} 0;
-    }
-
     .accordion-content {
       overflow: hidden;
-
-      p {
-        & + p {
-          margin-top: ${rem(10)};
-        }
-      }
+      border-left: 1px solid ${theme.coreColor.textColor};
+      border-right: 1px solid ${theme.coreColor.textColor};
+      border-bottom: 1px solid ${theme.coreColor.textColor};
 
       table {
-        font-size: ${rem(14)};
-        line-height: ${rem(18)};
+        font-size: 21px;
+        line-height: 27px;
+        width: 100%;
 
-        tr {
+        color: ${theme.coreColor.textColor};
+        thead {
+          th {
+            font-weight: 800;
+            text-align: left;
+            padding: 10px 20px;
+          }
+        }
+
+        tbody {
           td {
-            padding: ${rem(10)};
-
-            h4,
-            h5,
-            h6 {
-              font-size: inherit;
-              line-height: inherit;
-            }
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: 100;
+            line-height: inherit;
           }
         }
       }

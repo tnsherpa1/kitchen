@@ -8,7 +8,6 @@ import { Row } from "../Row";
 import { Col } from "../Col";
 import HamburgerMenuIcon from "../HamburgerIcon";
 import Drawer from "../Drawer";
-import MenuDrawer from "@/modules/MenuDrawer";
 import clsx from "clsx";
 import logo from "@/assets/images/logo.svg";
 import Menu from "../MenuList";
@@ -74,7 +73,6 @@ const Header = ({ onToggleMenu }: Props) => {
         overlayZindex={5}
         drawerType="custom"
       >
-        {/* <MenuDrawer /> */}
         <Menu />
       </Drawer>
     </>
