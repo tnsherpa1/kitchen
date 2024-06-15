@@ -24,7 +24,7 @@ const Beer = ({ accordionState, setAccordionState }: Props) => {
         <table>
           <thead>
             <tr>
-              <th>Beer</th>
+              <th>Name</th>
               <th>Price</th>
             </tr>
           </thead>
