@@ -1,13 +1,14 @@
 import BaseLayout from "@/layouts/BaseLayout";
 import WorkInProgressLayout from "@/layouts/WorkInProgressLayout";
+import EverestTrek from "@/modules/EverestTrek";
 import React from "react";
 
-const EverestTrek = () => {
+const EverestTrekPage = () => {
   return (
     <BaseLayout>
-      <WorkInProgressLayout />
+      <EverestTrek />
     </BaseLayout>
   );
 };
 
-export default EverestTrek;
+export default EverestTrekPage;

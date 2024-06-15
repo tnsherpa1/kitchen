@@ -1,13 +1,13 @@
 import BaseLayout from "@/layouts/BaseLayout";
-import KitchenMenu from "@/modules/KitchenMenu";
+import Experience from "@/modules/Experience";
 import React from "react";
 
-const MenuPage = () => {
+const ExperiencePage = () => {
   return (
     <BaseLayout>
-      <KitchenMenu />
+      <Experience />
     </BaseLayout>
   );
 };
 
-export default MenuPage;
+export default ExperiencePage;
