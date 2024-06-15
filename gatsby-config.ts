@@ -63,13 +63,6 @@ const config: GatsbyConfig = {
       resolve: "gatsby-transformer-remark",
       options: {},
     },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: "a07usf5ydq7w",
-        accessToken: "nhiEb0iJk0azMz8784kO60Pt28TI5iOxxo--Yv9RqI8",
-      },
-    },
   ],
 };
 
