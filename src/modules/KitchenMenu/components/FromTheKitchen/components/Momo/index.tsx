@@ -2,19 +2,7 @@ import React from "react";
 import DisplayMenu from "../../../DisplayMenu";
 import Accordion from "@/components/Accordion";
 import { MOMO_STEAMED } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
-
-const items = [
-  {
-    name: "Veggie Momo",
-    desc: "Steamed dumplings filled w/spinach, onion, cabbage & spices served with tomato sauce (v)",
-    price: "$14.00",
-  },
-  {
-    name: "Lamb or Chicken Momo ",
-    desc: "Choice of lamb or Chicken steamed dumplings served with tomato sauce",
-    price: "$15.50",
-  },
-];
+import useAllMarkdownData from "@/hooks/useAllMarkdownData";
 
 type Props = {
   accordionState: string;
@@ -22,6 +10,10 @@ type Props = {
 };
 
 const Momo = ({ accordionState, setAccordionState }: Props) => {
+  const data = useAllMarkdownData("momo");
+
+  if (!data.length) return null;
+
   return (
     <Accordion
       title={MOMO_STEAMED}
@@ -39,11 +31,11 @@ const Momo = ({ accordionState, setAccordionState }: Props) => {
               <th>Price</th>
             </tr>
           </thead>
-          {items.map((x, i) => {
+          {data.map((x, i) => {
             return (
               <DisplayMenu
                 name={x.name}
-                desc={x.desc}
+                desc={x.description}
                 price={x.price}
                 key={i}
               />
