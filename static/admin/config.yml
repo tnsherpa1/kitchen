@@ -10,10 +10,109 @@ public_folder: "img"
 collections:
   - name: "starter_salad"
     label: "Starter and Salad"
-    folder: "/content/kitchen_menu"
+    folder: "/content/kitchen_menu/starter_salad"
     create: true
     slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+
+  - name: "momo"
+    label: "MoMo - Steamed Dumplings"
+    folder: "/content/kitchen_menu/momo"
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+
+  - name: "curry_dishes"
+    label: "Curry Dishes"
+    folder: "/content/kitchen_menu/curry_dishes"
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+
+  - name: "tandoori"
+    label: "Tandoori"
+    folder: "/content/kitchen_menu/tandoori"
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+
+  - name: "tika_masala"
+    label: "Tika Masala"
+    folder: "/content/kitchen_menu/tika_masala"
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+
+  - name: "sides"
+    label: "Sides"
+    folder: "/content/kitchen_menu/sides"
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+
+  #######################
+  # Drinks Menu list
+  #######################
+
+  - name: "sparkling_wines"
+    label: "Sparkling Wines"
+    folder: "/content/drinks_menu/sparkling_wines"
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+
+  - name: "white_wines"
+    label: "White Wines"
+    folder: "/content/drinks_menu/white_wines"
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+
+  - name: "red_wines"
+    label: "Red Wines"
+    folder: "/content/drinks_menu/red_wines"
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+
+  - name: "beer"
+    label: "Beer"
+    folder: "/content/drinks_menu/beer"
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+
+  - name: "beverages"
+    label: "Beverages"
+    folder: "/content/drinks_menu/beverages"
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
