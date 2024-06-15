@@ -1,0 +1,4 @@
+---
+name: test
+price: asd
+---
