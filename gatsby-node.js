@@ -9,11 +9,10 @@ exports.createSchemaCustomization = ({ actions }) => {
       }
   
       type Frontmatter {
-        title: String!
+        name: String!
         description: String
-        image: String
-        ingredients: [String]
-        instructions: String
+        price: String
+        
       }
     `;
   createTypes(typeDefs);
