@@ -17,7 +17,7 @@ export const StyledDiv = styled.div`
 
     &.sticky {
       position: fixed;
-      width: 100%;
+      width: 100vw;
       backdrop-filter: blur(10px);
       animation: slideDown 0.35s ease-out;
 
