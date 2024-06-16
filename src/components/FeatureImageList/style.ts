@@ -56,11 +56,10 @@ export const StyledArticle = styled.article<{
     }
 
     .feature-title {
-      font-family: "Courier New", Courier, monospace;
       color: ${theme.coreColor.textColor};
-
       letter-spacing: 1px;
       position: relative;
+      font-size: 27px;
 
       &::before {
         position: absolute;
@@ -70,6 +69,9 @@ export const StyledArticle = styled.article<{
         width: 100%;
         height: 3px;
         background-color: ${theme.coreColor.textColor};
+      }
+      @media (max-width: ${theme.breakPoints.md}) {
+        font-size: 18px;
       }
     }
   `}
