@@ -8,10 +8,18 @@ export const StyledDiv = styled.div`
     gap: 20px;
     font-family: inherit;
     position: relative;
+    @media (max-width: ${theme.breakPoints.md}) {
+      /* width: 380px; */
+      width: 100%;
+    }
     .card-image-wrapper {
       img {
         width: 450px;
         height: 100%;
+
+        @media (max-width: ${theme.breakPoints.md}) {
+          width: 100%;
+        }
       }
     }
 
@@ -24,6 +32,10 @@ export const StyledDiv = styled.div`
       .content-text {
         font-size: 18px;
         line-height: 24px;
+
+        @media (max-width: ${theme.breakPoints.md}) {
+          font-size: 16px;
+        }
       }
 
       a {
@@ -31,6 +43,9 @@ export const StyledDiv = styled.div`
         font-size: 18px;
         display: inline-block;
 
+        @media (max-width: ${theme.breakPoints.md}) {
+          font-size: 16px;
+        }
         &:hover {
           text-decoration: underline;
         }

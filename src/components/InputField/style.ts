@@ -2,8 +2,7 @@ import styled, { css } from "styled-components";
 
 export const StyledDiv = styled.div`
   ${({ theme }) => css`
-    font-family: "Courier New", Courier, monospace;
-
+    font-family: ${theme.font.sourceSansPro};
     &.error {
       .label-wrapper {
         color: red;
@@ -13,7 +12,7 @@ export const StyledDiv = styled.div`
     .label-wrapper {
       color: ${theme.coreColor.textColor};
       display: block;
-      font-size: 18px;
+      font-size: 14px;
       letter-spacing: 0.25em;
       margin: 0 0 1em;
       text-transform: uppercase;

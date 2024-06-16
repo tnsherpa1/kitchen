@@ -27,6 +27,12 @@ export const StyledSection = styled.section`
         position: relative;
         display: inline-block;
         padding-top: 100px;
+
+        @media (max-width: ${theme.breakPoints.md}) {
+          padding-top: 50px;
+          font-size: 27px;
+        }
+
         &::before {
           position: absolute;
           content: "";
@@ -49,6 +55,14 @@ export const StyledSection = styled.section`
         color: ${theme.coreColor.textColor};
         font-weight: lighter;
         padding-bottom: 100px;
+
+        @media (max-width: ${theme.breakPoints.md}) {
+          font-size: 16px;
+          line-height: 27px;
+          gap: 20px;
+          margin-top: 30px;
+          padding-bottom: 50px;
+        }
       }
     }
   `}

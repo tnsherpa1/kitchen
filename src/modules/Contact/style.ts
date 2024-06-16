@@ -11,11 +11,26 @@ export const StyledSection = styled.section`
       display: grid;
       grid-template-columns: 1fr 1fr;
 
+      @media (max-width: ${theme.breakPoints.md}) {
+        grid-template-columns: 1fr;
+      }
+
       .form-wrapper {
         border-right: 1px solid rgba(212, 212, 255, 0.1);
         padding: 4em;
         padding-left: 0;
         flex-grow: 1;
+        font-family: ${theme.font.sourceSansPro};
+
+        @media (max-width: ${theme.breakPoints.md}) {
+          padding-top: 3em;
+          padding-bottom: 3em;
+        }
+
+        @media (max-width: ${theme.breakPoints.md}) {
+          border-right: none;
+          padding-right: 0;
+        }
 
         .contact-title {
           font-size: 35px;
@@ -32,6 +47,10 @@ export const StyledSection = styled.section`
 
           .col-6 {
             width: 48%;
+
+            @media (max-width: ${theme.breakPoints.md}) {
+              width: 100%;
+            }
           }
 
           .col-12 {
@@ -44,13 +63,15 @@ export const StyledSection = styled.section`
         display: flex;
         flex-direction: column;
         flex-grow: 1;
-        /* row-gap: 80px; */
 
         .contact-method {
           display: flex;
           gap: 20px;
           padding: 60px 40px;
           position: relative;
+          @media (max-width: ${theme.breakPoints.md}) {
+            padding: 40px 0;
+          }
 
           &::before {
             position: absolute;
@@ -74,15 +95,24 @@ export const StyledSection = styled.section`
             flex-direction: column;
             gap: 10px;
             color: ${theme.coreColor.textColor};
+            font-family: inherit;
             h3 {
               font-size: 24px;
               letter-spacing: 1px;
+
+              @media (max-width: ${theme.breakPoints.md}) {
+                font-size: 18px;
+              }
             }
 
             a {
               text-decoration: none;
               color: inherit;
               font-size: 18px;
+              @media (max-width: ${theme.breakPoints.md}) {
+                font-size: 14px;
+                font-weight: 100;
+              }
               &:hover {
                 text-decoration: underline;
               }

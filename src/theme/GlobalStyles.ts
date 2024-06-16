@@ -57,7 +57,6 @@ ${({ theme }) => css`
 
   .page-not-found-wrapper {
     padding: 15rem 0;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,6 +97,15 @@ ${({ theme }) => css`
       background-color: ${theme.coreColor.textColor};
       left: 0;
       bottom: -12px;
+
+      @media (max-width: ${theme.breakPoints.md}) {
+        height: 2px;
+      }
+    }
+
+    @media (max-width: ${theme.breakPoints.md}) {
+      padding-top: 50px;
+      font-size: 18px;
     }
   }
 `}

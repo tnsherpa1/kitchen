@@ -17,11 +17,16 @@ export const StyledFooter = styled.footer`
 
     .copyright {
       list-style: none;
-      font-family: "Courier New", Courier, monospace;
+      font-family: ${theme.font.sourceSansPro};
       font-size: 18px;
       margin-top: 20px;
       opacity: 0.3;
       color: ${theme.coreColor.textColor};
+      letter-spacing: 2px;
+
+      @media (max-width: ${theme.breakPoints.md}) {
+        font-size: 14px;
+      }
     }
   `}
 `;

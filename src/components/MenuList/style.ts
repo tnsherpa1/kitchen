@@ -16,6 +16,10 @@ export const StyledUl = styled.ul`
     gap: 40px;
     list-style: none;
 
+    @media (max-width: ${theme.breakPoints.md}) {
+      height: calc(100% - 44px);
+    }
+
     li {
       font-family: "Source Sans Pro", Helvetica, sans-serif;
 
@@ -60,6 +64,10 @@ export const StyledUl = styled.ul`
               background-color: ${theme.coreColor.highlight};
             }
           }
+        }
+
+        @media (max-width: ${theme.breakPoints.md}) {
+          font-size: 18px;
         }
       }
       a {

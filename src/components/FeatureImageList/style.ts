@@ -19,6 +19,12 @@ export const StyledArticle = styled.article<{
     position: relative;
     width: 40%;
 
+    @media (max-width: ${theme.breakPoints.md}) {
+      text-align: left;
+      padding-left: 10px;
+      justify-content: flex-start;
+    }
+
     &::before {
       position: absolute;
       content: "";
@@ -27,6 +33,7 @@ export const StyledArticle = styled.article<{
       background-color: ${theme.coreColor[$bgcolor]};
       opacity: 0.7;
       top: 0;
+      left: 0;
       transition: all 0.2s ease-in;
     }
 
@@ -40,6 +47,10 @@ export const StyledArticle = styled.article<{
       width: 60%;
     }
 
+    @media (max-width: ${theme.breakPoints.md}) {
+      width: 100% !important;
+    }
+
     a {
       text-decoration: none;
     }
@@ -47,9 +58,10 @@ export const StyledArticle = styled.article<{
     .feature-title {
       font-family: "Courier New", Courier, monospace;
       color: ${theme.coreColor.textColor};
-      font-size: 27px;
+
       letter-spacing: 1px;
       position: relative;
+
       &::before {
         position: absolute;
         content: "";

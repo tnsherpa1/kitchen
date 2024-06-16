@@ -7,6 +7,10 @@ export const StyledSection = styled.section`
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 60px;
+
+      @media (max-width: ${theme.breakPoints.md}) {
+        grid-template-columns: 1fr;
+      }
     }
   `}
 `;

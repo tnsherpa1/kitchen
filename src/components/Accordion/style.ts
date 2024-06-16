@@ -31,6 +31,11 @@ export const StyledDiv = styled.div<{ $iconAlignLeft: boolean }>`
       color: ${theme.coreColor.highlight};
       letter-spacing: 2px;
 
+      @media (max-width: ${theme.breakPoints.md}) {
+        font-size: 16px;
+        padding: 15px 10px;
+      }
+
       h3 {
         font-weight: 400;
       }
@@ -62,6 +67,10 @@ export const StyledDiv = styled.div<{ $iconAlignLeft: boolean }>`
         line-height: 27px;
         width: 100%;
 
+        @media (max-width: ${theme.breakPoints.md}) {
+          font-size: 14px;
+        }
+
         color: ${theme.coreColor.textColor};
         thead {
           th {
@@ -74,7 +83,9 @@ export const StyledDiv = styled.div<{ $iconAlignLeft: boolean }>`
         tbody {
           td {
             padding: 10px 20px;
-            font-size: 18px;
+            @media (max-width: ${theme.breakPoints.md}) {
+              line-height: 21px;
+            }
             font-weight: 100;
             line-height: inherit;
           }

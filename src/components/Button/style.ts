@@ -8,7 +8,7 @@ const defaultStyle = (theme: DefaultTheme) => css`
   display: inline-block;
   padding: 0 1.75em;
   outline: none;
-  font-family: "Courier New", Courier, monospace;
+  font-family: ${theme.font.sourceSansPro};
   font-weight: 600;
   transition: all 0.2s ease-in-out;
   text-align: center;
@@ -48,11 +48,21 @@ const defaultStyle = (theme: DefaultTheme) => css`
   &.md {
     width: 300px;
     font-size: 20px;
+
+    @media (max-width: ${theme.breakPoints.md}) {
+      width: 220px;
+      font-size: 14px;
+    }
   }
 
   &.lg {
     width: 450px;
     font-size: 21px;
+
+    @media (max-width: ${theme.breakPoints.md}) {
+      width: 320px;
+      font-size: 16px;
+    }
   }
 
   &.disabled,

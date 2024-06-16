@@ -5,7 +5,7 @@ export const StyledDiv = styled.div`
   ${({ theme }) => css`
     background-color: ${theme.coreColor.bg};
     background-image: url(${heroBanner});
-    /* height: 100vh; */
+    height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +23,6 @@ export const StyledDiv = styled.div`
       height: 100%;
       display: flex;
       justify-content: center;
-      padding: 120px 0;
     }
     .hero-banner-wrapper {
       display: flex;
@@ -32,6 +31,7 @@ export const StyledDiv = styled.div`
       justify-content: center;
       align-items: center;
       height: 100%;
+      width: 100%;
       z-index: 5;
       position: relative;
 
@@ -51,10 +51,13 @@ export const StyledDiv = styled.div`
           font-weight: 500;
           letter-spacing: 1px;
           color: ${theme.coreColor.textColor};
-          /* font-family: "Courier New", Courier, monospace; */
           text-align: center;
           letter-spacing: 4px;
           line-height: 26px;
+
+          @media (max-width: ${theme.breakPoints.md}) {
+            font-size: 14px;
+          }
         }
       }
 
@@ -73,6 +76,9 @@ export const StyledDiv = styled.div`
           color: #fff;
           list-style: none;
           width: 100%;
+          @media (max-width: ${theme.breakPoints.md}) {
+            font-size: 16px;
+          }
 
           li {
             gap: 5px;

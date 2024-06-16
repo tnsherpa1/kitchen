@@ -30,6 +30,11 @@ export const StyledDiv = styled.div`
       display: flex;
       justify-content: space-between;
       height: 73.66px;
+
+      @media (max-width: ${theme.breakPoints.md}) {
+        height: 44px;
+      }
+
       .logo-wrapper {
         display: flex;
         justify-content: center;
@@ -37,9 +42,13 @@ export const StyledDiv = styled.div`
         text-decoration: none;
         font-family: "Source Sans Pro", Helvetica, sans-serif;
 
-        .img {
-          width: 50px;
+        img {
+          /* width: 50px; */
           vertical-align: middle;
+
+          @media (max-width: ${theme.breakPoints.md}) {
+            width: 50px;
+          }
         }
 
         .logo-title {
@@ -71,6 +80,10 @@ export const StyledDiv = styled.div`
               transform: scaleX(1);
             }
           }
+
+          @media (max-width: ${theme.breakPoints.md}) {
+            font-size: 12px;
+          }
         }
       }
 
@@ -78,7 +91,8 @@ export const StyledDiv = styled.div`
         display: flex;
         align-items: center;
         gap: 10px;
-        padding: 0 0.75em;
+        /* padding: 0 0.75em; */
+
         .menu-link {
           outline: none;
           background-color: transparent;
@@ -93,6 +107,10 @@ export const StyledDiv = styled.div`
           transition: all 0.4 ease-in-out;
           &:hover {
             opacity: 0.8;
+          }
+
+          @media (max-width: ${theme.breakPoints.md}) {
+            display: none;
           }
         }
       }

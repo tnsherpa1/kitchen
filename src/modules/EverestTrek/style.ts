@@ -4,14 +4,25 @@ export const StyledSection = styled.section`
   ${({ theme }) => css`
     padding-bottom: 100px;
 
+    @media (max-width: ${theme.breakPoints.md}) {
+      padding-bottom: 50px;
+    }
+
     .everest-trek-title {
       font-size: 32px;
+
+      @media (max-width: ${theme.breakPoints.md}) {
+        font-size: 18px;
+      }
     }
 
     .everest-trek-achievement-wrapper {
       margin-top: 60px;
       display: flex;
       gap: 60px;
+      @media (max-width: ${theme.breakPoints.md}) {
+        flex-direction: column;
+      }
 
       .achievement-image-wrapper {
         width: 100%;
@@ -30,6 +41,10 @@ export const StyledSection = styled.section`
         line-height: 37px;
         position: relative;
         display: flex;
+        @media (max-width: ${theme.breakPoints.md}) {
+          font-size: 14px;
+          line-height: 27px;
+        }
       }
     }
   `}

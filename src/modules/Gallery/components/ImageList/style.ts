@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const StyledDiv = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     height: 300px;
     position: relative;
     overflow: hidden;
@@ -61,6 +61,11 @@ export const StyledDiv = styled.div`
       cursor: pointer;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
+
+      @media (max-width: ${theme.breakPoints.md}) {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
     }
   `}
 `;

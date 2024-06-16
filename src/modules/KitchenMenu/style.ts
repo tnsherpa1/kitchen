@@ -18,6 +18,10 @@ export const StyledDiv = styled.div`
         color: ${theme.coreColor.textColor};
         font-weight: 500;
         text-transform: uppercase;
+
+        @media (max-width: ${theme.breakPoints.md}) {
+          font-size: 16px;
+        }
       }
 
       .dish-note-content {
@@ -40,6 +44,11 @@ export const StyledDiv = styled.div`
       margin-top: 40px;
 
       color: ${theme.coreColor.textColor};
+
+      @media (max-width: ${theme.breakPoints.md}) {
+        font-size: 14px;
+        line-height: 21px;
+      }
       p {
         font-weight: 100;
         letter-spacing: 1px;
@@ -47,6 +56,10 @@ export const StyledDiv = styled.div`
           display: flex;
           flex-direction: column;
           gap: 10px;
+
+          @media (max-width: ${theme.breakPoints.md}) {
+            gap: 5px;
+          }
         }
 
         &.kitchen-service-charge {

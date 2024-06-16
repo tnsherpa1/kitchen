@@ -1,4 +1,3 @@
-import { Link } from "gatsby";
 import React from "react";
 import { StyledSection } from "./style";
 import { Container } from "../Container";

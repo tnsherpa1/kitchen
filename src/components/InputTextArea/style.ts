@@ -1,27 +1,29 @@
 import styled, { css } from "styled-components";
 
 export const StyledDiv = styled.div`
-  font-family: "Courier New", Courier, monospace;
+  ${({ theme }) => css`
+    font-family: ${theme.font.sourceSansPro};
 
-  &.error {
-    .label-wrapper {
-      color: red;
+    &.error {
+      .label-wrapper {
+        color: red;
+      }
     }
-  }
 
-  .label-wrapper {
-    color: #fff;
-    display: block;
-    font-size: 18px;
-    letter-spacing: 0.25em;
-    margin: 0 0 1em;
-    text-transform: uppercase;
-  }
+    .label-wrapper {
+      color: #fff;
+      display: block;
+      font-size: 14px;
+      letter-spacing: 0.25em;
+      margin: 0 0 1em;
+      text-transform: uppercase;
+    }
 
-  .error-msg {
-    color: red;
-    margin-top: 10px;
-  }
+    .error-msg {
+      color: red;
+      margin-top: 10px;
+    }
+  `}
 `;
 
 export const InputTextAreaStyle = styled.textarea`

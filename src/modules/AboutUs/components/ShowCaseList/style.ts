@@ -15,6 +15,9 @@ export const StyledDiv = styled.div`
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       row-gap: 80px;
+      @media (max-width: ${theme.breakPoints.md}) {
+        grid-template-columns: 1fr;
+      }
     }
   `}
 `;
