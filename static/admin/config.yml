@@ -116,3 +116,12 @@ collections:
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
+
+  - name: "footer_text"
+    label: "Footer Text"
+    files:
+      - label: "Footer Text"
+        name: "footer_text"
+        file: "content/footer_text/footer_text.md"
+        fields:
+          - { label: "Footer Text", name: "footer_text", widget: "string" }
