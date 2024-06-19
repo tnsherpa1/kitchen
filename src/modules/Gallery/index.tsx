@@ -75,11 +75,12 @@ const Gallery = () => {
 
                   console.log({ test: getImage(x.image) }, "@@@");
                   return (
-                    <GatsbyImage
-                      image={getImage(x.image)}
-                      key={i}
-                      onClick={() => setIndex(i)}
-                    />
+                    // <GatsbyImage
+                    //   // image={getImage(x.image)}
+                    //   key={i}
+                    //   onClick={() => setIndex(i)}
+                    // />
+                    <span />
                   );
                 })}
 

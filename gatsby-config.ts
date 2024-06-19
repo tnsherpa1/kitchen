@@ -60,6 +60,13 @@ const config: GatsbyConfig = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "image",
+        path: `${__dirname}/assets/images`,
+      },
+    },
+    {
       resolve: "gatsby-transformer-remark",
       options: {},
     },
