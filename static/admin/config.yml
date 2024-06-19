@@ -117,11 +117,20 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
 
+  - name: "gallery"
+    label: "Gallery"
+    folder: "/content/gallery"
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Name", name: "image", widget: "image" }
+
   - name: "footer_text"
     label: "Footer Text"
     files:
       - label: "Footer Text"
-        name: "footer_text"
+        name: "title"
         file: "content/footer_text/footer_text.md"
         fields:
-          - { label: "Footer Text", name: "footer_text", widget: "string" }
+          - { label: "Footer Text", name: "title", widget: "string" }

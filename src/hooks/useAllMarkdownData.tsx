@@ -16,6 +16,11 @@ const useAllMarkdownData = (
               price
               name
               description
+              image {
+                childImageSharp {
+                  gatsbyImageData(layout: 600)
+                }
+              }
             }
             html
           }

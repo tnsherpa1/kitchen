@@ -1,3 +1,3 @@
 ---
-footer_text: © Himalayan Sherpa Kitchen 2024
+title: © Himalayan Sherpa Kitchen 2024
 ---

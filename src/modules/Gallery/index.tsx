@@ -11,6 +11,8 @@ import img4 from "@/assets/images/gallery-image/sherpa-kitchen-st-helena.jpg";
 import ImageList from "./components/ImageList";
 import ImageLightbox from "@/components/ImageLightBox";
 import { getLightBoxImage } from "./utils/get-light-box-image";
+import useAllMarkdownData from "@/hooks/useAllMarkdownData";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const photos = [
   {
@@ -53,6 +55,9 @@ const photos = [
 
 const Gallery = () => {
   const [index, setIndex] = React.useState<number | null>(null);
+  const data = useAllMarkdownData("gallery");
+
+  console.log({ data }, "@@@@");
 
   return (
     <StyledSection>
@@ -65,10 +70,13 @@ const Gallery = () => {
               </div>
 
               <div className="gallery-image-wrapper">
-                {photos.map((x, i) => {
+                {data.map((x: any, i) => {
+                  if (!x.image) return;
+
+                  console.log({ test: getImage(x.image) }, "@@@");
                   return (
-                    <ImageList
-                      imageUrl={x.src}
+                    <GatsbyImage
+                      image={getImage(x.image)}
                       key={i}
                       onClick={() => setIndex(i)}
                     />
