@@ -8,11 +8,13 @@ import img1 from "@/assets/images/gallery-image/himalayas-st-helena.jpg";
 import img2 from "@/assets/images/gallery-image/indian-cuisine-st-helena.jpg";
 import img3 from "@/assets/images/gallery-image/indian-restaurant-st-helena.jpg";
 import img4 from "@/assets/images/gallery-image/sherpa-kitchen-st-helena.jpg";
-import ImageList from "./components/ImageList";
+// import ImageList from "./components/ImageList";
 import ImageLightbox from "@/components/ImageLightBox";
 import { getLightBoxImage } from "./utils/get-light-box-image";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import ImageWithFallBack from "@/components/ImageWithFallBack";
+import { graphql } from "gatsby";
+// import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const photos = [
   {
@@ -53,9 +55,9 @@ const photos = [
   },
 ];
 
-const Gallery = () => {
+const Gallery = ({ data }) => {
   const [index, setIndex] = React.useState<number | null>(null);
-  const data = useAllMarkdownData("gallery");
+  // const data = useAllMarkdownData("gallery");
 
   console.log({ data }, "@@@@");
 
@@ -70,17 +72,17 @@ const Gallery = () => {
               </div>
 
               <div className="gallery-image-wrapper">
-                {data.map((x: any, i) => {
+                {data?.map((x: any, i) => {
                   if (!x.image) return;
 
-                  console.log({ test: getImage(x.image) }, "@@@");
+                  // console.log({ test: getImage(x.image) }, "@@@");
                   return (
                     // <GatsbyImage
                     //   // image={getImage(x.image)}
                     //   key={i}
                     //   onClick={() => setIndex(i)}
                     // />
-                    <span />
+                    <ImageWithFallBack src={x.image} key={i} alt="asdad" />
                   );
                 })}
 
@@ -99,3 +101,22 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "gallery" } } }
+    ) {
+      nodes {
+        frontmatter {
+          name
+          image {
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)
+            }
+          }
+        }
+      }
+    }
+  }
+`;

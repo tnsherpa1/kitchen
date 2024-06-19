@@ -123,6 +123,12 @@ collections:
     create: true
     slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
     fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "gallery",
+        }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Name", name: "image", widget: "image" }
 

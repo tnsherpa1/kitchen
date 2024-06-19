@@ -67,6 +67,13 @@ const config: GatsbyConfig = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: `${__dirname}/static/uploads/`, // Path where Netlify CMS uploads images
+      },
+    },
+    {
       resolve: "gatsby-transformer-remark",
       options: {},
     },
