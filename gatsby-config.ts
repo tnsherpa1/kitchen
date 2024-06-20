@@ -70,7 +70,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `uploads`,
-        path: `${__dirname}/static/uploads/`, // Adjust the path to where your Netlify CMS uploads images
+        path: `${__dirname}/static/uploads`, // Adjust the path to where your Netlify CMS uploads images
       },
     },
     {

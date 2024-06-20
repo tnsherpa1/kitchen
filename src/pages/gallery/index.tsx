@@ -15,24 +15,17 @@ const GalleryPage = ({ data }: any) => {
 
 export default GalleryPage;
 
-// export const query = graphql`
-//   query MyQuery {
-//     allMarkdownRemark {
-//       edges {
-//         node {
-//           frontmatter {
-//             image {
-//               childImageSharp {
-//                 gatsbyImageData(
-//                   width: 600
-//                   placeholder: BLURRED
-//                   formats: [AUTO, WEBP, AVIF]
-//                 )
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
+export const query = graphql`
+  {
+    allFile(filter: { sourceInstanceName: { eq: "uploads" } }) {
+      edges {
+        node {
+          childImageSharp {
+            gatsbyImageData(width: 600)
+          }
+          publicURL
+        }
+      }
+    }
+  }
+`;
