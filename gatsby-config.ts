@@ -63,14 +63,14 @@ const config: GatsbyConfig = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "image",
-        path: `${__dirname}/assets/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "images",
-        path: `${__dirname}/static/uploads/`, // Path where Netlify CMS uploads images
+        name: `uploads`,
+        path: `${__dirname}/static/uploads/`, // Adjust the path to where your Netlify CMS uploads images
       },
     },
     {

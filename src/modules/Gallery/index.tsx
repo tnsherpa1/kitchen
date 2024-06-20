@@ -55,11 +55,9 @@ const photos = [
   },
 ];
 
-const Gallery = ({ data }) => {
+const Gallery = () => {
   const [index, setIndex] = React.useState<number | null>(null);
   // const data = useAllMarkdownData("gallery");
-
-  console.log({ data }, "@@@@");
 
   return (
     <StyledSection>
@@ -72,7 +70,7 @@ const Gallery = ({ data }) => {
               </div>
 
               <div className="gallery-image-wrapper">
-                {data?.map((x: any, i) => {
+                {/* {data?.map((x: any, i) => {
                   if (!x.image) return;
 
                   // console.log({ test: getImage(x.image) }, "@@@");
@@ -84,7 +82,7 @@ const Gallery = ({ data }) => {
                     // />
                     <ImageWithFallBack src={x.image} key={i} alt="asdad" />
                   );
-                })}
+                })} */}
 
                 <ImageLightbox
                   images={getLightBoxImage(photos)}
@@ -101,22 +99,3 @@ const Gallery = ({ data }) => {
 };
 
 export default Gallery;
-
-export const query = graphql`
-  query {
-    allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "gallery" } } }
-    ) {
-      nodes {
-        frontmatter {
-          name
-          image {
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
-            }
-          }
-        }
-      }
-    }
-  }
-`;
