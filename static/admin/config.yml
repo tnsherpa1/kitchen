@@ -4,8 +4,8 @@ backend:
   branch: main
 
 publish_mode: editorial_workflow
-media_folder: "public/assets/img"
-public_folder: "img"
+media_folder: static/uploads
+public_folder: /uploads
 
 collections:
   - name: "starter_salad"

@@ -16,7 +16,6 @@ const useAllMarkdownData = (
               price
               name
               description
-              image
             }
             html
           }
