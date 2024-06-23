@@ -4,8 +4,12 @@ import { Container } from "@/components/Container";
 import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
 import ShowCaseList from "./components/ShowCaseList";
+import { AboutUsBlogType } from "@/pages/about-us/types/about-us-type";
 
-const AboutUs = () => {
+type Props = {
+  data: Array<AboutUsBlogType>;
+};
+const AboutUs = ({ data }: Props) => {
   return (
     <StyledSection>
       <div className="about-us-wrapper">
@@ -47,7 +51,7 @@ const AboutUs = () => {
         </Container>
       </div>
 
-      <ShowCaseList />
+      <ShowCaseList data={data} />
     </StyledSection>
   );
 };

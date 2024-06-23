@@ -12,7 +12,7 @@ const linkItem = [
   },
   {
     label: "Our Story",
-    url: "/about",
+    url: "/about-us",
   },
   {
     label: "Menu",

@@ -1,6 +1,4 @@
-import type { GalleryPageProps } from "@/pages/gallery";
-
-export const sanitizeGalleryImage = ({ data }: GalleryPageProps) => {
+export const sanitizeGalleryImage = ({ data }: GraphQlMarkDownPageType) => {
   const { edges = [] } = data?.allMarkdownRemark || {};
 
   if (!Array.isArray(edges) || !edges.length) return [];

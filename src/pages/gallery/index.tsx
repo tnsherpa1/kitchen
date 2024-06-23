@@ -4,15 +4,7 @@ import { sanitizeGalleryImage } from "@/modules/Gallery/utils/sanitize-gallery-i
 import { graphql } from "gatsby";
 import React from "react";
 
-export type GalleryPageProps = {
-  data: {
-    allMarkdownRemark: {
-      edges: Array<{ node: { frontmatter: { image: string } } }>;
-    };
-  };
-};
-
-const GalleryPage = ({ data }: GalleryPageProps) => {
+const GalleryPage = ({ data }: GraphQlMarkDownPageType) => {
   console.log(data, "@@@");
   return (
     <BaseLayout>

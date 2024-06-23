@@ -5,6 +5,7 @@ import { StyledDiv } from "./style";
 import { Container } from "@/components/Container";
 import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
+import { AboutUsBlogType } from "@/pages/about-us/types/about-us-type";
 
 const data = [
   {
@@ -44,7 +45,11 @@ const data = [
   },
 ];
 
-const ShowCaseList = () => {
+type Props = {
+  data: Array<AboutUsBlogType>;
+};
+const ShowCaseList = ({ data }: Props) => {
+  console.log({ data }, "@@");
   return (
     <StyledDiv>
       <Container>
@@ -57,10 +62,10 @@ const ShowCaseList = () => {
               {data.map((x, i) => {
                 return (
                   <Card
-                    alt={x.alt}
-                    imgURL={x.imgURL}
-                    href={x.href}
-                    content={x.content}
+                    alt={"card"}
+                    imgURL={x.image}
+                    href="/everest-trek"
+                    content={x.description}
                     key={i}
                   />
                 );
