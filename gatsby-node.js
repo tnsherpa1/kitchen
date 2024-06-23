@@ -9,7 +9,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       }
   
       type Frontmatter {
-        name: String!
+        name: String
         description: String
         price: String
         

@@ -10,7 +10,6 @@ import img3 from "@/assets/images/gallery-image/indian-restaurant-st-helena.jpg"
 import img4 from "@/assets/images/gallery-image/sherpa-kitchen-st-helena.jpg";
 import ImageLightbox from "@/components/ImageLightBox";
 import { getLightBoxImage } from "./utils/get-light-box-image";
-import useAllMarkdownData from "@/hooks/useAllMarkdownData";
 import ImageWithFallBack from "@/components/ImageWithFallBack";
 
 const photos = [
