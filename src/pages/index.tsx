@@ -2,7 +2,8 @@
 import Banner from "@/modules/Banner";
 import BaseLayout from "../layouts/BaseLayout";
 import React from "react";
-import { Link } from "gatsby";
+import Helmet from "react-helmet";
+
 import FeatureImageList from "@/components/FeatureImageList";
 import OurStory from "@/components/OurStory";
 import { defaultPalette } from "@/theme/color";
@@ -39,6 +40,22 @@ const feaatureImageListData = [
 const Home = () => {
   return (
     <BaseLayout>
+      <Helmet
+        title="Sherpa Kitchen - St. Helena"
+        meta={[
+          {
+            name: "description",
+            content:
+              "Best Indian, Nepalese, Tibetan restaurant in St. Helena, CA",
+          },
+          {
+            name: "keywords",
+            content:
+              "indian restaurant in st. helena, indian food-st. helena, indian cuisine-st. helena, himalayan kitchen- st. helena, himalayas- st. helena, sherpa kitchen- st. helena, st. helena lunch",
+          },
+        ]}
+      />
+
       <Banner />
 
       <div id="main">
