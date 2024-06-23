@@ -13,6 +13,7 @@ export type GalleryPageProps = {
 };
 
 const GalleryPage = ({ data }: GalleryPageProps) => {
+  console.log(data, "@@@");
   return (
     <BaseLayout>
       <Gallery data={sanitizeGalleryImage({ data })} />

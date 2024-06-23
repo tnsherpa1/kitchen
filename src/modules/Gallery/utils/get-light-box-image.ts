@@ -1,8 +1,8 @@
-export const getLightBoxImage = (imageList: Array<{ src: string }>) => {
+export const getLightBoxImage = (imageList: Array<{ imageSrc: string }>) => {
   return imageList.map((x) => {
     return {
-      url: x.src || "",
-      original: x.src || "",
+      url: x.imageSrc || "",
+      original: x.imageSrc || "",
     };
   });
 };
