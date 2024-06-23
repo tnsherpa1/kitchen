@@ -126,15 +126,6 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
-  - name: "footer_text"
-    label: "Footer Text"
-    files:
-      - label: "Footer Text"
-        name: "title"
-        file: "content/footer_text/footer_text.md"
-        fields:
-          - { label: "Footer Text", name: "title", widget: "string" }
-
   - name: "settings"
     label: "Settings"
     files:
@@ -143,6 +134,18 @@ collections:
         file: "content/settings/settings.json"
         fields:
           - { label: "Footer Text", name: "footer_text", widget: "string" }
+
+      - label: "Phone Number"
+        name: "phone_number"
+        file: "content/settings/settings.json"
+        fields:
+          - { label: "Phone Number", name: "phone_number", widget: "string" }
+
+      - label: "Email"
+        name: "email"
+        file: "content/settings/settings.json"
+        fields:
+          - { label: "Email", name: "email", widget: "string" }
 
   - name: "blog"
     label: "Blog"
