@@ -1,14 +1,21 @@
 import BaseLayout from "@/layouts/BaseLayout";
-import WorkInProgressLayout from "@/layouts/WorkInProgressLayout";
 import Gallery from "@/modules/Gallery";
+import { sanitizeGalleryImage } from "@/modules/Gallery/utils/sanitize-gallery-image";
 import { graphql } from "gatsby";
 import React from "react";
 
-const GalleryPage = ({ data }: any) => {
-  console.log(data, "@@@");
+export type GalleryPageProps = {
+  data: {
+    allMarkdownRemark: {
+      edges: Array<{ node: { frontmatter: { image: string } } }>;
+    };
+  };
+};
+
+const GalleryPage = ({ data }: GalleryPageProps) => {
   return (
     <BaseLayout>
-      <Gallery />
+      <Gallery data={sanitizeGalleryImage({ data })} />
     </BaseLayout>
   );
 };
@@ -16,14 +23,17 @@ const GalleryPage = ({ data }: any) => {
 export default GalleryPage;
 
 export const query = graphql`
-  {
-    allFile(filter: { sourceInstanceName: { eq: "uploads" } }) {
+  query MyQuery {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/content/gallery/" } }
+    ) {
       edges {
         node {
-          childImageSharp {
-            gatsbyImageData(width: 600)
+          id
+          fileAbsolutePath
+          frontmatter {
+            image
           }
-          publicURL
         }
       }
     }

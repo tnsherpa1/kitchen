@@ -5,6 +5,7 @@ import { StyledDiv } from "./style";
 import { Container } from "@/components/Container";
 import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
+import useAllMarkdownData from "@/hooks/useAllMarkdownData";
 
 const data = [
   {
@@ -45,6 +46,10 @@ const data = [
 ];
 
 const ShowCaseList = () => {
+  const datas = useAllMarkdownData("blog");
+
+  console.log({ datas }, "@@@");
+
   return (
     <StyledDiv>
       <Container>

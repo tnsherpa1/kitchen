@@ -8,13 +8,10 @@ import img1 from "@/assets/images/gallery-image/himalayas-st-helena.jpg";
 import img2 from "@/assets/images/gallery-image/indian-cuisine-st-helena.jpg";
 import img3 from "@/assets/images/gallery-image/indian-restaurant-st-helena.jpg";
 import img4 from "@/assets/images/gallery-image/sherpa-kitchen-st-helena.jpg";
-// import ImageList from "./components/ImageList";
 import ImageLightbox from "@/components/ImageLightBox";
 import { getLightBoxImage } from "./utils/get-light-box-image";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
 import ImageWithFallBack from "@/components/ImageWithFallBack";
-import { graphql } from "gatsby";
-// import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const photos = [
   {
@@ -55,9 +52,12 @@ const photos = [
   },
 ];
 
-const Gallery = () => {
+type Props = {
+  data: Array<{ imageSrc: string }>;
+};
+
+const Gallery = ({ data }: Props) => {
   const [index, setIndex] = React.useState<number | null>(null);
-  // const data = useAllMarkdownData("gallery");
 
   return (
     <StyledSection>
@@ -70,19 +70,13 @@ const Gallery = () => {
               </div>
 
               <div className="gallery-image-wrapper">
-                {/* {data?.map((x: any, i) => {
-                  if (!x.image) return;
+                {data?.map((x, i) => {
+                  if (!x.imageSrc) return;
 
-                  // console.log({ test: getImage(x.image) }, "@@@");
                   return (
-                    // <GatsbyImage
-                    //   // image={getImage(x.image)}
-                    //   key={i}
-                    //   onClick={() => setIndex(i)}
-                    // />
-                    <ImageWithFallBack src={x.image} key={i} alt="asdad" />
+                    <ImageWithFallBack src={x.imageSrc} key={i} alt="asdad" />
                   );
-                })} */}
+                })}
 
                 <ImageLightbox
                   images={getLightBoxImage(photos)}
