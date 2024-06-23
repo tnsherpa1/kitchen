@@ -3,7 +3,6 @@ import { StyledFooter } from "./style";
 import Icons from "../Icons";
 import facebookIcon from "@/assets/images/icons/facebook.png";
 import instagramIcon from "@/assets/images/icons/instagram.png";
-import useAllMarkdownData from "@/hooks/useAllMarkdownData";
 
 const Footer = () => {
   return (
