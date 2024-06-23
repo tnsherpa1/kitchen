@@ -135,6 +135,15 @@ collections:
         fields:
           - { label: "Footer Text", name: "title", widget: "string" }
 
+  - name: "settings"
+    label: "Settings"
+    files:
+      - label: "Footer Text"
+        name: "footer_text"
+        file: "content/settings/settings.json"
+        fields:
+          - { label: "Footer Text", name: "footer_text", widget: "string" }
+
   - name: "blog"
     label: "Blog"
     folder: "/content/blog"
