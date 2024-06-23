@@ -5,7 +5,6 @@ import { graphql } from "gatsby";
 import React from "react";
 
 const GalleryPage = ({ data }: GraphQlMarkDownPageType) => {
-  console.log(data, "@@@");
   return (
     <BaseLayout>
       <Gallery data={sanitizeGalleryImage({ data })} />

@@ -4,7 +4,7 @@ import { Container } from "@/components/Container";
 import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
 import ShowCaseList from "./components/ShowCaseList";
-import { AboutUsBlogType } from "@/pages/about-us/types/about-us-type";
+import { AboutUsBlogType } from "./types/about-us-type";
 
 type Props = {
   data: Array<AboutUsBlogType>;

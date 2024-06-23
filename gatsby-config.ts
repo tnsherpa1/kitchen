@@ -50,6 +50,7 @@ const config: GatsbyConfig = {
       resolve: "gatsby-plugin-root-import",
       options: {
         "@": path.join(__dirname, "src"),
+        "#": path.join(__dirname, "/"),
       },
     },
     {

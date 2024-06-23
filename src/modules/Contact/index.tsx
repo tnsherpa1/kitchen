@@ -13,9 +13,15 @@ import { contactSchema } from "./contact.schema";
 import emailIcon from "@/assets/images/icons/email.png";
 import phoneIcon from "@/assets/images/icons/phone-call.png";
 import homeIcon from "@/assets/images/icons/home.png";
+import settings from "#/content/settings/settings.json";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = React.useState(false);
+
+  const {
+    email = "sherpadaiinsonoma@yahoo.com",
+    phone_number = "(707) 963-4439",
+  } = settings || {};
 
   const formik = useFormik<ContactFormTypes>({
     initialValues: {
@@ -113,16 +119,14 @@ const Contact = () => {
                   <Icons icon={emailIcon} />
                   <div className="content-info">
                     <h3>Email</h3>
-                    <a href="mail:sherpadaiinsonoma@yahoo.com">
-                      sherpadaiinsonoma@yahoo.com
-                    </a>
+                    <a href={`mail:${email}`}>{email}</a>
                   </div>
                 </div>
                 <div className="contact-method">
                   <Icons icon={phoneIcon} />
                   <div className="content-info">
                     <h3>Phone</h3>
-                    <a href="tel:1-707-963-4439">(707) 963-4439</a>
+                    <a href={`tel:${phone_number}`}>{phone_number}</a>
                   </div>
                 </div>
                 <div className="contact-method">

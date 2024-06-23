@@ -1,13 +1,12 @@
 import BaseLayout from "@/layouts/BaseLayout";
 import WorkInProgressLayout from "@/layouts/WorkInProgressLayout";
 import AboutUs from "@/modules/AboutUs";
+import { AboutUsBlogType } from "@/modules/AboutUs/types/about-us-type";
+import sanitizeAboutUsData from "@/modules/AboutUs/utils/sanitize-about-us-data";
 import { graphql } from "gatsby";
 import React from "react";
-import { sanitizeAboutUsData } from "./utils/sanitize-about-us-data";
-import { AboutUsBlogType } from "./types/about-us-type";
 
 const AboutPage = ({ data }: GraphQlMarkDownPageType) => {
-  console.log(data, "@@@@");
   return (
     <BaseLayout>
       <AboutUs data={sanitizeAboutUsData({ data }) as Array<AboutUsBlogType>} />

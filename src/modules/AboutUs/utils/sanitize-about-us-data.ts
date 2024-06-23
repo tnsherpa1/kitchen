@@ -1,4 +1,4 @@
-export const sanitizeAboutUsData = ({ data }: GraphQlMarkDownPageType) => {
+const sanitizeAboutUsData = ({ data }: GraphQlMarkDownPageType) => {
   const { edges = [] } = data?.allMarkdownRemark || {};
 
   if (!Array.isArray(edges) || !edges.length) return [];
@@ -11,3 +11,5 @@ export const sanitizeAboutUsData = ({ data }: GraphQlMarkDownPageType) => {
     return [...acc, frontmatter];
   }, []);
 };
+
+export default sanitizeAboutUsData;

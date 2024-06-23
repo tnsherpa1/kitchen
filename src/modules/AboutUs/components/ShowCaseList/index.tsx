@@ -5,45 +5,7 @@ import { StyledDiv } from "./style";
 import { Container } from "@/components/Container";
 import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
-import { AboutUsBlogType } from "@/pages/about-us/types/about-us-type";
-
-const data = [
-  {
-    imgURL: heroBanner,
-    alt: "Mount Everest Trekking",
-    content:
-      "2018 Trekkers en route Mt. Everest Base Camp organized by the owner, Chiring Sherpa. Chiring leads a trip to Nepal every year. Tourists enjoy and fully immerse in the local culture and natural beauty along the route.",
-    href: "/everest-trek",
-  },
-  {
-    imgURL: heroBanner,
-    alt: "Mount Everest Trekking",
-    content:
-      "2018 Trekkers en route Mt. Everest Base Camp organized by the owner, Chiring Sherpa. Chiring leads a trip to Nepal every year. Tourists enjoy and fully immerse in the local culture and natural beauty along the route.",
-    href: "/everest-trek",
-  },
-  {
-    imgURL: heroBanner,
-    alt: "Mount Everest Trekking",
-    content:
-      "2018 Trekkers en route Mt. Everest Base Camp organized by the owner, Chiring Sherpa. Chiring leads a trip to Nepal every year. Tourists enjoy and fully immerse in the local culture and natural beauty along the route.",
-    href: "/everest-trek",
-  },
-  {
-    imgURL: heroBanner,
-    alt: "Mount Everest Trekking",
-    content:
-      "2018 Trekkers en route Mt. Everest Base Camp organized by the owner, Chiring Sherpa. Chiring leads a trip to Nepal every year. Tourists enjoy and fully immerse in the local culture and natural beauty along the route.",
-    href: "/everest-trek",
-  },
-  {
-    imgURL: heroBanner,
-    alt: "Mount Everest Trekking",
-    content:
-      "2018 Trekkers en route Mt. Everest Base Camp organized by the owner, Chiring Sherpa. Chiring leads a trip to Nepal every year. Tourists enjoy and fully immerse in the local culture and natural beauty along the route.",
-    href: "/everest-trek",
-  },
-];
+import { AboutUsBlogType } from "../../types/about-us-type";
 
 type Props = {
   data: Array<AboutUsBlogType>;

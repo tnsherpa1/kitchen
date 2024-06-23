@@ -3,8 +3,11 @@ import { StyledFooter } from "./style";
 import Icons from "../Icons";
 import facebookIcon from "@/assets/images/icons/facebook.png";
 import instagramIcon from "@/assets/images/icons/instagram.png";
-
+import settings from "#/content/settings/settings.json";
 const Footer = () => {
+  console.log({ settings }, "@@@");
+
+  const { footer_text = "© Himalayan Sherpa Kitchen 2024" } = settings || {};
   return (
     <StyledFooter id="footer">
       <ul className="social-icons-list">
@@ -40,7 +43,7 @@ const Footer = () => {
         </li>
       </ul>
       <ul className="copyright">
-        <li>&copy; Himalayan Sherpa Kitchen 2024</li>
+        <li>{footer_text}</li>
       </ul>
     </StyledFooter>
   );
