@@ -126,32 +126,80 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
+  #######################
+  # Website Settings
+  #######################
+
   - name: "settings"
     label: "Settings"
     files:
-      - label: "Footer Text"
-        name: "footer_text"
+      - label: "Settings File"
+        name: "settings_file"
         file: "content/settings/settings.json"
         fields:
-          - { label: "Footer Text", name: "footer_text", widget: "string" }
+          - label: "Footer Text"
+            name: "footer_text"
+            widget: "string"
 
-      - label: "Phone Number"
-        name: "phone_number"
-        file: "content/settings/settings.json"
-        fields:
-          - { label: "Phone Number", name: "phone_number", widget: "string" }
+          - label: "Phone Number"
+            name: "phone_number"
+            widget: "string"
 
-      - label: "Email"
-        name: "email"
-        file: "content/settings/settings.json"
-        fields:
-          - { label: "Email", name: "email", widget: "string" }
+          - label: "Email"
+            name: "email"
+            widget: "string"
+
+          - label: "Hero Banner Text"
+            name: "hero_banner_text"
+            widget: "string"
+
+          - label: "Lunch Time"
+            name: "lunch_time"
+            widget: "string"
+
+          - label: "Lunch last seated Time"
+            name: "lunch_last_seated_time"
+            widget: "string"
+
+          - label: "Dinner Time"
+            name: "dinner_time"
+            widget: "string"
+
+          - label: "Dinner last seated Time"
+            name: "dinner_last_seated_time"
+            widget: "string"
+
+          - label: "Story"
+            name: "story_content"
+            widget: "markdown"
+
+          - label: "About us"
+            name: "about_us"
+            widget: "markdown"
+
+  #######################
+  # Blog Details
+  #######################
 
   - name: "blog"
     label: "Blog"
     folder: "/content/blog"
     create: true
     slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "markdown" }
+
+  #######################
+  # Everest trek details
+  #######################
+
+  - name: "everest-trek"
+    label: "Everest Base Camp Trek"
+    folder: "/content/everest_base_camp_trek"
+    # create: true
+    # slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
