@@ -12,7 +12,7 @@ collections:
     label: "Starter and Salad"
     folder: "/content/kitchen_menu/starter_salad"
     create: true
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    slug: "{{name}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -151,7 +151,7 @@ collections:
 
           - label: "Hero Banner Text"
             name: "hero_banner_text"
-            widget: "string"
+            widget: "text"
 
           - label: "Lunch Time"
             name: "lunch_time"
@@ -197,10 +197,10 @@ collections:
 
   - name: "everest-trek"
     label: "Everest Base Camp Trek"
-    folder: "/content/everest_base_camp_trek"
-    # create: true
-    # slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Description", name: "description", widget: "markdown" }
+    files:
+      - label: Everest Base Camp Trek
+        name: everest-base-camp-description
+        file: "/content/everest_base_camp_trek/everest-base-camp-description.md"
+        fields:
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Description", name: "description", widget: "markdown" }
