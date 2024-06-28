@@ -22,7 +22,7 @@ collections:
     label: "MoMo - Steamed Dumplings"
     folder: "/content/kitchen_menu/momo"
     create: true
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    slug: "{{name}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -32,7 +32,7 @@ collections:
     label: "Curry Dishes"
     folder: "/content/kitchen_menu/curry_dishes"
     create: true
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    slug: "{{name}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -42,7 +42,7 @@ collections:
     label: "Tandoori"
     folder: "/content/kitchen_menu/tandoori"
     create: true
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    slug: "{{name}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -52,7 +52,7 @@ collections:
     label: "Tika Masala"
     folder: "/content/kitchen_menu/tika_masala"
     create: true
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    slug: "{{name}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -62,7 +62,7 @@ collections:
     label: "Sides"
     folder: "/content/kitchen_menu/sides"
     create: true
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    slug: "{{name}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -76,7 +76,7 @@ collections:
     label: "Sparkling Wines"
     folder: "/content/drinks_menu/sparkling_wines"
     create: true
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    slug: "{{name}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
@@ -85,7 +85,7 @@ collections:
     label: "White Wines"
     folder: "/content/drinks_menu/white_wines"
     create: true
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    slug: "{{name}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
@@ -94,7 +94,7 @@ collections:
     label: "Red Wines"
     folder: "/content/drinks_menu/red_wines"
     create: true
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    slug: "{{name}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
@@ -103,7 +103,7 @@ collections:
     label: "Beer"
     folder: "/content/drinks_menu/beer"
     create: true
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    slug: "{{name}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
@@ -112,7 +112,7 @@ collections:
     label: "Beverages"
     folder: "/content/drinks_menu/beverages"
     create: true
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    slug: "{{name}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
@@ -121,7 +121,7 @@ collections:
     label: "Gallery"
     folder: "/content/gallery"
     create: true
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    slug: "{{name}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
@@ -185,7 +185,7 @@ collections:
     label: "Blog"
     folder: "/content/blog"
     create: true
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    slug: "{{name}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
