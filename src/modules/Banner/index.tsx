@@ -7,6 +7,14 @@ import { Col } from "@/components/Col";
 import Button from "@/components/Button";
 import namaste from "@/assets/images/namaste.svg";
 import star from "@/assets/images/4star.png";
+import {
+  hero_banner_text,
+  lunch_time,
+  lunch_last_seated_time,
+  dinner_time,
+  dinner_last_seated_time,
+  phone_number,
+} from "#/content/settings/settings.json";
 
 const Banner = () => (
   <StyledDiv>
@@ -20,11 +28,7 @@ const Banner = () => (
                 src={namaste}
                 alt="Namaste from himalayan sherpa kitchen"
               />
-              <p className="hero-banner-content-text">
-                We offer you a hearty welcome to the exotic flavors of the
-                Himalayan cuisine! Your taste is our specialty and your pleasure
-                our courtesy.
-              </p>
+              <p className="hero-banner-content-text">{hero_banner_text}</p>
             </div>
             <div className="hero-banner-content-wrapper">
               <ul>
@@ -33,18 +37,22 @@ const Banner = () => (
                   <p>Open daily</p>
                 </li>
                 <li className="show-border">
-                  <strong>Lunch: 11:30am to 3:00pm</strong>
-                  <p>Last tables seated at 2:45pm</p>
+                  <strong>Lunch: {lunch_time}</strong>
+                  <p>Last tables seated at {lunch_last_seated_time}</p>
                 </li>
                 <li className="show-border">
-                  <strong>Dinner: 5:00pm to 9:00pm</strong>
-                  <p>Last tables seated at 8:30pm</p>
+                  <strong>Dinner: {dinner_time}</strong>
+                  <p>Last tables seated at {dinner_last_seated_time}</p>
                 </li>
               </ul>
               <ul className="button-group">
                 <li>
-                  <Button href="tel:1-707-963-4439" skin="contained" size="md">
-                    (707) 963-4439
+                  <Button
+                    href={`tel:${phone_number}`}
+                    skin="contained"
+                    size="md"
+                  >
+                    {phone_number}
                   </Button>
                 </li>
                 <li>
@@ -59,16 +67,6 @@ const Banner = () => (
                 </li>
               </ul>
               <ul className="icons">
-                {/* <li>
-                  <a
-                    href="https://www.yelp.com/biz/st-helena-sherpa-kitchen-st-helena"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="icon alt fa-yelp"
-                  >
-                    <span className="label">Yelp</span>
-                  </a>
-                </li> */}
                 <li>
                   <a
                     href="https://www.yelp.com/biz/st-helena-sherpa-kitchen-st-helena"

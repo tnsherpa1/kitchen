@@ -4,7 +4,10 @@ import { Container } from "@/components/Container";
 import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
 import ImageWithFallBack from "@/components/ImageWithFallBack";
-import trekInfo from "@/assets/images/everest-trek-info.jpeg";
+import {
+  description,
+  image,
+} from "#/content/everest_base_camp_trek/base_camp.json";
 
 const EverestTrek = () => {
   return (
@@ -18,16 +21,11 @@ const EverestTrek = () => {
 
             <div className="everest-trek-achievement-wrapper">
               <div className="achievement-image-wrapper">
-                <ImageWithFallBack src={trekInfo} alt="Everest Trek Info" />
+                <ImageWithFallBack src={image} alt="Everest Trek Info" />
               </div>
 
               <div className="achievement-trek-content">
-                <i>
-                  Chiring leads a trip to Nepal every year. Tourists enjoy and
-                  fully immerse in the local culture and natural beauty along
-                  the route. <br /> For more details, pricing and complete
-                  itinerary please call or use the contact form below.
-                </i>
+                <i>{description}</i>
               </div>
             </div>
           </Col>
