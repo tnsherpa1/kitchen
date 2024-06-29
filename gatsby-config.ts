@@ -72,7 +72,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: `${title_logo || "./src/assets/images/namaste.svg"}`,
+        icon: `./public${title_logo || "./src/assets/images/namaste.svg"}`,
       },
     },
   ],
