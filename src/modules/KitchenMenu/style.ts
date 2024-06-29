@@ -27,8 +27,9 @@ export const StyledDiv = styled.div`
       .dish-note-content {
         color: ${theme.coreColor.textColor};
         padding: 20px;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 100;
+        line-height: 28px;
       }
     }
 

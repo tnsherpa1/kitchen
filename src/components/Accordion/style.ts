@@ -63,10 +63,12 @@ export const StyledDiv = styled.div<{ $iconAlignLeft: boolean }>`
       border-bottom: 1px solid ${theme.coreColor.textColor};
 
       table {
-        font-size: 21px;
+        font-size: 18px;
         line-height: 27px;
         width: 100%;
-
+        border: none;
+        cell-spacing: 0;
+        cell-padding: 0;
         @media (max-width: ${theme.breakPoints.md}) {
           font-size: 14px;
         }
@@ -76,13 +78,16 @@ export const StyledDiv = styled.div<{ $iconAlignLeft: boolean }>`
           th {
             font-weight: 800;
             text-align: left;
-            padding: 10px 20px;
+            padding: 20px;
           }
         }
 
         tbody {
+          tr:nth-child(odd) {
+            background-color: rgba(212, 212, 255, 0.035);
+          }
           td {
-            padding: 10px 20px;
+            padding: 20px;
             @media (max-width: ${theme.breakPoints.md}) {
               line-height: 21px;
             }

@@ -39,17 +39,18 @@ const Starter = ({ accordionState, setAccordionState }: Props) => {
               <th>Price</th>
             </tr>
           </thead>
-
-          {data.map((item, i) => {
-            return (
-              <DisplayMenu
-                name={item.name}
-                price={item.price}
-                desc={item.description}
-                key={i}
-              />
-            );
-          })}
+          <tbody>
+            {data.map((item, i) => {
+              return (
+                <DisplayMenu
+                  name={item.name}
+                  price={item.price}
+                  desc={item.description}
+                  key={i}
+                />
+              );
+            })}
+          </tbody>
         </table>
       </div>
     </Accordion>

@@ -6,10 +6,16 @@ import { Container } from "@/components/Container";
 import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
 import namaste from "@/assets/images/namaste.svg";
+import menuHelper from "content/settings/menu_list_helper.json";
 
 import ImageWithFallBack from "@/components/ImageWithFallBack";
 
 const KitchenMenu = () => {
+  const {
+    menu_footer_address = "",
+    menu_footer_description = "",
+    menu_service_charge_description = "",
+  } = menuHelper || {};
   return (
     <StyledDiv>
       <Container>
@@ -29,25 +35,19 @@ const KitchenMenu = () => {
         <Row>
           <Col>
             <div className="kitchen-information-wrapper">
-              <p className="kitchen-content">
-                We offer you a hearty welcome to the exotic flavors of the
-                Himalayan cuisine! Your taste is our specialty and your pleasure
-                our courtesy. (v) Indicates Vegan dishes Due to California
-                statewide water restrictions, water service is offered by
-                request only.
-              </p>
+              {menu_footer_description && (
+                <p className="kitchen-content">{menu_footer_description}</p>
+              )}
 
-              <p className="kitchen-location">
-                <span> 1148 Main Street,</span>
-                <span> St. Helena, CA 94574</span>
-                <span> Phone: (707) 963-4439</span>
-              </p>
+              {menu_footer_address && (
+                <p className="kitchen-location">{menu_footer_address}</p>
+              )}
 
-              <p className="kitchen-service-charge">
-                18% Service Charge may be added to parties of 6 or more Take out
-                orders and catering available for private events Thank you for
-                dining with us. See you soon!
-              </p>
+              {menu_service_charge_description && (
+                <p className="kitchen-service-charge">
+                  {menu_service_charge_description}
+                </p>
+              )}
 
               <div className="kitchen-service-logo">
                 <ImageWithFallBack src={namaste} alt="sherpa kitchen logo" />

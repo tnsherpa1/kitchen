@@ -37,16 +37,18 @@ const Momo = ({ accordionState, setAccordionState }: Props) => {
               <th>Price</th>
             </tr>
           </thead>
-          {data.map((x, i) => {
-            return (
-              <DisplayMenu
-                name={x.name}
-                desc={x.description}
-                price={x.price}
-                key={i}
-              />
-            );
-          })}
+          <tbody>
+            {data.map((x, i) => {
+              return (
+                <DisplayMenu
+                  name={x.name}
+                  desc={x.description}
+                  price={x.price}
+                  key={i}
+                />
+              );
+            })}
+          </tbody>
         </table>
       </div>
     </Accordion>
