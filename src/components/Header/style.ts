@@ -83,7 +83,6 @@ export const StyledDiv = styled.div`
 
           @media (max-width: ${theme.breakPoints.md}) {
             font-size: 12px;
-            display: none;
           }
         }
       }
