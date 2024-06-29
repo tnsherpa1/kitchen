@@ -146,6 +146,10 @@ collections:
             name: "site_logo"
             widget: "image"
 
+          - label: "title logo"
+            name: "title_logo"
+            widget: image
+
           - label: "Footer Text"
             name: "footer_text"
             widget: "string"
