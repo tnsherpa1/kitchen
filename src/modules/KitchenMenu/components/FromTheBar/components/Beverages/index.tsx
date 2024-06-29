@@ -3,6 +3,7 @@ import Accordion from "@/components/Accordion";
 import DisplayMenu from "../../../DisplayMenu";
 import { BEVERAGES } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
+import drinksHelper from "content/settings/drinks_menu_helper.json";
 
 type Props = {
   accordionState: string;
@@ -14,6 +15,8 @@ const Beverages = ({ accordionState, setAccordionState }: Props) => {
 
   if (!data.length) return null;
 
+  const { beverages_description = "" } = drinksHelper || {};
+
   return (
     <Accordion
       title={BEVERAGES}
@@ -23,6 +26,9 @@ const Beverages = ({ accordionState, setAccordionState }: Props) => {
       }
     >
       <div className="table-wrapper">
+        {beverages_description && (
+          <p className="dish-note-content">{beverages_description}</p>
+        )}
         <table>
           <thead>
             <tr>

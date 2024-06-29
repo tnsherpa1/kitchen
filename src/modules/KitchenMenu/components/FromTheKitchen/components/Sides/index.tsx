@@ -3,6 +3,7 @@ import DisplayMenu from "../../../DisplayMenu";
 import Accordion from "@/components/Accordion";
 import { SIDES } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
+import menuHelper from "content/settings/kitchen_menu_helper.json";
 
 type Props = {
   accordionState: string;
@@ -14,6 +15,8 @@ const Sides = ({ accordionState, setAccordionState }: Props) => {
 
   if (!data.length) return null;
 
+  const { sides_description = "" } = menuHelper || {};
+
   return (
     <Accordion
       title={SIDES}
@@ -23,6 +26,9 @@ const Sides = ({ accordionState, setAccordionState }: Props) => {
       }
     >
       <div className="table-wrapper">
+        {sides_description && (
+          <p className="dish-note-content">{sides_description}</p>
+        )}
         <table>
           <thead>
             <tr>

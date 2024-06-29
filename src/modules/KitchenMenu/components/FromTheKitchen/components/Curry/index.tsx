@@ -3,6 +3,7 @@ import Accordion from "@/components/Accordion";
 import DisplayMenu from "../../../DisplayMenu";
 import { CURRY_DISHES } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
+import menuHelper from "content/settings/kitchen_menu_helper.json";
 
 type Props = {
   accordionState: string;
@@ -14,6 +15,8 @@ const Curry = ({ accordionState, setAccordionState }: Props) => {
 
   if (!data.length) return null;
 
+  const { curry_dishes_description = "" } = menuHelper || {};
+
   return (
     <Accordion
       title={CURRY_DISHES}
@@ -23,9 +26,9 @@ const Curry = ({ accordionState, setAccordionState }: Props) => {
       }
     >
       <div className="table-wrapper">
-        <p className="dish-note-content">
-          Served with a choice of steamed Basmati or Brown Rice
-        </p>
+        {curry_dishes_description && (
+          <p className="dish-note-content">{curry_dishes_description}</p>
+        )}
 
         <table>
           <thead>

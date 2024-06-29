@@ -3,6 +3,7 @@ import Accordion from "@/components/Accordion";
 import DisplayMenu from "../../../DisplayMenu";
 import { TIKA_MASALA } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
+import menuHelper from "content/settings/kitchen_menu_helper.json";
 
 type Props = {
   accordionState: string;
@@ -14,6 +15,8 @@ const TikaMasala = ({ accordionState, setAccordionState }: Props) => {
 
   if (!data.length) return null;
 
+  const { tika_masala_description = "" } = menuHelper || {};
+
   return (
     <Accordion
       title={TIKA_MASALA}
@@ -23,10 +26,9 @@ const TikaMasala = ({ accordionState, setAccordionState }: Props) => {
       }
     >
       <div className="table-wrapper">
-        <p>
-          Served with a choice of steamed Basmati or Brown Rice Served in a
-          smooth creamy sauce with your choice of
-        </p>
+        {tika_masala_description && (
+          <p className="dish-note-content">{tika_masala_description}</p>
+        )}
         <table>
           <thead>
             <tr>

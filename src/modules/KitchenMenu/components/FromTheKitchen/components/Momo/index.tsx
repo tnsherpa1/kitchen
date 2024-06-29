@@ -3,6 +3,7 @@ import DisplayMenu from "../../../DisplayMenu";
 import Accordion from "@/components/Accordion";
 import { MOMO_STEAMED } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
+import menuHelper from "content/settings/kitchen_menu_helper.json";
 
 type Props = {
   accordionState: string;
@@ -14,6 +15,8 @@ const Momo = ({ accordionState, setAccordionState }: Props) => {
 
   if (!data.length) return null;
 
+  const { momo_description = "" } = menuHelper || {};
+
   return (
     <Accordion
       title={MOMO_STEAMED}
@@ -23,6 +26,9 @@ const Momo = ({ accordionState, setAccordionState }: Props) => {
       }
     >
       <div className="table-wrapper">
+        {momo_description && (
+          <p className="dish-note-content">{momo_description}</p>
+        )}
         <table>
           <thead>
             <tr>

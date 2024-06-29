@@ -32,7 +32,8 @@ const Header = ({ onToggleMenu }: Props) => {
     };
   }, []);
 
-  const { home_page_title = "Himalayan Sherpa Kitchen" } = settings || {};
+  const { home_page_title = "Himalayan Sherpa Kitchen", site_logo = "" } =
+    settings || {};
 
   return (
     <>
@@ -45,7 +46,10 @@ const Header = ({ onToggleMenu }: Props) => {
             <Col>
               <div className="header-wrapper">
                 <Link to="/" className="logo-wrapper">
-                  <ImageWithFallBack src={logo} alt="sherpa kitchen logo" />
+                  <ImageWithFallBack
+                    src={site_logo || logo}
+                    alt="sherpa kitchen logo"
+                  />
                   <strong className="logo-title">{home_page_title}</strong>
                 </Link>
                 <nav

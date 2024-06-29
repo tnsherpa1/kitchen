@@ -3,6 +3,7 @@ import Accordion from "@/components/Accordion";
 import { STARTERS_AND_SALADS } from "@/modules/KitchenMenu/constant/kitchen-menu-constant";
 import useAllMarkdownData from "@/hooks/useAllMarkdownData";
 import DisplayMenu from "../../../DisplayMenu";
+import menuHelper from "content/settings/kitchen_menu_helper.json";
 
 type Props = {
   accordionState: string;
@@ -13,6 +14,8 @@ const Starter = ({ accordionState, setAccordionState }: Props) => {
   const data = useAllMarkdownData("starter_salad");
 
   if (!data.length) return null;
+
+  const { starter_salad_description = "" } = menuHelper || {};
 
   return (
     <Accordion
@@ -25,6 +28,9 @@ const Starter = ({ accordionState, setAccordionState }: Props) => {
       }
     >
       <div className="table-wrapper">
+        {starter_salad_description && (
+          <p className="dish-note-content">{starter_salad_description}</p>
+        )}
         <table>
           <thead>
             <tr>

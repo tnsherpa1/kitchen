@@ -133,6 +133,7 @@ collections:
   - name: "settings"
     label: "Settings"
     files:
+      # Website Settings
       - label: "Website Settings"
         name: "website_settings"
         file: "content/settings/settings.json"
@@ -181,6 +182,7 @@ collections:
             name: "story_content"
             widget: "markdown"
 
+      # Kitchen Menu Settings
       - label: "Kitchen Menu Helper"
         name: "kitchen_menu_helper"
         file: "content/settings/kitchen_menu_helper.json"
@@ -209,6 +211,7 @@ collections:
             name: "tika_masala_description"
             widget: "string"
 
+      # Drinks Menu Settings
       - label: "Drinks Menu Helper"
         name: "drink_menu_helper"
         file: "content/settings/drinks_menu_helper.json"
@@ -233,6 +236,7 @@ collections:
             name: "white_wine_description"
             widget: "text"
 
+      # Menu List Helper
       - label: "Menu List Helper"
         name: "menu_list_helper"
         file: "content/settings/menu_list_helper.json"

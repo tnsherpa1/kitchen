@@ -51,6 +51,8 @@ const config: GatsbyConfig = {
       options: {
         "@": path.join(__dirname, "src"),
         "#": path.join(__dirname, "/"),
+        // prettier-ignore
+        "content": path.join(__dirname, "content"),
       },
     },
     {
