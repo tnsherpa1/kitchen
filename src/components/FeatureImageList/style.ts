@@ -56,22 +56,8 @@ export const StyledArticle = styled.article<{
     }
 
     .feature-title {
-      color: ${theme.coreColor.textColor};
-      letter-spacing: 1px;
-      position: relative;
-      font-size: 27px;
-
-      &::before {
-        position: absolute;
-        content: "";
-        left: 0;
-        bottom: -10px;
-        width: 100%;
-        height: 3px;
-        background-color: ${theme.coreColor.textColor};
-      }
-      @media (max-width: ${theme.breakPoints.md}) {
-        font-size: 18px;
+      .section-title {
+        padding-top: 0;
       }
     }
   `}

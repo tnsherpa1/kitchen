@@ -5,6 +5,7 @@ import { Row } from "../Row";
 import { Col } from "../Col";
 import Button from "../Button";
 import settings from "content/settings/settings.json";
+import Typography from "../Typography";
 
 const OurStory = () => {
   const { story_content = "" } = settings || {};
@@ -15,13 +16,13 @@ const OurStory = () => {
           <Col>
             <div className="our-story-wrapper">
               <header className="our-story-title">
-                <h2>The Story</h2>
+                <Typography as="h2" className="section-title">
+                  The Story
+                </Typography>
               </header>
-              {story_content && (
-                <p className="our-story-description">{story_content}</p>
-              )}
+              {story_content && <Typography as="p">{story_content}</Typography>}
               <div className="link-wrapper">
-                <Button href="/about" skin="outline" size="md">
+                <Button href="/about-us" skin="outline" size="md">
                   Learn more
                 </Button>
               </div>

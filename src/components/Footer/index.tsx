@@ -4,6 +4,7 @@ import Icons from "../Icons";
 import facebookIcon from "@/assets/images/icons/facebook.png";
 import instagramIcon from "@/assets/images/icons/instagram.png";
 import settings from "content/settings/settings.json";
+import Typography from "../Typography";
 const Footer = () => {
   const { footer_text = "© Himalayan Sherpa Kitchen 2024" } = settings || {};
   return (
@@ -41,7 +42,9 @@ const Footer = () => {
         </li>
       </ul>
       <ul className="copyright">
-        <li>{footer_text}</li>
+        <li>
+          <Typography as="subtitle2">{footer_text}</Typography>
+        </li>
       </ul>
     </StyledFooter>
   );

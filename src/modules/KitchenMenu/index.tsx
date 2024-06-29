@@ -9,6 +9,7 @@ import namaste from "@/assets/images/namaste.svg";
 import menuHelper from "content/settings/menu_list_helper.json";
 
 import ImageWithFallBack from "@/components/ImageWithFallBack";
+import Typography from "@/components/Typography";
 
 const KitchenMenu = () => {
   const {
@@ -22,7 +23,9 @@ const KitchenMenu = () => {
         <Row>
           <Col>
             <header className="major section-title">
-              <h1>Menu</h1>
+              <Typography as="h1" className="section-title">
+                Menu
+              </Typography>
             </header>
 
             <div className="kitchen-menu-wrapper">
@@ -36,17 +39,21 @@ const KitchenMenu = () => {
           <Col>
             <div className="kitchen-information-wrapper">
               {menu_footer_description && (
-                <p className="kitchen-content">{menu_footer_description}</p>
+                <Typography as="p" className="kitchen-content">
+                  {menu_footer_description}
+                </Typography>
               )}
 
               {menu_footer_address && (
-                <p className="kitchen-location">{menu_footer_address}</p>
+                <Typography as="p" className="kitchen-location">
+                  {menu_footer_address}
+                </Typography>
               )}
 
               {menu_service_charge_description && (
-                <p className="kitchen-service-charge">
+                <Typography as="p" className="kitchen-service-charge">
                   {menu_service_charge_description}
-                </p>
+                </Typography>
               )}
 
               <div className="kitchen-service-logo">

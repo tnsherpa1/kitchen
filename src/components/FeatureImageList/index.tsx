@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import { StyledArticle } from "./style";
 import { defaultPalette } from "@/theme/color";
+import Typography from "../Typography";
 
 type Props = {
   title: string;
@@ -26,7 +27,9 @@ const FeatureImageList = ({
     >
       <Link to={href} className="link primary">
         <header className="feature-title">
-          <h3>{title}</h3>
+          <Typography as="h3" className="section-title">
+            {title}
+          </Typography>
         </header>
       </Link>
     </StyledArticle>

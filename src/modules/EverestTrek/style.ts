@@ -8,14 +8,6 @@ export const StyledSection = styled.section`
       padding-bottom: 50px;
     }
 
-    .everest-trek-title {
-      font-size: 32px;
-
-      @media (max-width: ${theme.breakPoints.md}) {
-        font-size: 18px;
-      }
-    }
-
     .everest-trek-achievement-wrapper {
       margin-top: 60px;
       display: flex;

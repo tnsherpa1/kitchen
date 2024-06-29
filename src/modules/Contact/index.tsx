@@ -14,6 +14,7 @@ import emailIcon from "@/assets/images/icons/email.png";
 import phoneIcon from "@/assets/images/icons/phone-call.png";
 import homeIcon from "@/assets/images/icons/home.png";
 import settings from "content/settings/settings.json";
+import Typography from "@/components/Typography";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = React.useState(false);
@@ -48,7 +49,9 @@ const Contact = () => {
           <Col>
             <div className="contact-wrapper">
               <div className="form-wrapper">
-                <h2 className="contact-title">Contact Us</h2>
+                <Typography as="h2" className="section-title contact-title">
+                  Contact Us
+                </Typography>
                 <form
                   className="form-inner-wrapper"
                   onSubmit={(e) => {
@@ -118,26 +121,31 @@ const Contact = () => {
                 <div className="contact-method">
                   <Icons icon={emailIcon} />
                   <div className="content-info">
-                    <h3>Email</h3>
-                    <a href={`mail:${email}`}>{email}</a>
+                    <Typography as="h5">Email</Typography>
+                    <Typography as="subtitle2">
+                      <a href={`mail:${email}`}>{email}</a>
+                    </Typography>
                   </div>
                 </div>
                 <div className="contact-method">
                   <Icons icon={phoneIcon} />
                   <div className="content-info">
-                    <h3>Phone</h3>
-                    <a href={`tel:${phone_number}`}>{phone_number}</a>
+                    <Typography as="h5">Phone</Typography>
+                    <Typography as="subtitle2">
+                      {" "}
+                      <a href={`tel:${phone_number}`}>{phone_number}</a>
+                    </Typography>
                   </div>
                 </div>
                 <div className="contact-method">
                   <Icons icon={homeIcon} />
                   <div className="content-info">
-                    <h3>Location</h3>
-                    <span>
+                    <Typography as="h5">Location</Typography>
+                    <Typography as="subtitle2">
                       1148 Main Street
                       <br />
                       St. Helena, CA 94574
-                    </span>
+                    </Typography>
                   </div>
                 </div>
               </div>

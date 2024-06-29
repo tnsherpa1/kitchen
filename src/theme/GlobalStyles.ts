@@ -39,6 +39,7 @@ ${({ theme }) => css`
     background-color: #5e4933;
     overflow-x: hidden;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
+    width: 100%;
 
     &.menu-open {
       height: 100vh;
@@ -80,33 +81,6 @@ ${({ theme }) => css`
       color: #fff;
     }
     border-top: 1px solid rgba(212, 212, 255, 0.1);
-  }
-
-  .section-title {
-    color: ${theme.coreColor.textColor};
-    font-size: 28px;
-    font-family: inherit;
-    position: relative;
-    display: inline-block;
-    padding-top: 100px;
-    &::before {
-      position: absolute;
-      content: "";
-      height: 5px;
-      width: 100%;
-      background-color: ${theme.coreColor.textColor};
-      left: 0;
-      bottom: -12px;
-
-      @media (max-width: ${theme.breakPoints.md}) {
-        height: 2px;
-      }
-    }
-
-    @media (max-width: ${theme.breakPoints.md}) {
-      padding-top: 50px;
-      font-size: 18px;
-    }
   }
 `}
 

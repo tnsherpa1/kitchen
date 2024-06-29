@@ -8,6 +8,7 @@ import Button from "@/components/Button";
 import namaste from "@/assets/images/namaste.svg";
 import star from "@/assets/images/4star.png";
 import settings from "content/settings/settings.json";
+import Typography from "@/components/Typography";
 
 const Banner = () => {
   const {
@@ -30,21 +31,27 @@ const Banner = () => {
                   src={namaste}
                   alt="Namaste from himalayan sherpa kitchen"
                 />
-                <p className="hero-banner-content-text">{hero_banner_text}</p>
+                <Typography as="subtitle1" className="hero-banner-content-text">
+                  {hero_banner_text}
+                </Typography>
               </div>
               <div className="hero-banner-content-wrapper">
                 <ul>
                   <li>
                     <strong>Hours:</strong>
-                    <p>Open daily</p>
+                    <Typography as="subtitle1">Open daily</Typography>
                   </li>
                   <li className="show-border">
                     <strong>Lunch: {lunch_time}</strong>
-                    <p>Last tables seated at {lunch_last_seated_time}</p>
+                    <Typography as="subtitle1">
+                      Last tables seated at {lunch_last_seated_time}
+                    </Typography>
                   </li>
                   <li className="show-border">
                     <strong>Dinner: {dinner_time}</strong>
-                    <p>Last tables seated at {dinner_last_seated_time}</p>
+                    <Typography as="subtitle1">
+                      Last tables seated at {dinner_last_seated_time}
+                    </Typography>
                   </li>
                 </ul>
                 <ul className="button-group">

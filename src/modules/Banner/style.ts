@@ -11,6 +11,7 @@ export const StyledDiv = styled.div`
     background-size: cover;
     background-position: 50%;
     position: relative;
+    overflow: hidden;
     &::before {
       position: absolute;
       height: 100%;
@@ -46,18 +47,11 @@ export const StyledDiv = styled.div`
         margin-bottom: 40px;
 
         .hero-banner-content-text {
-          font-family: "Source Sans Pro", Helvetica, sans-serif;
-          font-size: 18px;
-          font-weight: 500;
+          font-weight: 400;
+          text-transform: uppercase;
           letter-spacing: 1px;
           color: ${theme.coreColor.textColor};
           text-align: center;
-          letter-spacing: 4px;
-          line-height: 26px;
-
-          @media (max-width: ${theme.breakPoints.md}) {
-            font-size: 14px;
-          }
         }
       }
 

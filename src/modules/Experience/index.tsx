@@ -5,6 +5,7 @@ import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
 import ExperienceContentBox from "./components/ExprienceContentBox";
 import { title } from "process";
+import Typography from "@/components/Typography";
 
 const data = [
   {
@@ -37,9 +38,9 @@ const Experience = () => {
         <Row>
           <Col>
             <div className="exprience-wrapper">
-              <h1 className="experience-title section-title">
+              <Typography as="h1" className="experience-title section-title">
                 Kitchen + Experience
-              </h1>
+              </Typography>
 
               <div className="expreience-content-box-wrapper">
                 {data.map((item, i) => {

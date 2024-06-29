@@ -29,22 +29,13 @@ export const StyledDiv = styled.div`
       gap: 15px;
       color: ${theme.coreColor.textColor};
 
-      .content-text {
-        font-size: 18px;
-        line-height: 24px;
-
-        @media (max-width: ${theme.breakPoints.md}) {
-          font-size: 16px;
-        }
-      }
-
       a {
         color: ${theme.coreColor.textColor};
         font-size: 18px;
         display: inline-block;
 
         @media (max-width: ${theme.breakPoints.md}) {
-          font-size: 16px;
+          font-size: 14px;
         }
         &:hover {
           text-decoration: underline;

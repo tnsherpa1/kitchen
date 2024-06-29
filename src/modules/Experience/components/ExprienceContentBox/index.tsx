@@ -1,5 +1,6 @@
 import React from "react";
 import { StyledDiv } from "./style";
+import Typography from "@/components/Typography";
 
 type Props = {
   title: string;
@@ -11,9 +12,13 @@ const ExperienceContentBox = ({
 }: Props) => {
   return (
     <StyledDiv>
-      <h5 className="experience-box-title">{title}</h5>
+      <Typography as="h5" className="experience-box-title">
+        {title}
+      </Typography>
 
-      <p className="experience-box-content">{content}</p>
+      <Typography as="p" className="experience-box-content">
+        {content}
+      </Typography>
     </StyledDiv>
   );
 };

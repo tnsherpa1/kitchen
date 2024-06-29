@@ -47,7 +47,7 @@ const defaultStyle = (theme: DefaultTheme) => css`
 
   &.md {
     width: 300px;
-    font-size: 20px;
+    font-size: 18px;
 
     @media (max-width: ${theme.breakPoints.md}) {
       width: 220px;
@@ -57,7 +57,7 @@ const defaultStyle = (theme: DefaultTheme) => css`
 
   &.lg {
     width: 450px;
-    font-size: 21px;
+    font-size: 20px;
 
     @media (max-width: ${theme.breakPoints.md}) {
       width: 320px;

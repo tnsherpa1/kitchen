@@ -6,20 +6,20 @@ import { Container } from "@/components/Container";
 import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
 import { AboutUsBlogType } from "../../types/about-us-type";
+import Typography from "@/components/Typography";
 
 type Props = {
   data: Array<AboutUsBlogType>;
 };
 const ShowCaseList = ({ data }: Props) => {
-  console.log({ data }, "@@");
   return (
     <StyledDiv>
       <Container>
         <Row>
           <Col>
-            <h2 className="section-title show-case-title">
+            <Typography as="h2" className="section-title show-case-title">
               Everest Base Camp Trek
-            </h2>
+            </Typography>
             <div className="show-case-card-container">
               {data.map((x, i) => {
                 return (

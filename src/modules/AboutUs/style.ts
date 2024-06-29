@@ -22,43 +22,23 @@ export const StyledSection = styled.section`
 
       .about-us-title {
         color: ${theme.coreColor.textColor};
-        font-size: 47px;
-        font-family: inherit;
-        position: relative;
         display: inline-block;
-        padding-top: 100px;
 
         @media (max-width: ${theme.breakPoints.md}) {
           padding-top: 50px;
-          font-size: 27px;
-        }
-
-        &::before {
-          position: absolute;
-          content: "";
-          height: 5px;
-          width: 100%;
-          background-color: ${theme.coreColor.textColor};
-          left: 0;
-          bottom: -12px;
         }
       }
 
       .story-content {
-        font-family: "Source Sans Pro", Helvetica, sans-serif;
         margin-top: 60px;
-        font-size: 24px;
         display: flex;
         flex-direction: column;
         gap: 40px;
-        line-height: 36px;
         color: ${theme.coreColor.textColor};
         font-weight: lighter;
         padding-bottom: 100px;
 
         @media (max-width: ${theme.breakPoints.md}) {
-          font-size: 16px;
-          line-height: 27px;
           gap: 20px;
           margin-top: 30px;
           padding-bottom: 50px;

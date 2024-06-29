@@ -33,9 +33,7 @@ export const StyledSection = styled.section`
         }
 
         .contact-title {
-          font-size: 35px;
-          letter-spacing: 2px;
-          color: ${theme.coreColor.textColor};
+          padding-top: 0;
           margin-bottom: 2em;
         }
 
@@ -69,8 +67,10 @@ export const StyledSection = styled.section`
           gap: 20px;
           padding: 60px 40px;
           position: relative;
+          width: 100%;
           @media (max-width: ${theme.breakPoints.md}) {
             padding: 40px 0;
+            overflow: hidden;
           }
 
           &::before {
@@ -96,23 +96,10 @@ export const StyledSection = styled.section`
             gap: 10px;
             color: ${theme.coreColor.textColor};
             font-family: inherit;
-            h3 {
-              font-size: 24px;
-              letter-spacing: 1px;
-
-              @media (max-width: ${theme.breakPoints.md}) {
-                font-size: 18px;
-              }
-            }
 
             a {
               text-decoration: none;
               color: inherit;
-              font-size: 18px;
-              @media (max-width: ${theme.breakPoints.md}) {
-                font-size: 14px;
-                font-weight: 100;
-              }
               &:hover {
                 text-decoration: underline;
               }

@@ -5,6 +5,7 @@ import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
 import ImageWithFallBack from "@/components/ImageWithFallBack";
 import settings from "content/everest_base_camp_trek/base_camp.json";
+import Typography from "@/components/Typography";
 
 const EverestTrek = () => {
   const { description = "", image = "" } = settings || {};
@@ -13,8 +14,10 @@ const EverestTrek = () => {
       <Container>
         <Row>
           <Col>
-            <div className="everest-trek-title section-title">
-              <h1>Everest Base Camp Trek</h1>
+            <div className="everest-trek-title">
+              <Typography as="h1" className="section-title">
+                Everest Base Camp Trek
+              </Typography>
             </div>
 
             <div className="everest-trek-achievement-wrapper">
@@ -24,7 +27,9 @@ const EverestTrek = () => {
 
               {description && (
                 <div className="achievement-trek-content">
-                  <i>{description}</i>
+                  <Typography as="p">
+                    <i>{description}</i>
+                  </Typography>
                 </div>
               )}
             </div>

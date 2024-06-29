@@ -37,8 +37,6 @@ export const StyledDiv = styled.div`
       display: flex;
       flex-direction: column;
       gap: 40px;
-      font-size: 19px;
-      line-height: 32px;
       text-align: center;
       width: 90%;
       margin: 0 auto;
@@ -46,10 +44,6 @@ export const StyledDiv = styled.div`
 
       color: ${theme.coreColor.textColor};
 
-      @media (max-width: ${theme.breakPoints.md}) {
-        font-size: 14px;
-        line-height: 21px;
-      }
       p {
         font-weight: 100;
         letter-spacing: 1px;

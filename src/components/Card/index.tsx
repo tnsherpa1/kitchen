@@ -3,6 +3,7 @@ import { StyledDiv } from "./style";
 import ImageWithFallBack from "../ImageWithFallBack";
 import { Link } from "gatsby";
 import { truncateString } from "@/utils/turncate-string";
+import Typography from "../Typography";
 
 type Props = {
   imgURL: string;
@@ -26,9 +27,9 @@ const Card = ({
       </div>
 
       <div className="card-content-wrapper">
-        <p title={content} className="content-text">
+        <Typography as="p" title={content} className="content-text">
           {truncateString(content)}
-        </p>
+        </Typography>
 
         <Link to={href}>{linkLabel}</Link>
       </div>
