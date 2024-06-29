@@ -1,5 +1,4 @@
 import BaseLayout from "@/layouts/BaseLayout";
-import WorkInProgressLayout from "@/layouts/WorkInProgressLayout";
 import EverestTrek from "@/modules/EverestTrek";
 import React from "react";
 import { Helmet } from "react-helmet";

@@ -11,6 +11,7 @@ import Drawer from "../Drawer";
 import clsx from "clsx";
 import logo from "@/assets/images/logo.svg";
 import Menu from "../MenuList";
+import settings from "#/content/settings/settings.json";
 
 type Props = {
   onToggleMenu: () => void;
@@ -31,6 +32,8 @@ const Header = ({ onToggleMenu }: Props) => {
     };
   }, []);
 
+  const { home_page_title = "Himalayan Sherpa Kitchen" } = settings || {};
+
   return (
     <>
       <StyledDiv
@@ -43,9 +46,7 @@ const Header = ({ onToggleMenu }: Props) => {
               <div className="header-wrapper">
                 <Link to="/" className="logo-wrapper">
                   <ImageWithFallBack src={logo} alt="sherpa kitchen logo" />
-                  <strong className="logo-title">
-                    Himalayan Sherpa Kitchen
-                  </strong>
+                  <strong className="logo-title">{home_page_title}</strong>
                 </Link>
                 <nav
                   className="menu-wrapper"

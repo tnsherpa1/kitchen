@@ -133,10 +133,18 @@ collections:
   - name: "settings"
     label: "Settings"
     files:
-      - label: "Settings File"
-        name: "settings_file"
+      - label: "Website Settings"
+        name: "website_settings"
         file: "content/settings/settings.json"
         fields:
+          - label: "Home Page Title"
+            name: "home_page_title"
+            widget: "string"
+
+          - label: "Site Logo"
+            name: "site_logo"
+            widget: "image"
+
           - label: "Footer Text"
             name: "footer_text"
             widget: "string"
@@ -173,9 +181,73 @@ collections:
             name: "story_content"
             widget: "markdown"
 
-          - label: "About us"
-            name: "about_us"
+      - label: "Kitchen Menu Helper"
+        name: "kitchen_menu_helper"
+        file: "content/settings/kitchen_menu_helper.json"
+        fields:
+          - label: "Curry Dishes Description"
+            name: "curry_dishes_description"
+            widget: "string"
+
+          - label: "Momo Description"
+            name: "momo_description"
+            widget: "string"
+
+          - label: "Sides Description"
+            name: "sides_description"
+            widget: "string"
+
+          - label: "Starter Salad Description"
+            name: "starter_salad_description"
+            widget: "string"
+
+          - label: "Tandoori Description"
+            name: "tandoori_description"
+            widget: "text"
+
+          - label: "Tika Masala Description"
+            name: "tika_masala_description"
+            widget: "string"
+
+      - label: "Drinks Menu Helper"
+        name: "drink_menu_helper"
+        file: "content/settings/drinks_menu_helper.json"
+        fields:
+          - label: "Beer Description"
+            name: "beer_description"
+            widget: "string"
+
+          - label: "Beverages Description"
+            name: "beverages_description"
+            widget: "string"
+
+          - label: "Red Wine Description"
+            name: "red_wine_description"
+            widget: "string"
+
+          - label: "Sparkling Wine Description"
+            name: "sparkling_wine_description"
+            widget: "string"
+
+          - label: "White Wine Description"
+            name: "white_wine_description"
+            widget: "text"
+
+      - label: "Menu List Helper"
+        name: "menu_list_helper"
+        file: "content/settings/menu_list_helper.json"
+        fields:
+          - label: "Menu Footer Description"
+            name: "menu_footer_description"
+            widget: "string"
+
+          - label: "Menu Footer Address"
+            name: "menu_footer_address"
             widget: "markdown"
+
+          - label: "Menu Service Charge Description"
+            name: "menu_service_charge_description"
+            widget: "string"
 
   #######################
   # Blog Details
@@ -204,3 +276,11 @@ collections:
         fields:
           - { label: "Image", name: "image", widget: "image" }
           - { label: "Description", name: "description", widget: "markdown" }
+
+  # #######################
+  # # Kitchen menu helper text
+  # #######################
+
+  # - name: "menu_description_list"
+  #   label: "Menu Description List"
+  #   files:
