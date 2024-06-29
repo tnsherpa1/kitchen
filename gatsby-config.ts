@@ -1,5 +1,7 @@
+// import settings from "content/settings/settings.json";
 import type { GatsbyConfig } from "gatsby";
 const path = require("path");
+const { title_logo = "" } = require("./content/settings/settings.json");
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -67,24 +69,10 @@ const config: GatsbyConfig = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     start_url: `/`,
-    //     icon: `${__dirname}/uploads/logo.svg`,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Your Site Name`,
-        short_name: `Short Name`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `standalone`,
-        icon: `public/uploads/logo.svg`,
-        // icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `${title_logo || "./src/assets/images/namaste.svg"}`,
       },
     },
   ],

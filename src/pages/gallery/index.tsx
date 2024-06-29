@@ -1,17 +1,15 @@
+import Seo from "@/components/Seo";
 import BaseLayout from "@/layouts/BaseLayout";
 import Gallery from "@/modules/Gallery";
 import { sanitizeGalleryImage } from "@/modules/Gallery/utils/sanitize-gallery-image";
 import { graphql } from "gatsby";
 import React from "react";
-import { Helmet } from "react-helmet";
+import seo from "content/seo/gallery-page-seo.json";
 
 const GalleryPage = ({ data }: GraphQlMarkDownPageType) => {
   return (
     <BaseLayout>
-      <Helmet>
-        <title>Sherpa Kitchen Gallery</title>
-        <meta name="description" content="Photo Page" />
-      </Helmet>
+      <Seo {...seo} />
       <Gallery data={sanitizeGalleryImage({ data })} />
     </BaseLayout>
   );

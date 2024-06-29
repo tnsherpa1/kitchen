@@ -4,9 +4,10 @@ import { Container } from "../Container";
 import { Row } from "../Row";
 import { Col } from "../Col";
 import Button from "../Button";
-import { story_content } from "#/content/settings/settings.json";
+import settings from "content/settings/settings.json";
 
 const OurStory = () => {
+  const { story_content = "" } = settings || {};
   return (
     <StyledSection>
       <Container>
@@ -16,10 +17,9 @@ const OurStory = () => {
               <header className="our-story-title">
                 <h2>The Story</h2>
               </header>
-              <p className="our-story-description">
-                In the late nineties, owners Kam Chhiring moved to California
-                {story_content}
-              </p>
+              {story_content && (
+                <p className="our-story-description">{story_content}</p>
+              )}
               <div className="link-wrapper">
                 <Button href="/about" skin="outline" size="md">
                   Learn more

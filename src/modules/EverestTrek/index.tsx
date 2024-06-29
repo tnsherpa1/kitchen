@@ -4,12 +4,10 @@ import { Container } from "@/components/Container";
 import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
 import ImageWithFallBack from "@/components/ImageWithFallBack";
-import {
-  description,
-  image,
-} from "#/content/everest_base_camp_trek/base_camp.json";
+import settings from "content/everest_base_camp_trek/base_camp.json";
 
 const EverestTrek = () => {
+  const { description = "", image = "" } = settings || {};
   return (
     <StyledSection>
       <Container>
@@ -24,9 +22,11 @@ const EverestTrek = () => {
                 <ImageWithFallBack src={image} alt="Everest Trek Info" />
               </div>
 
-              <div className="achievement-trek-content">
-                <i>{description}</i>
-              </div>
+              {description && (
+                <div className="achievement-trek-content">
+                  <i>{description}</i>
+                </div>
+              )}
             </div>
           </Col>
         </Row>

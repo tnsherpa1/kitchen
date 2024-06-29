@@ -13,7 +13,7 @@ import { contactSchema } from "./contact.schema";
 import emailIcon from "@/assets/images/icons/email.png";
 import phoneIcon from "@/assets/images/icons/phone-call.png";
 import homeIcon from "@/assets/images/icons/home.png";
-import settings from "#/content/settings/settings.json";
+import settings from "content/settings/settings.json";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = React.useState(false);

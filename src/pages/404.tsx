@@ -1,13 +1,19 @@
 import * as React from "react";
 import { HeadFC, PageProps } from "gatsby";
 import BaseLayout from "@/layouts/BaseLayout";
-import { Container } from "@/components/Container";
 
 import Button from "@/components/Button";
+import Seo from "@/components/Seo";
 
 const NotFoundPage: React.FC<PageProps> = () => {
+  const seo = {
+    seo_title: "404 Page Not Found",
+    meta_description: "Sherpa Kitchen Page Not found",
+    meta_keywords: "Page Not Found",
+  };
   return (
     <BaseLayout>
+      <Seo {...seo} />
       <main className="page-not-found-wrapper">
         <h1 className="not-found-title">
           <strong className="not-found-status-code">404</strong>

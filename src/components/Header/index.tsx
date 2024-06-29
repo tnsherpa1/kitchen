@@ -11,7 +11,7 @@ import Drawer from "../Drawer";
 import clsx from "clsx";
 import logo from "@/assets/images/logo.svg";
 import Menu from "../MenuList";
-import settings from "#/content/settings/settings.json";
+import settings from "content/settings/settings.json";
 
 type Props = {
   onToggleMenu: () => void;

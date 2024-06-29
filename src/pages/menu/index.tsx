@@ -1,15 +1,13 @@
+import Seo from "@/components/Seo";
 import BaseLayout from "@/layouts/BaseLayout";
 import KitchenMenu from "@/modules/KitchenMenu";
 import React from "react";
-import { Helmet } from "react-helmet";
+import seo from "content/seo/menu-page-seo.json";
 
 const MenuPage = () => {
   return (
     <BaseLayout>
-      <Helmet>
-        <title>Menu - Himalayan Sherpa Kitchen St. Helena, CA</title>
-        <meta name="description" content="Himalayan Sherpa Kitchen - Menu" />
-      </Helmet>
+      <Seo {...seo} />
 
       <KitchenMenu />
     </BaseLayout>

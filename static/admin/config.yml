@@ -286,9 +286,127 @@ collections:
           - { label: "Description", name: "description", widget: "markdown" }
 
   # #######################
-  # # Kitchen menu helper text
+  # Page SEO
   # #######################
 
-  # - name: "menu_description_list"
-  #   label: "Menu Description List"
-  #   files:
+  - name: "search-engine-optimization"
+    label: "Search Engine Optimization(SEO)"
+    files:
+      # Home Page SEO
+      - label: Home Page SEO
+        name: home-page-seo
+        file: "content/seo/home-page.json"
+        fields:
+          - label: "Seo Title"
+            name: "seo_title"
+            widget: "string"
+
+          - label: "Meta Description"
+            name: "meta_description"
+            widget: "string"
+
+          - label: "Meta Keywords"
+            name: "meta_keywords"
+            widget: "string"
+
+      # About Us SEO
+      - label: About US SEO
+        name: about-us-seo
+        file: "content/seo/about-us-seo.json"
+        fields:
+          - label: "Seo Title"
+            name: "seo_title"
+            widget: "string"
+
+          - label: "Meta Description"
+            name: "meta_description"
+            widget: "string"
+
+          - label: "Meta Keywords"
+            name: "meta_keywords"
+            widget: "string"
+
+      # Contact us SEO
+      - label: Contact US SEO
+        name: contact-us-seo
+        file: "content/seo/contact-us-seo.json"
+        fields:
+          - label: "Seo Title"
+            name: "seo_title"
+            widget: "string"
+
+          - label: "Meta Description"
+            name: "meta_description"
+            widget: "string"
+
+          - label: "Meta Keywords"
+            name: "meta_keywords"
+            widget: "string"
+
+      # Everest Trek SEO
+      - label: Everest Trek SEO
+        name: everest-trek-seo
+        file: "content/seo/everest-trek-seo.json"
+        fields:
+          - label: "Seo Title"
+            name: "seo_title"
+            widget: "string"
+
+          - label: "Meta Description"
+            name: "meta_description"
+            widget: "string"
+
+          - label: "Meta Keywords"
+            name: "meta_keywords"
+            widget: "string"
+
+      # Experience SEO
+      - label: Experience Page SEO
+        name: experience-page-seo
+        file: "content/seo/experience-page-seo.json"
+        fields:
+          - label: "Seo Title"
+            name: "seo_title"
+            widget: "string"
+
+          - label: "Meta Description"
+            name: "meta_description"
+            widget: "string"
+
+          - label: "Meta Keywords"
+            name: "meta_keywords"
+            widget: "string"
+
+      # Gallery Page SEO
+      - label: Gallery Page SEO
+        name: gallery-page-seo
+        file: "content/seo/gallery-page-seo.json"
+        fields:
+          - label: "Seo Title"
+            name: "seo_title"
+            widget: "string"
+
+          - label: "Meta Description"
+            name: "meta_description"
+            widget: "string"
+
+          - label: "Meta Keywords"
+            name: "meta_keywords"
+            widget: "string"
+
+      # Menu Page SEO
+      - label: Menu Page SEO
+        name: menu-page-seo
+        file: "content/seo/menu-page-seo.json"
+        fields:
+          - label: "Seo Title"
+            name: "seo_title"
+            widget: "string"
+
+          - label: "Meta Description"
+            name: "meta_description"
+            widget: "string"
+
+          - label: "Meta Keywords"
+            name: "meta_keywords"
+            widget: "string"

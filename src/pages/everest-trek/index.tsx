@@ -1,15 +1,13 @@
+import Seo from "@/components/Seo";
 import BaseLayout from "@/layouts/BaseLayout";
 import EverestTrek from "@/modules/EverestTrek";
 import React from "react";
-import { Helmet } from "react-helmet";
+import seo from "content/seo/everest-trek-seo.json";
 
 const EverestTrekPage = () => {
   return (
     <BaseLayout>
-      <Helmet>
-        <title>Everest Base Camp Trek</title>
-        <meta name="description" content="Everest Trek" />
-      </Helmet>
+      <Seo {...seo} />
 
       <EverestTrek />
     </BaseLayout>

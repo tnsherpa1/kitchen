@@ -1,14 +1,12 @@
+import Seo from "@/components/Seo";
 import BaseLayout from "@/layouts/BaseLayout";
 import React from "react";
-import { Helmet } from "react-helmet";
+import seo from "content/seo/contact-us-seo.json";
 
 const ContactUsPage = () => {
   return (
     <BaseLayout>
-      <Helmet>
-        <title>Contact Us</title>
-        <meta name="description" content="Contact us" />
-      </Helmet>
+      <Seo {...seo} />
     </BaseLayout>
   );
 };
