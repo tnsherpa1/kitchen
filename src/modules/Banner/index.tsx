@@ -1,5 +1,4 @@
 import React from "react";
-import { StyledDiv } from "./style";
 import ImageWithFallBack from "@/components/ImageWithFallBack";
 import { Container } from "@/components/Container";
 import { Row } from "@/components/Row";
@@ -9,6 +8,8 @@ import namaste from "@/assets/images/namaste.svg";
 import star from "@/assets/images/4star.png";
 import settings from "content/settings/settings.json";
 import Typography from "@/components/Typography";
+import yelp from "@/assets/images/yelp-brands-solid.svg";
+import { StyledDiv } from "./style";
 
 const Banner = () => {
   const {
@@ -76,6 +77,16 @@ const Banner = () => {
                   </li>
                 </ul>
                 <ul className="icons">
+                  <li>
+                    <a
+                      href="https://www.yelp.com/biz/st-helena-sherpa-kitchen-st-helena"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="yelp-wrapper"
+                    >
+                      <ImageWithFallBack src={yelp} alt="yelp" />
+                    </a>
+                  </li>
                   <li>
                     <a
                       href="https://www.yelp.com/biz/st-helena-sherpa-kitchen-st-helena"

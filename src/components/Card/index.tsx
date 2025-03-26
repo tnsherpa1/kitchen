@@ -28,7 +28,7 @@ const Card = ({
 
       <div className="card-content-wrapper">
         <Typography as="p" title={content} className="content-text">
-          {truncateString(content)}
+          {truncateString(content, 10000)}
         </Typography>
 
         <Link to={href}>{linkLabel}</Link>

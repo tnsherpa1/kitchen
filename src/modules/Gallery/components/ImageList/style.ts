@@ -59,8 +59,8 @@ export const StyledDiv = styled.div`
       height: 100%;
       object-fit: cover;
       cursor: pointer;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
+      /* -webkit-filter: grayscale(100%); */
+      /* filter: grayscale(100%); */
 
       @media (max-width: ${theme.breakPoints.md}) {
         -webkit-filter: grayscale(0);

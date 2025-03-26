@@ -16,6 +16,7 @@ interface ITypography {
   children?: React.ReactNode;
   onClick?: () => void;
   style?: CSSProperties;
+  dangerouslySetInnerHTML?: any;
 }
 
 const Typography = ({
@@ -25,6 +26,7 @@ const Typography = ({
   onClick,
   style,
   title,
+  dangerouslySetInnerHTML,
 }: ITypography) => {
   let Element;
   if (as === "h1") Element = H1;
@@ -49,6 +51,7 @@ const Typography = ({
       onClick={onClick}
       style={style}
       title={title || defaultContent}
+      dangerouslySetInnerHTML={dangerouslySetInnerHTML}
     >
       {children}
     </Element>

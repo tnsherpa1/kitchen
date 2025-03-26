@@ -89,6 +89,30 @@ export const StyledDiv = styled.div`
         .button-group {
           margin-top: 40px;
         }
+
+        .icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          li {
+            .yelp-wrapper {
+              img {
+                width: 51px;
+                height: 50px;
+                border-radius: 50%;
+                padding: 10px;
+                background-color: #fff;
+                cursor: pointer;
+                transition: 0.2s all ease-in-out;
+                &:hover {
+                  background-color: #6fc3df;
+                }
+              }
+            }
+          }
+        }
       }
     }
   `}

@@ -7,6 +7,7 @@ import { Row } from "@/components/Row";
 import { Col } from "@/components/Col";
 import namaste from "@/assets/images/namaste.svg";
 import menuHelper from "content/settings/menu_list_helper.json";
+import ReactHtmlParser from "react-html-parser";
 
 import ImageWithFallBack from "@/components/ImageWithFallBack";
 import Typography from "@/components/Typography";
@@ -17,6 +18,7 @@ const KitchenMenu = () => {
     menu_footer_description = "",
     menu_service_charge_description = "",
   } = menuHelper || {};
+
   return (
     <StyledDiv>
       <Container>
@@ -46,7 +48,7 @@ const KitchenMenu = () => {
 
               {menu_footer_address && (
                 <Typography as="p" className="kitchen-location">
-                  {menu_footer_address}
+                  {ReactHtmlParser(menu_footer_address)}
                 </Typography>
               )}
 

@@ -3,6 +3,8 @@ import { StyledFooter } from "./style";
 import Icons from "../Icons";
 import facebookIcon from "@/assets/images/icons/facebook.png";
 import instagramIcon from "@/assets/images/icons/instagram.png";
+import yelp from "@/assets/images/yelp-brands-solid.svg";
+
 import settings from "content/settings/settings.json";
 import Typography from "../Typography";
 const Footer = () => {
@@ -37,7 +39,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="icon alt fa-yelp"
           >
-            <Icons icon={facebookIcon} />
+            <Icons icon={yelp} />
           </a>
         </li>
       </ul>
