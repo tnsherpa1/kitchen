@@ -6,9 +6,16 @@ import { Col } from "@/components/Col";
 import ImageWithFallBack from "@/components/ImageWithFallBack";
 import settings from "content/everest_base_camp_trek/base_camp.json";
 import Typography from "@/components/Typography";
+import ReactHtmlParser from "react-html-parser";
 
 const EverestTrek = () => {
   const { description = "", image = "" } = settings || {};
+
+  const formattedDescription = React.useMemo(() => {
+    if (!description) return "";
+
+    return description.replace(/\n+/g, "<br>");
+  }, [description]);
   return (
     <StyledSection>
       <Container>
@@ -25,10 +32,10 @@ const EverestTrek = () => {
                 <ImageWithFallBack src={image} alt="Everest Trek Info" />
               </div>
 
-              {description && (
+              {formattedDescription && (
                 <div className="achievement-trek-content">
                   <Typography as="p">
-                    <i>{description}</i>
+                    <i>{ReactHtmlParser(formattedDescription)}</i>
                   </Typography>
                 </div>
               )}

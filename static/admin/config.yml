@@ -186,6 +186,22 @@ collections:
             name: "story_content"
             widget: "markdown"
 
+          - label: "Reservation Link"
+            name: "reservation_link"
+            widget: "string"
+
+          - label: "Yelp Link"
+            name: "yelp_link"
+            widget: "string"
+
+          - label: "Facebook Link"
+            name: "facebook_link"
+            widget: "string"
+
+          - label: "Instagram Link"
+            name: "instagram_link"
+            widget: "string"
+
       # Kitchen Menu Settings
       - label: "Kitchen Menu Helper"
         name: "kitchen_menu_helper"

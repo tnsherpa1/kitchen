@@ -19,6 +19,12 @@ const KitchenMenu = () => {
     menu_service_charge_description = "",
   } = menuHelper || {};
 
+  const formattedAddress = React.useMemo(() => {
+    if (!menu_footer_address) return "";
+
+    return menu_footer_address.replace(/\n+/g, "<br>");
+  }, [menu_footer_address]);
+
   return (
     <StyledDiv>
       <Container>
@@ -46,9 +52,9 @@ const KitchenMenu = () => {
                 </Typography>
               )}
 
-              {menu_footer_address && (
+              {formattedAddress && (
                 <Typography as="p" className="kitchen-location">
-                  {ReactHtmlParser(menu_footer_address)}
+                  {ReactHtmlParser(formattedAddress)}
                 </Typography>
               )}
 

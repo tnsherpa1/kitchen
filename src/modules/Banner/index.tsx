@@ -19,6 +19,7 @@ const Banner = () => {
     dinner_time = "",
     dinner_last_seated_time = "",
     phone_number = "",
+    yelp_link = "",
   } = settings || {};
   return (
     <StyledDiv>
@@ -56,15 +57,17 @@ const Banner = () => {
                   </li>
                 </ul>
                 <ul className="button-group">
-                  <li>
-                    <Button
-                      href={`tel:${phone_number}`}
-                      skin="contained"
-                      size="md"
-                    >
-                      {phone_number}
-                    </Button>
-                  </li>
+                  {phone_number && (
+                    <li>
+                      <Button
+                        href={`tel:${phone_number}`}
+                        skin="contained"
+                        size="md"
+                      >
+                        {phone_number}
+                      </Button>
+                    </li>
+                  )}
                   <li>
                     <Button
                       href="/menu"
@@ -76,27 +79,29 @@ const Banner = () => {
                     </Button>
                   </li>
                 </ul>
-                <ul className="icons">
-                  <li>
-                    <a
-                      href="https://www.yelp.com/biz/st-helena-sherpa-kitchen-st-helena"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="yelp-wrapper"
-                    >
-                      <ImageWithFallBack src={yelp} alt="yelp" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.yelp.com/biz/st-helena-sherpa-kitchen-st-helena"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ImageWithFallBack src={star} alt="yelp" />
-                    </a>
-                  </li>
-                </ul>
+                {yelp_link && (
+                  <ul className="icons">
+                    <li>
+                      <a
+                        href={yelp_link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="yelp-wrapper"
+                      >
+                        <ImageWithFallBack src={yelp} alt="yelp" />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href={yelp_link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ImageWithFallBack src={star} alt="yelp" />
+                      </a>
+                    </li>
+                  </ul>
+                )}
               </div>
             </div>
           </Col>

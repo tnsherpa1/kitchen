@@ -118,25 +118,29 @@ const Contact = () => {
               </div>
 
               <div className="contact-info-warpper">
-                <div className="contact-method">
-                  <Icons icon={emailIcon} />
-                  <div className="content-info">
-                    <Typography as="h5">Email</Typography>
-                    <Typography as="subtitle2">
-                      <a href={`mail:${email}`}>{email}</a>
-                    </Typography>
+                {email && (
+                  <div className="contact-method">
+                    <Icons icon={emailIcon} />
+                    <div className="content-info">
+                      <Typography as="h5">Email</Typography>
+                      <Typography as="subtitle2">
+                        <a href={`mail:${email}`}>{email}</a>
+                      </Typography>
+                    </div>
                   </div>
-                </div>
-                <div className="contact-method">
-                  <Icons icon={phoneIcon} />
-                  <div className="content-info">
-                    <Typography as="h5">Phone</Typography>
-                    <Typography as="subtitle2">
-                      {" "}
-                      <a href={`tel:${phone_number}`}>{phone_number}</a>
-                    </Typography>
+                )}
+                {phoneIcon && (
+                  <div className="contact-method">
+                    <Icons icon={phoneIcon} />
+                    <div className="content-info">
+                      <Typography as="h5">Phone</Typography>
+                      <Typography as="subtitle2">
+                        {" "}
+                        <a href={`tel:${phone_number}`}>{phone_number}</a>
+                      </Typography>
+                    </div>
                   </div>
-                </div>
+                )}
                 <div className="contact-method">
                   <Icons icon={homeIcon} />
                   <div className="content-info">
