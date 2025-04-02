@@ -75,7 +75,7 @@ const config: GatsbyConfig = {
         name: `sthelenasherpakitchen`,
         short_name: `Sherpa Kitchen`,
         start_url: `/`,
-        icon: `${title_logo ? `./public${title_logo}` : "./src/assets/images/namaste.svg"}`,
+        icon: `${title_logo ? `./static${title_logo}` : "./src/assets/images/namaste.svg"}`,
       },
     },
   ],
