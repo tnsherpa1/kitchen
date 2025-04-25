@@ -10,13 +10,19 @@ export const StyledSection = styled.section`
     }
 
     .our-story-wrapper {
-      color: ${theme.coreColor.textColor};
       display: flex;
       flex-direction: column;
-      gap: 60px;
-
+      gap: 40px;
       @media (max-width: ${theme.breakPoints.md}) {
         gap: 30px;
+      }
+      .our-story-title {
+        color: ${theme.color.white};
+        width: fit-content;
+      }
+
+      .p {
+        color: ${theme.color.white};
       }
     }
   `}

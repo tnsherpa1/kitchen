@@ -36,7 +36,7 @@ ${({ theme }) => css`
   }
 
   body {
-    background-color: #5e4933;
+    background-color: #5e4933 !important;
     overflow-x: hidden;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     width: 100%;
@@ -56,31 +56,23 @@ ${({ theme }) => css`
     text-decoration: none;
   }
 
-  .page-not-found-wrapper {
-    padding: 15rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    .not-found-title {
-      font-size: 67px;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-      .not-found-status-code {
-        font-size: 100px;
+  .text-underline {
+    position: relative;
+    display: inline-block;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 3px;
+      width: 100%;
+      background-color: ${theme.coreColor.textColor};
+      left: 0;
+      bottom: -12px;
+
+      @media (max-width: ${theme.breakPoints.md}) {
+        height: 2px;
+        bottom: -4px;
       }
     }
-
-    .not-found-helper-text {
-      font-size: 24px;
-      margin: 30px 0;
-      color: #fff;
-    }
-    border-top: 1px solid rgba(212, 212, 255, 0.1);
   }
 `}
 

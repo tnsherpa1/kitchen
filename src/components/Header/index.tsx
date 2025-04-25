@@ -2,10 +2,13 @@ import React from "react";
 import { Link } from "gatsby";
 
 import { StyledDiv } from "./style";
-import ImageWithFallBack from "../ImageWithFallBack";
-import { Container } from "../Container";
-import { Row } from "../Row";
-import { Col } from "../Col";
+import {
+  ImageWithFallBack,
+  Container,
+  Row,
+  Col,
+} from "restaurant-ui/components";
+
 import HamburgerMenuIcon from "../HamburgerIcon";
 import Drawer from "../Drawer";
 import clsx from "clsx";
@@ -13,11 +16,7 @@ import logo from "@/assets/images/logo.svg";
 import Menu from "../MenuList";
 import settings from "content/settings/settings.json";
 
-type Props = {
-  onToggleMenu: () => void;
-};
-
-const Header = ({ onToggleMenu }: Props) => {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isHeaderSticky, setIsHeaderSticky] = React.useState(false);
 
@@ -56,9 +55,7 @@ const Header = ({ onToggleMenu }: Props) => {
                   className="menu-wrapper"
                   onClick={() => setIsMenuOpen((prev) => !prev)}
                 >
-                  <div className="menu-link" onClick={onToggleMenu}>
-                    Menu
-                  </div>
+                  <div className="menu-link">Menu</div>
                   <HamburgerMenuIcon isMenuOpen={isMenuOpen} />
                 </nav>
               </div>

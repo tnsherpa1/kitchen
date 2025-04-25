@@ -1,12 +1,9 @@
 import React from "react";
-import heroBanner from "@/assets/images/hero-banner-image.jpeg";
 import Card from "@/components/Card";
 import { StyledDiv } from "./style";
-import { Container } from "@/components/Container";
-import { Row } from "@/components/Row";
-import { Col } from "@/components/Col";
+import { Container, Row, Col } from "restaurant-ui/components";
 import { AboutUsBlogType } from "../../types/about-us-type";
-import Typography from "@/components/Typography";
+import { Typography } from "restaurant-ui/components";
 
 type Props = {
   data: Array<AboutUsBlogType>;
@@ -17,7 +14,10 @@ const ShowCaseList = ({ data }: Props) => {
       <Container>
         <Row>
           <Col>
-            <Typography as="h2" className="section-title show-case-title">
+            <Typography
+              as="h2"
+              className="section-title show-case-title text-underline"
+            >
               Everest Base Camp Trek
             </Typography>
             <div className="show-case-card-container">

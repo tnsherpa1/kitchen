@@ -54,7 +54,7 @@ export const StyledDiv = styled.div`
         .logo-title {
           display: flex;
           align-self: center;
-          color: ${theme.color.white["100"]};
+          color: ${theme.color.white};
           text-transform: uppercase;
           letter-spacing: 0.25em;
           font-size: 22px;
@@ -67,7 +67,7 @@ export const StyledDiv = styled.div`
             height: 2px;
             width: 100%;
             visibility: hidden;
-            background-color: ${theme.color.white["100"]};
+            background-color: ${theme.color.white};
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
             -webkit-transition: all 0.3s ease-in-out 0s;
@@ -100,7 +100,7 @@ export const StyledDiv = styled.div`
           font-size: 24px;
           line-height: 24px;
           letter-spacing: 0.25em;
-          color: ${theme.color.white["100"]};
+          color: ${theme.color.white};
           text-transform: uppercase;
           position: relative;
           cursor: pointer;

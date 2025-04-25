@@ -1,11 +1,9 @@
 import React from "react";
 import { StyledSection } from "./style";
-import { Container } from "@/components/Container";
-import { Row } from "@/components/Row";
-import { Col } from "@/components/Col";
+import { Container, Col, Row } from "restaurant-ui/components";
 import ShowCaseList from "./components/ShowCaseList";
 import { AboutUsBlogType } from "./types/about-us-type";
-import Typography from "@/components/Typography";
+import { Typography } from "restaurant-ui/components";
 
 type Props = {
   data: Array<AboutUsBlogType>;
@@ -17,7 +15,10 @@ const AboutUs = ({ data }: Props) => {
         <Container>
           <Row>
             <Col>
-              <Typography as="h1" className="section-title about-us-title">
+              <Typography
+                as="h1"
+                className="section-title about-us-title text-underline"
+              >
                 Our Story
               </Typography>
 

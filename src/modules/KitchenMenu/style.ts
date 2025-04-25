@@ -5,6 +5,10 @@ export const StyledDiv = styled.div`
     padding-bottom: 100px;
     border-top: 1px solid rgba(212, 212, 255, 0.1);
 
+    .menu-title {
+      color: ${theme.color.white} !important;
+    }
+
     .kitchen-menu-wrapper {
       margin-top: 30px;
       display: flex;
@@ -47,10 +51,14 @@ export const StyledDiv = styled.div`
       p {
         font-weight: 100;
         letter-spacing: 1px;
+        &.kitchen-content {
+          color: ${theme.color.white};
+        }
         &.kitchen-location {
           display: flex;
           flex-direction: column;
           gap: 10px;
+          color: ${theme.color.white};
 
           @media (max-width: ${theme.breakPoints.md}) {
             gap: 5px;
@@ -60,6 +68,7 @@ export const StyledDiv = styled.div`
         &.kitchen-service-charge {
           border-top: 1px solid rgba(212, 212, 255, 0.1);
           padding-top: 40px;
+          color: ${theme.color.white};
         }
       }
 

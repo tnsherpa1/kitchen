@@ -9,7 +9,7 @@ interface Props {
 
 export const StyledDiv = styled.div<Props>`
   ${({ theme, width, size }) => css`
-    background-color: ${theme.color.white["100"]};
+    background-color: ${theme.color.white};
     position: fixed;
     height: 100%;
     bottom: 0;

@@ -6,6 +6,10 @@ export const StyledDiv = styled.div`
     padding-top: 60;
     padding-bottom: 100px;
 
+    .show-case-title {
+      color: ${theme.color.white} !important;
+    }
+
     .show-case-card-container {
       margin-top: 60px;
       display: grid;

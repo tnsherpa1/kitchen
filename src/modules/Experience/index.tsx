@@ -1,11 +1,8 @@
 import React from "react";
 import { StyledSection } from "./style";
-import { Container } from "@/components/Container";
-import { Row } from "@/components/Row";
-import { Col } from "@/components/Col";
+import { Container, Row, Col, Typography } from "restaurant-ui/components";
 import ExperienceContentBox from "./components/ExprienceContentBox";
 import { title } from "process";
-import Typography from "@/components/Typography";
 
 const data = [
   {

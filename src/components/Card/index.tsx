@@ -1,9 +1,9 @@
 import React from "react";
 import { StyledDiv } from "./style";
-import ImageWithFallBack from "../ImageWithFallBack";
+import { ImageWithFallBack } from "restaurant-ui/components";
 import { Link } from "gatsby";
 import { truncateString } from "@/utils/turncate-string";
-import Typography from "../Typography";
+import { Typography } from "restaurant-ui/components";
 
 type Props = {
   imgURL: string;

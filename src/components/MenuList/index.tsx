@@ -5,7 +5,7 @@ import Button from "../Button";
 import { StyledUl } from "./style";
 import clsx from "clsx";
 import settings from "content/settings/settings.json";
-import ImageWithFallBack from "../ImageWithFallBack";
+import { ImageWithFallBack } from "restaurant-ui/components";
 import yelp from "@/assets/images/yelp-brands-solid.svg";
 
 const linkItem = [

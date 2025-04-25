@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledDiv } from "./style";
-import Typography from "@/components/Typography";
+import { Typography } from "restaurant-ui/components";
 
 type Props = {
   title: string;

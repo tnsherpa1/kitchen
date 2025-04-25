@@ -1,7 +1,5 @@
-import { Col } from "@/components/Col";
-import { Container } from "@/components/Container";
+import { Col, Container, Row, Typography } from "restaurant-ui/components";
 import InputField from "@/components/InputField";
-import { Row } from "@/components/Row";
 import React from "react";
 import { StyledSection } from "./style";
 import InputTextArea from "@/components/InputTextArea";
@@ -14,7 +12,7 @@ import emailIcon from "@/assets/images/icons/email.png";
 import phoneIcon from "@/assets/images/icons/phone-call.png";
 import homeIcon from "@/assets/images/icons/home.png";
 import settings from "content/settings/settings.json";
-import Typography from "@/components/Typography";
+import { theme } from "@/theme/theme";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = React.useState(false);
@@ -49,7 +47,11 @@ const Contact = () => {
           <Col>
             <div className="contact-wrapper">
               <div className="form-wrapper">
-                <Typography as="h2" className="section-title contact-title">
+                <Typography
+                  as="h2"
+                  className="section-title contact-title"
+                  color={theme.color.white}
+                >
                   Contact Us
                 </Typography>
                 <form

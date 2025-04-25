@@ -8,6 +8,10 @@ export const StyledSection = styled.section`
       padding-bottom: 50px;
     }
 
+    .everest-trek-title {
+      color: ${theme.color.white} !important;
+    }
+
     .everest-trek-achievement-wrapper {
       margin-top: 60px;
       display: flex;
@@ -36,6 +40,10 @@ export const StyledSection = styled.section`
         @media (max-width: ${theme.breakPoints.md}) {
           font-size: 14px;
           line-height: 27px;
+        }
+
+        .trek-content {
+          color: ${theme.color.white};
         }
       }
     }

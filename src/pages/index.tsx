@@ -1,8 +1,6 @@
-// import BaseLayout from "@/layouts/BaseLayout";
 import Banner from "@/modules/Banner";
 import BaseLayout from "../layouts/BaseLayout";
 import React from "react";
-import Helmet from "react-helmet";
 
 import FeatureImageList from "@/components/FeatureImageList";
 import OurStory from "@/components/OurStory";
@@ -12,7 +10,8 @@ import featureImage2 from "@/assets/images/feature-image-2.jpg";
 import featureImage3 from "@/assets/images/feature-image-3.jpg";
 import featureImage4 from "@/assets/images/feature-image-4.jpg";
 import seo from "content/seo/home-page-seo.json";
-import Seo from "@/components/Seo";
+import { Seo } from "restaurant-ui/components";
+import settings from "content/settings/settings.json";
 
 const feaatureImageListData = [
   {
