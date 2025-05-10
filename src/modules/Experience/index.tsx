@@ -2,7 +2,6 @@ import React from "react";
 import { StyledSection } from "./style";
 import { Container, Row, Col, Typography } from "restaurant-ui/components";
 import ExperienceContentBox from "./components/ExprienceContentBox";
-import { title } from "process";
 
 const data = [
   {
@@ -35,7 +34,11 @@ const Experience = () => {
         <Row>
           <Col>
             <div className="exprience-wrapper">
-              <Typography as="h1" className="experience-title section-title">
+              <Typography
+                as="h1"
+                className="experience-title section-title"
+                color="#fff"
+              >
                 Kitchen + Experience
               </Typography>
 

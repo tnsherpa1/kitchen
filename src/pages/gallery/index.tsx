@@ -11,14 +11,13 @@ import { graphql } from "gatsby";
 import React from "react";
 import "react-image-lightbox/style.css";
 import seo from "content/seo/gallery-page-seo.json";
-import StyledSection from "./style";
 import { sanitizeGalleryImage } from "@/utils/sanitize-gallery-image";
 
 const GalleryPage = ({ data }: GraphQlMarkDownPageType) => {
   return (
     <BaseLayout>
       <Seo {...seo} />
-      <StyledSection>
+      <div className="gallery-page-wrapper">
         <Container>
           <Row>
             <Col>
@@ -29,7 +28,7 @@ const GalleryPage = ({ data }: GraphQlMarkDownPageType) => {
           </Row>
         </Container>
         <ImageGallery imageData={sanitizeGalleryImage({ data })} />
-      </StyledSection>
+      </div>
     </BaseLayout>
   );
 };

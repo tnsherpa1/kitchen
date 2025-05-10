@@ -20,25 +20,23 @@ const BaseLayout = ({ children }: Props) => {
     instagram_link = "",
   } = settings || {};
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        <div className="body">
-          <Header />
-          {children}
-          <Contact />
-          <Footer
-            footerText={footer_text}
-            yelpLink={yelp_link}
-            facebookLink={facebook_link}
-            instagramLink={instagram_link}
-            bgColor={theme.color.bgColor}
-            textColor={theme.color.white}
-            iconRadius
-          />
-        </div>
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <div className="body">
+        <Header />
+        {children}
+        <Contact />
+        <Footer
+          footerText={footer_text}
+          yelpLink={yelp_link}
+          facebookLink={facebook_link}
+          instagramLink={instagram_link}
+          bgColor={theme.color.bgColor}
+          textColor={theme.color.white}
+          iconRadius
+        />
+      </div>
+    </ThemeProvider>
   );
 };
 

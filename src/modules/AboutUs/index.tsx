@@ -1,9 +1,8 @@
 import React from "react";
 import { StyledSection } from "./style";
-import { Container, Col, Row } from "restaurant-ui/components";
+import { Container, Col, Row, Typography } from "restaurant-ui/components";
 import ShowCaseList from "./components/ShowCaseList";
 import { AboutUsBlogType } from "./types/about-us-type";
-import { Typography } from "restaurant-ui/components";
 
 type Props = {
   data: Array<AboutUsBlogType>;
