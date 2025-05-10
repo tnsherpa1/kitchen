@@ -29,6 +29,10 @@ export const StyledDiv = styled.div`
       gap: 15px;
       color: ${theme.coreColor.textColor};
 
+      .content-text {
+        color: ${theme.color.white};
+      }
+
       a {
         color: ${theme.coreColor.textColor};
         font-size: 18px;

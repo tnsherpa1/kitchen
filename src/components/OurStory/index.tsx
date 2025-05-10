@@ -1,11 +1,9 @@
 import React from "react";
 import { StyledSection } from "./style";
-import { Container } from "../Container";
-import { Row } from "../Row";
-import { Col } from "../Col";
+import { Container, Row, Col } from "restaurant-ui/components";
 import Button from "../Button";
 import settings from "content/settings/settings.json";
-import Typography from "../Typography";
+import { Typography } from "restaurant-ui/components";
 
 const OurStory = () => {
   const { story_content = "" } = settings || {};
@@ -15,11 +13,12 @@ const OurStory = () => {
         <Row>
           <Col>
             <div className="our-story-wrapper">
-              <header className="our-story-title">
-                <Typography as="h2" className="section-title">
-                  The Story
-                </Typography>
-              </header>
+              <Typography
+                as="h2"
+                className="section-title our-story-title text-underline"
+              >
+                The Story
+              </Typography>
               {story_content && <Typography as="p">{story_content}</Typography>}
               <div className="link-wrapper">
                 <Button href="/about-us" skin="outline" size="md">

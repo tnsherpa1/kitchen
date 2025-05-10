@@ -1,11 +1,13 @@
 import React from "react";
 import { StyledSection } from "./style";
-import { Container } from "@/components/Container";
-import { Row } from "@/components/Row";
-import { Col } from "@/components/Col";
-import ImageWithFallBack from "@/components/ImageWithFallBack";
+import {
+  ImageWithFallBack,
+  Container,
+  Row,
+  Col,
+  Typography,
+} from "restaurant-ui/components";
 import settings from "content/everest_base_camp_trek/base_camp.json";
-import Typography from "@/components/Typography";
 import ReactHtmlParser from "react-html-parser";
 
 const EverestTrek = () => {
@@ -21,11 +23,12 @@ const EverestTrek = () => {
       <Container>
         <Row>
           <Col>
-            <div className="everest-trek-title">
-              <Typography as="h1" className="section-title">
-                Everest Base Camp Trek
-              </Typography>
-            </div>
+            <Typography
+              as="h1"
+              className="section-title everest-trek-title text-underline"
+            >
+              Everest Base Camp Trek
+            </Typography>
 
             <div className="everest-trek-achievement-wrapper">
               <div className="achievement-image-wrapper">
@@ -34,7 +37,7 @@ const EverestTrek = () => {
 
               {formattedDescription && (
                 <div className="achievement-trek-content">
-                  <Typography as="p">
+                  <Typography as="p" className="trek-content">
                     <i>{ReactHtmlParser(formattedDescription)}</i>
                   </Typography>
                 </div>

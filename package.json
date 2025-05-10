@@ -39,6 +39,7 @@
     "react-image-lightbox": "^5.1.4",
     "react-portal": "^4.2.2",
     "styled-components": "^6.1.11",
+    "restaurant-ui": "^1.7.2-SSR",
     "yup": "^1.4.0"
   },
   "devDependencies": {

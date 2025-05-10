@@ -1,4 +1,4 @@
-import Seo from "@/components/Seo";
+import { Seo } from "restaurant-ui/components";
 import BaseLayout from "@/layouts/BaseLayout";
 import Experience from "@/modules/Experience";
 import React from "react";

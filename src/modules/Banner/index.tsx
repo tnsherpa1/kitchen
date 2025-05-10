@@ -1,13 +1,15 @@
 import React from "react";
-import ImageWithFallBack from "@/components/ImageWithFallBack";
-import { Container } from "@/components/Container";
-import { Row } from "@/components/Row";
-import { Col } from "@/components/Col";
+import {
+  ImageWithFallBack,
+  Container,
+  Row,
+  Col,
+  Typography,
+} from "restaurant-ui/components";
 import Button from "@/components/Button";
 import namaste from "@/assets/images/namaste.svg";
 import star from "@/assets/images/4star.png";
 import settings from "content/settings/settings.json";
-import Typography from "@/components/Typography";
 import yelp from "@/assets/images/yelp-brands-solid.svg";
 import { StyledDiv } from "./style";
 

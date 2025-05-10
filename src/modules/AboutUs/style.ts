@@ -43,6 +43,10 @@ export const StyledSection = styled.section`
           margin-top: 30px;
           padding-bottom: 50px;
         }
+        .p {
+          color: ${theme.color.white} !important;
+          font-size: 20px;
+        }
       }
     }
   `}

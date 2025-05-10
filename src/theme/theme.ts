@@ -2,7 +2,7 @@ import { breakPoints } from "./breakPoints";
 import { color, coreColor } from "./color";
 import { font } from "./font";
 
-export const getTheme = {
+export const theme = {
   breakPoints,
   color,
   font,

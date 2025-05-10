@@ -68,6 +68,7 @@ export const StyledSection = styled.section`
           padding: 60px 40px;
           position: relative;
           width: 100%;
+
           @media (max-width: ${theme.breakPoints.md}) {
             padding: 40px 0;
             overflow: hidden;
@@ -94,12 +95,24 @@ export const StyledSection = styled.section`
             display: flex;
             flex-direction: column;
             gap: 10px;
-            color: ${theme.coreColor.textColor};
             font-family: inherit;
+            .h5,
+            .subtitle2 {
+              color: ${theme.color.white} !important;
+            }
+
+            .h5 {
+              font-size: 20px;
+            }
+
+            .subtitle2 {
+              font-size: 16px;
+            }
 
             a {
               text-decoration: none;
-              color: inherit;
+              color: ${theme.color.white} !important;
+              font-size: 16px;
               &:hover {
                 text-decoration: underline;
               }

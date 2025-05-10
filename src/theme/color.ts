@@ -2,6 +2,8 @@ import { THEME_MODE } from "@/constants/theme-mode";
 import { getLocalStorageItem } from "@/utils/local-storage-helpers";
 
 export const color = {
+  bgColor: "#5E4933",
+  white: "#fff",
   yellow: {
     100: `rgb(248, 159, 0)`,
   },
@@ -13,9 +15,6 @@ export const color = {
   },
   black: {
     100: `rgb(38, 38, 38)`,
-  },
-  white: {
-    100: `rgb(255, 255, 255)`,
   },
   lightGrey: {
     100: `rgb(235, 235, 235)`,

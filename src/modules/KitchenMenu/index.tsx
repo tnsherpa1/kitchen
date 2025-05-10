@@ -2,15 +2,16 @@ import React from "react";
 import { StyledDiv } from "./style";
 import FromTheKitchen from "./components/FromTheKitchen";
 import FromTheBar from "./components/FromTheBar";
-import { Container } from "@/components/Container";
-import { Row } from "@/components/Row";
-import { Col } from "@/components/Col";
+import {
+  Container,
+  Col,
+  Row,
+  ImageWithFallBack,
+  Typography,
+} from "restaurant-ui/components";
 import namaste from "@/assets/images/namaste.svg";
 import menuHelper from "content/settings/menu_list_helper.json";
 import ReactHtmlParser from "react-html-parser";
-
-import ImageWithFallBack from "@/components/ImageWithFallBack";
-import Typography from "@/components/Typography";
 
 const KitchenMenu = () => {
   const {
@@ -31,7 +32,10 @@ const KitchenMenu = () => {
         <Row>
           <Col>
             <header className="major section-title">
-              <Typography as="h1" className="section-title">
+              <Typography
+                as="h1"
+                className="section-title text-underline menu-title"
+              >
                 Menu
               </Typography>
             </header>

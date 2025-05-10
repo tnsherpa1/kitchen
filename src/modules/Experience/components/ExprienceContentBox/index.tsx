@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledDiv } from "./style";
-import Typography from "@/components/Typography";
+import { Typography } from "restaurant-ui/components";
 
 type Props = {
   title: string;
@@ -12,11 +12,11 @@ const ExperienceContentBox = ({
 }: Props) => {
   return (
     <StyledDiv>
-      <Typography as="h5" className="experience-box-title">
+      <Typography as="h5" className="experience-box-title" color="#fff">
         {title}
       </Typography>
 
-      <Typography as="p" className="experience-box-content">
+      <Typography as="p" className="experience-box-content" color="#fff">
         {content}
       </Typography>
     </StyledDiv>

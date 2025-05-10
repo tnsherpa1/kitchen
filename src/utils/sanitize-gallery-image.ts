@@ -3,13 +3,13 @@ export const sanitizeGalleryImage = ({ data }: GraphQlMarkDownPageType) => {
 
   if (!Array.isArray(edges) || !edges.length) return [];
 
-  return edges.reduce((acc: Array<{ imageSrc: string }>, iterator) => {
+  return edges.reduce((acc: Array<{ src: string }>, iterator) => {
     const { image = "" } = iterator?.node?.frontmatter || {};
 
     if (!image) {
       return acc;
     }
 
-    return [...acc, { imageSrc: image }];
+    return [...acc, { src: image }];
   }, []);
 };

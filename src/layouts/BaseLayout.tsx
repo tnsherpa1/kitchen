@@ -1,34 +1,42 @@
 import React from "react";
 
-import Header from "@/components/Header";
 import Contact from "@/modules/Contact";
-import Footer from "@/components/Footer";
+import { Footer } from "restaurant-ui/components";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "@/theme/GlobalStyles";
-import { getTheme } from "@/theme/theme";
+import { theme } from "@/theme/theme";
+import Header from "@/components/Header";
+import settings from "content/settings/settings.json";
 
 type Props = {
   children: React.ReactNode;
 };
 
 const BaseLayout = ({ children }: Props) => {
-  //TODO: Need to fix this toogle
-  const handleToggleMenu = () => {};
-
+  const {
+    footer_text = "© Himalayan Sherpa Kitchen 2024",
+    yelp_link = "",
+    facebook_link = "",
+    instagram_link = "",
+  } = settings || {};
   return (
-    <>
-      <ThemeProvider theme={getTheme}>
-        <GlobalStyles />
-        <div className="body">
-          <div id="layout-wrapper">
-            <Header onToggleMenu={handleToggleMenu} />
-            {children}
-            <Contact />
-            <Footer />
-          </div>
-        </div>
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <div className="body">
+        <Header />
+        {children}
+        <Contact />
+        <Footer
+          footerText={footer_text}
+          yelpLink={yelp_link}
+          facebookLink={facebook_link}
+          instagramLink={instagram_link}
+          bgColor={theme.color.bgColor}
+          textColor={theme.color.white}
+          iconRadius
+        />
+      </div>
+    </ThemeProvider>
   );
 };
 

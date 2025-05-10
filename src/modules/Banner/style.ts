@@ -83,6 +83,14 @@ export const StyledDiv = styled.div`
               display: flex;
               flex-direction: column;
             }
+
+            .subtitle1 {
+              color: ${theme.color.white};
+              font-size: 18px;
+            }
+            > strong {
+              font-size: 20px;
+            }
           }
         }
 

@@ -1,4 +1,4 @@
-import Seo from "@/components/Seo";
+import { Seo } from "restaurant-ui/components";
 import BaseLayout from "@/layouts/BaseLayout";
 import AboutUs from "@/modules/AboutUs";
 import { AboutUsBlogType } from "@/modules/AboutUs/types/about-us-type";

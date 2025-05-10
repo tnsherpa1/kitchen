@@ -56,8 +56,14 @@ export const StyledArticle = styled.article<{
     }
 
     .feature-title {
-      .section-title {
+      .feature-image-title {
         padding-top: 0;
+        font-size: 36px;
+        color: ${theme.color.white};
+        text-decoration: underline;
+        opacity: 1;
+        position: relative;
+        z-index: 2;
       }
     }
   `}
