@@ -7,6 +7,7 @@ export const SIDES = "Sides";
 
 //Drinks
 export const BEER = "Beer";
+export const DRAFT_BEER = "Draft Beer";
 export const BEVERAGES = "Beverages";
 export const RED_WINES = "Red Wines";
 export const SPARKLING_WINES = "Sparkling Wines";

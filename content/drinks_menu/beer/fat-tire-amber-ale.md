@@ -1,4 +1,4 @@
 ---
-name: Fat Tire Amber Ale (Bottled)
-price: $6.00
+name: Fat Tire Amber Ale
+price: $7.00 (Bottle)
 ---

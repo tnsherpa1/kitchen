@@ -1,4 +1,4 @@
 ---
 name: Organic Tofu
-price: $18.50
+price: $20.00
 ---

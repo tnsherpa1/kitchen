@@ -1,4 +1,4 @@
 ---
 name: Lamb
-price: $21.50
+price: $23.00
 ---

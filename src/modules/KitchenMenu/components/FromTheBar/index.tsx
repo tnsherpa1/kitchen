@@ -5,6 +5,7 @@ import Beverages from "./components/Beverages";
 import RedWines from "./components/RedWines";
 import SparklingWines from "./components/SparklingWines";
 import WhiteWines from "./components/WhiteWines";
+import DraftBeer from "./components/DraftBeer";
 
 const FromTheBar = () => {
   const [accordionState, setAccordionState] = React.useState("");
@@ -12,14 +13,6 @@ const FromTheBar = () => {
   return (
     <StyledDiv>
       <h3 className="kitchen-menu-title"> From the Bar:</h3>
-      <Beer
-        accordionState={accordionState}
-        setAccordionState={setAccordionState}
-      />
-      <Beverages
-        accordionState={accordionState}
-        setAccordionState={setAccordionState}
-      />
       <RedWines
         accordionState={accordionState}
         setAccordionState={setAccordionState}
@@ -29,6 +22,18 @@ const FromTheBar = () => {
         setAccordionState={setAccordionState}
       />
       <WhiteWines
+        accordionState={accordionState}
+        setAccordionState={setAccordionState}
+      />
+      <Beer
+        accordionState={accordionState}
+        setAccordionState={setAccordionState}
+      />
+      <DraftBeer
+        accordionState={accordionState}
+        setAccordionState={setAccordionState}
+      />
+      <Beverages
         accordionState={accordionState}
         setAccordionState={setAccordionState}
       />

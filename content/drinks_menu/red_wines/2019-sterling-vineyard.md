@@ -1,4 +1,4 @@
 ---
 name: 2019 Sterling Vineyard, Heritage Collection Merlot, Napa Valley
-price: $11.50 ($45.00 Btl)
+price: $48.00 (Bottle)
 ---

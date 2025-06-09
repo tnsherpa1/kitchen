@@ -1,4 +1,4 @@
 ---
 name: 2021 Starmont Chardonney, Carneros
-price: $10.00 ($38.00 Btl)
+price: $11.00 (Glass), $42.00 (Bottle)
 ---

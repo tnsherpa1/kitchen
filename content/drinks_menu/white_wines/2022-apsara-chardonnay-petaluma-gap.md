@@ -1,4 +1,4 @@
 ---
 name: 2022 Apsara Chardonnay, Petaluma Gap
-price: $10.50 ($41 Btl)
+price: $11.50 (Glass), $44.00 (Bottle)
 ---

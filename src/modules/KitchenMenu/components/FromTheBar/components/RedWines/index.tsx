@@ -39,7 +39,14 @@ const RedWines = ({ accordionState, setAccordionState }: Props) => {
           </thead>
           <tbody>
             {data.map((x, i) => {
-              return <DisplayMenu name={x.name} price={x.price} key={i} />;
+              return (
+                <DisplayMenu
+                  name={x.name}
+                  price={x.price}
+                  key={i}
+                  showDescription={false}
+                />
+              );
             })}
           </tbody>
         </table>

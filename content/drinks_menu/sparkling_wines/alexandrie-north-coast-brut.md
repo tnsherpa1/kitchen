@@ -1,4 +1,4 @@
 ---
 name: Alexandrie North Coast Brut
-price: $11.00, $46.00(Btl)
+price: $48.00 (Bottle)
 ---
