@@ -1,4 +1,4 @@
 ---
 name: Veggie Vegan Tikki Masala
-price: $19.50
+price: $21.00
 ---

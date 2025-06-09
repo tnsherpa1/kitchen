@@ -1,4 +1,4 @@
 ---
-name: Stella Artois (Bottled)
-price: $6.00
+name: Stella Artois
+price: $7.00 (Bottle)
 ---

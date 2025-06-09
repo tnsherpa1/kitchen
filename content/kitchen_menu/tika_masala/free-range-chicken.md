@@ -1,4 +1,4 @@
 ---
 name: Free Range Chicken
-price: $20.50
+price: $22.00
 ---

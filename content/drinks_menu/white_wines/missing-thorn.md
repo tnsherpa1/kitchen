@@ -1,4 +1,4 @@
 ---
-name: Missing Thorn ( Alcohol Removed Wine )
-price: $40.00 ($38.00 Btl)
+name: Missing Thorn (Alcohol Removed Wine)
+price: $10.00 (Glass), $38.00 (Bottle)
 ---

@@ -42,7 +42,7 @@ const Sides = ({ accordionState, setAccordionState }: Props) => {
               return (
                 <DisplayMenu
                   name={x.name}
-                  desc={x.description}
+                  desc={x?.description}
                   price={x.price}
                   key={i}
                 />

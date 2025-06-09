@@ -1,7 +1,8 @@
 {
-  "beer_description": "",
-  "beverages_description": "",
-  "red_wine_description": "",
-  "sparkling_wine_description": "",
-  "white_wine_description": ""
+  "beer_description": "We charge a $20 corkage fee.",
+  "draftbeer_description": "We charge a $20 corkage fee.",
+  "beverages_description": "We charge a $20 corkage fee.",
+  "red_wine_description": "We charge a $20 corkage fee.",
+  "sparkling_wine_description": "We charge a $20 corkage fee.",
+  "white_wine_description": "We charge a $20 corkage fee."
 }
