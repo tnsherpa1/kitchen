@@ -85,7 +85,7 @@ const Banner = () => {
                       className="letter-spacing"
                       size="md"
                     >
-                      View The Menu
+                      View Menu
                     </Button>
                   </li>
                 </ul>
