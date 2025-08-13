@@ -95,7 +95,7 @@ export const StyledDiv = styled.div`
         }
 
         .button-group {
-          margin-top: 40px;
+          margin: 15px 0px;
           display: flex;
           gap: 20px;
           justify-content: center;
@@ -105,10 +105,6 @@ export const StyledDiv = styled.div`
           @media (max-width: 1024px) {
             flex-direction: column;
           }
-
-          /* li {
-            display: flex;
-          } */
         }
 
         .icons {
