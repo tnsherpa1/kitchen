@@ -9,11 +9,12 @@ const defaultStyle = (theme: DefaultTheme) => css`
   padding: 0 1.75em;
   outline: none;
   font-family: ${theme.font.sourceSansPro};
-  font-weight: 600;
+  font-weight: 400;
   transition: all 0.2s ease-in-out;
   text-align: center;
   letter-spacing: 2px;
   cursor: pointer;
+  font-size: 16px;
 
   &.contained {
     background-color: #fff;
