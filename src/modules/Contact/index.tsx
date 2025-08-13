@@ -66,7 +66,7 @@ const Contact = () => {
                   <div className="col-6">
                     <InputField
                       name="name"
-                      placeholder="sherpa..."
+                      placeholder="Your Name"
                       label="Name"
                       value={formik.values.name}
                       onBlur={formik.handleBlur}
@@ -80,7 +80,7 @@ const Contact = () => {
                   <div className="col-6">
                     <InputField
                       name="email"
-                      placeholder="sherpa@exmaple.com"
+                      placeholder="Your Email"
                       label="Email"
                       touched={formik.touched.email}
                       value={formik.values.email}
@@ -95,7 +95,7 @@ const Contact = () => {
                     <InputTextArea
                       id="message"
                       name="message"
-                      placeholder="Food is...."
+                      placeholder="Your Message"
                       label="Message"
                       rows={20}
                       cols={2}
