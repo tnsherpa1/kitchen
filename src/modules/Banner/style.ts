@@ -61,7 +61,7 @@ export const StyledDiv = styled.div`
         display: flex;
         flex-direction: column;
         gap: 30px;
-        ul {
+        .banner-content-information {
           display: flex;
           flex-direction: column;
           text-align: center;
@@ -95,7 +95,16 @@ export const StyledDiv = styled.div`
         }
 
         .button-group {
-          margin-top: 40px;
+          margin: 15px 0px;
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          list-style: none;
+          @media (max-width: 1024px) {
+            flex-direction: column;
+          }
         }
 
         .icons {
@@ -103,6 +112,8 @@ export const StyledDiv = styled.div`
           flex-direction: row;
           justify-content: center;
           align-items: center;
+          list-style: none;
+          gap: 20px;
 
           li {
             .yelp-wrapper {

@@ -40,6 +40,7 @@ const Menu = () => {
     phone_number = "",
     reservation_link = "",
     yelp_link = "",
+    online_ordering = "https://order.toasttab.com/online/himalayan-sherpa-kitchen-1148-main-st",
   } = settings || {};
   return (
     <StyledUl className="menu-list-wrapper">
@@ -64,6 +65,19 @@ const Menu = () => {
             size="lg"
           >
             Reservation
+          </Button>
+        </li>
+      )}
+      {online_ordering && (
+        <li>
+          <Button
+            href={online_ordering}
+            className="button special fit"
+            rel="noopener noreferrer"
+            skin="outline"
+            size="lg"
+          >
+            Online Ordering
           </Button>
         </li>
       )}

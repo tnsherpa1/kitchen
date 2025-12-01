@@ -22,6 +22,7 @@ const Banner = () => {
     dinner_last_seated_time = "",
     phone_number = "",
     yelp_link = "",
+    online_ordering = "https://order.toasttab.com/online/himalayan-sherpa-kitchen-1148-main-st",
   } = settings || {};
   return (
     <StyledDiv>
@@ -40,7 +41,7 @@ const Banner = () => {
                 </Typography>
               </div>
               <div className="hero-banner-content-wrapper">
-                <ul>
+                <ul className="banner-content-information">
                   <li>
                     <strong>Hours:</strong>
                     <Typography as="subtitle1">Open daily</Typography>
@@ -63,10 +64,17 @@ const Banner = () => {
                     <li>
                       <Button
                         href={`tel:${phone_number}`}
-                        skin="contained"
+                        skin="outline"
                         size="md"
                       >
                         {phone_number}
+                      </Button>
+                    </li>
+                  )}
+                  {online_ordering && (
+                    <li>
+                      <Button href={online_ordering} skin="outline" size="md">
+                        Online Ordering
                       </Button>
                     </li>
                   )}
@@ -77,7 +85,7 @@ const Banner = () => {
                       className="letter-spacing"
                       size="md"
                     >
-                      VIEW THE MENU
+                      View Menu
                     </Button>
                   </li>
                 </ul>
